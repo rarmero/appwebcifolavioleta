@@ -3,37 +3,26 @@ project:
 
 website:
   title: "web"
-
   navbar:
-    background: dark
-    style: "floating"
-
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: about
+      - about.qmd
 
-sidebar:
-    - title: "Labs"
-      border: true
-      collapse-level: 1
-      background: none
-      style: "floating"
-      contents:
-        - text: "Create and publish by Quarto"
-        - text: "---"  
-        - section: "Lab#MD01-1"
-          contents: 
-            - introductiondevops.qmd
+  sidebar:
+      - title: "Labs"
+        border: true
+        collapse-level: 1
+        background: none
+        style: "floating"
+        contents:
+          - text: "Create and publish by Quarto"
+          - text: "---"  
+          - section: "Lab#MD01-1"
+            contents: 
+              - introductiondevops.qmd
 
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-page-footer: 
+  page-footer: 
     background: dark
     center: "it does not matter how slowly you go so long as you do not stop (Confucios)" 
     right: 
@@ -41,3 +30,10 @@ page-footer:
         href: https://github.com/rarmero
       - icon: linkedin 
         href: https://es.linkedin.com/in/rafaelcarrion 
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
