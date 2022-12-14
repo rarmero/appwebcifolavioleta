@@ -21,6 +21,12 @@ website:
           - section: "Lab#MD01-1"
             contents: 
               - introductiondevops.qmd
+        contents:
+          - text: "Create and publish by Quarto"
+          - text: "---"  
+          - section: "Lab#SE01-1"
+            contents: 
+              - testjava.qmd
 
   page-footer: 
     background: dark
