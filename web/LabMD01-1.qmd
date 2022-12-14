@@ -1,0 +1,12 @@
+---
+title: "Lab ME 01-1"
+---
+
+## Delivery of exercesises
+
+:::{.callout-note  collapse="false" }
+
+## Publish
+
+![fig 1](images/quartopublish1.png)
+:::
