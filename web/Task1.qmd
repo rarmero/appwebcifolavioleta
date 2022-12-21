@@ -1,0 +1,19 @@
+---
+title: "Task-1"
+---
+
+## Java app dockerized and published on Kubernettes
+
+:::{.callout-note  collapse="false" }
+
+## Pods
+
+![fig 1](images/k8sPods.PNG)
+:::
+
+:::{.callout-note  collapse="false" }
+
+## Desployments
+
+![fig 2](images/k8sdeployments.PNG)
+:::

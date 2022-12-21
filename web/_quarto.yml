@@ -2,31 +2,41 @@ project:
   type: website
 
 website:
-  title: "Web App"
+  title: "App with web tecnologies"
+
   navbar:
     right:
       - href: index.qmd
         text: Home
+      - sidebar:tasks
+      - sidebar:labs
       - about.qmd
 
   sidebar:
-      - id: "labs" 
-        title: "Labs"
-        border: true
-        collapse-level: 1
-        background: none
-        style: "floating"
-        contents:
-          - text: "Labs"
-          - text: "---"  
-          - section: "Lab#MD01-1"
-            contents:
-             - LabMD01-1.qmd
-          - section: "Lab#SE01-1"
-            contents: 
-             - LabSE01-1.qmd
-
-
+    - id: "labs" 
+      title: "Labs"
+      border: true
+      collapse-level: 1
+      background: none
+      style: "floating"
+      contents:
+        - text: "Labs"
+        - text: "---"  
+        - section: "Lab#MD01-1"
+          contents:
+           - LabMD01-1.qmd
+        - section: "Lab#SE01-1"
+          contents: 
+           - LabSE01-1.qmd
+           
+    - id: "tasks" 
+      title: "Tasks"
+      contents:
+        - text: "Tasks"
+        - text: "---"  
+        - section: "Task-1"
+          contents:
+           - Task1.qmd
   page-footer: 
     background: dark
     center: "it does not matter how slowly you go so long as you do not stop (Confucios)" 
