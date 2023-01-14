@@ -24,10 +24,10 @@ website:
         - text: "---"  
         - section: "Lab#MD01-1"
           contents:
-           - LabMD01-1.qmd
+           - "LabMD01-1.qmd"
         - section: "Lab#SE01-1"
           contents: 
-           - LabSE01-1.qmd
+           - "LabSE01-1.qmd"
            
     - id: "tasks" 
       title: "Tasks"
@@ -36,7 +36,20 @@ website:
         - text: "---"  
         - section: "Task-1"
           contents:
-           - Task1.qmd
+           - "Task1.qmd"
+
+    - id: "projects" 
+      title: "Projects"
+      collapse-level: 1
+      background: none
+      style: "floating"
+      contents:
+        - text: "Projects"
+        - text: "---"  
+        - section: "Project1"
+          contents:
+          - "Project1.qmd"
+
   page-footer: 
     background: dark
     center: "it does not matter how slowly you go so long as you do not stop (Confucios)" 

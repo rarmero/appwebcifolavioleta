@@ -1,0 +1,20 @@
+---
+title: "Chromebook"
+---
+
+## Visual Code on chromebook
+
+Installed on Acer Spin513 qualcomm snpadragon
+
+
+references:
+
+
+
+:::{.callout-note  collapse="false" }
+
+## Visual code
+
+![fig 1](images/chromebookVisualCode.PNG)
+
+:::
