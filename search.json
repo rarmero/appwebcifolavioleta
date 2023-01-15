@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Theory1.html",
+    "href": "Theory1.html",
+    "title": "App with web tecnologies",
+    "section": "",
+    "text": "OWASP\nDifferences SAST-DAST"
+  },
+  {
     "objectID": "Task1.html",
     "href": "Task1.html",
     "title": "Task-1",
@@ -21,11 +28,25 @@
     "text": "SonarQube like SAST\nSonarQube"
   },
   {
+    "objectID": "Project2.html#links-references",
+    "href": "Project2.html#links-references",
+    "title": "SonarQube",
+    "section": "Links references",
+    "text": "Links references\n\n\nList of tools"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Web App Cifo La Violeta",
     "section": "",
     "text": "Delivery of exercesises"
+  },
+  {
+    "objectID": "Project3.html",
+    "href": "Project3.html",
+    "title": "DAST Tools",
+    "section": "",
+    "text": "Tools to consider\nFree DAST"
   },
   {
     "objectID": "LabMD01-1.html",
