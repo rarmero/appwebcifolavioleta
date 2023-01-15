@@ -11,6 +11,7 @@ website:
       - sidebar:tasks
       - sidebar:projects
       - sidebar:labs
+      - sidebar:theory
       - about.qmd
 
   sidebar:
@@ -22,7 +23,6 @@ website:
       style: "floating"
       contents:
         - text: "Labs"
-        - text: "---"  
         - section: "Lab#MD01-1"
           contents:
            - "LabMD01-1.qmd"
@@ -50,9 +50,20 @@ website:
         - section: "Project1"
           contents:
            - "Project1.qmd"
-        - section: "Project1"
+        - section: "Project2"
           contents:
            - "Project2.qmd"   
+        - section: "Project3"
+          contents:
+           - "Project3.qmd"    
+
+    - id: "theory" 
+      title: "Theory"
+      contents:
+        - text: "Theory"
+        - section: "Theory"
+          contents:
+           - "Theory1.qmd"      
 
   page-footer: 
     background: dark
