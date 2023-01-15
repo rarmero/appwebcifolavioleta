@@ -55,15 +55,22 @@ website:
            - "Project2.qmd"   
         - section: "Project3"
           contents:
-           - "Project3.qmd"    
+           - "Project3.qmd"
+        - section: "Project4"
+          contents:
+           - "testing.qmd" 
 
     - id: "theory" 
       title: "Theory"
       contents:
         - text: "Theory"
+        - text: "---"
         - section: "Theory"
           contents:
            - "Theory1.qmd"      
+        - section: "UML"
+          contents:
+           - "uml1.qmd"    
 
   page-footer: 
     background: dark
