@@ -9,6 +9,15 @@ SonarQube like SAST
 [SonarQube](https://www.sonarsource.com/products/sonarqube/)
 
 
+## Links references
+
+::: {.summary}
+
+- [List of tools](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis)
+
+:::
+
+
 
 
 
