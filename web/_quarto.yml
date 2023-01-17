@@ -38,6 +38,9 @@ website:
         - section: "Task-1"
           contents:
            - "Task1.qmd"
+        - section: "Task-2"
+          contents:
+           - "Task2.qmd"
 
     - id: "projects" 
       title: "Projects"
