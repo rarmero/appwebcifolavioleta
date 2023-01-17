@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "Task2.html",
+    "href": "Task2.html",
+    "title": "Task-2",
+    "section": "",
+    "text": "docker quarto"
+  },
+  {
     "objectID": "Theory1.html",
     "href": "Theory1.html",
     "title": "App with web tecnologies",
@@ -44,7 +51,7 @@
   {
     "objectID": "Project3.html",
     "href": "Project3.html",
-    "title": "DAST Tools",
+    "title": "Dynamic Application Security Testing (DAST) Software Tools",
     "section": "",
     "text": "Tools to consider\nFree DAST"
   },

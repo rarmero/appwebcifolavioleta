@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Task2.html</loc>
+    <lastmod>2023-01-17T21:57:54.363Z</lastmod>
+  </url>
+  <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/Theory1.html</loc>
-    <lastmod>2023-01-17T21:31:55.310Z</lastmod>
+    <lastmod>2023-01-17T21:57:54.682Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/Task1.html</loc>
-    <lastmod>2023-01-17T21:31:55.631Z</lastmod>
+    <lastmod>2023-01-17T21:57:55.000Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/testing.html</loc>
-    <lastmod>2023-01-17T21:31:55.930Z</lastmod>
+    <lastmod>2023-01-17T21:57:55.303Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/Project1.html</loc>
-    <lastmod>2023-01-17T21:31:56.251Z</lastmod>
+    <lastmod>2023-01-17T21:57:55.619Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/Project2.html</loc>
-    <lastmod>2023-01-17T21:31:56.548Z</lastmod>
+    <lastmod>2023-01-17T21:57:55.925Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/index.html</loc>
-    <lastmod>2023-01-17T21:31:56.831Z</lastmod>
+    <lastmod>2023-01-17T21:57:56.215Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/Project3.html</loc>
-    <lastmod>2023-01-17T21:31:57.119Z</lastmod>
+    <lastmod>2023-01-17T21:57:56.512Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/LabMD01-1.html</loc>
-    <lastmod>2023-01-17T21:31:57.415Z</lastmod>
+    <lastmod>2023-01-17T21:57:56.802Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/about.html</loc>
-    <lastmod>2023-01-17T21:31:57.706Z</lastmod>
+    <lastmod>2023-01-17T21:57:57.100Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/LabSE01-1.html</loc>
-    <lastmod>2023-01-17T21:31:57.994Z</lastmod>
+    <lastmod>2023-01-17T21:57:57.395Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/uml1.html</loc>
-    <lastmod>2023-01-17T21:31:58.291Z</lastmod>
+    <lastmod>2023-01-17T21:57:57.682Z</lastmod>
   </url>
 </urlset>
