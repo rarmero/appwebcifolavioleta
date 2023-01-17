@@ -7,9 +7,11 @@ title: "Chromebook"
 Installed on Acer Spin513 qualcomm snpadragon
 
 
-references:
+- references:
 
+[documentation](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started)
 
+- Applications installed:
 
 :::{.callout-note  collapse="false" }
 
@@ -18,3 +20,13 @@ references:
 ![fig 1](images/chromebookVisualCode.PNG)
 
 :::
+
+
+:::{.callout-note  collapse="false" }
+
+## NetBeans - Java
+
+![fig 2](images/netbeans.PNG)
+
+:::
+
