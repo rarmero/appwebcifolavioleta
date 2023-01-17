@@ -71,9 +71,9 @@ website:
         - section: "Theory"
           contents:
            - "Theory1.qmd"      
-        - section: "UML"
+        - section: "Patterns"
           contents:
-           - "uml1.qmd"    
+           - "patterns1.qmd"    
 
   page-footer: 
     background: dark

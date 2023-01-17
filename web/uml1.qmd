@@ -1,7 +1,0 @@
----
-title: "UML"
----
-
-Links
-
-[UML by Takaaki Teshima](https://dev.to/takaakit)
