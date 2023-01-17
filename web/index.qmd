@@ -2,4 +2,7 @@
 title: "Web App Cifo La Violeta"
 ---
 
-Delivery of exercesises
+- Delivery of exercesises (Labs)
+- Personal projects
+- Tasks
+- Theory
