@@ -66,9 +66,9 @@ website:
     - id: "theory" 
       title: "Theory"
       contents:
-        - text: "Documentation"
+        - text: "Theory"
         - text: "---"
-        - section: "Links"
+        - section: "Documentation"
           contents:
            - "Theory1.qmd"      
         - section: "Patterns"
