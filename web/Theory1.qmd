@@ -1,4 +1,6 @@
-
+---
+title: "Theory"
+---
 
 - [Cloud Native Interactive Landscape](https://landscape.cncf.io/)
 

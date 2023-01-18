@@ -31,14 +31,14 @@ website:
            - "LabSE01-1.qmd"
            
     - id: "tasks" 
-      title: "Tasks"
+      title: "Devops"
       contents:
-        - text: "Tasks"
+        - text: "Devops"
         - text: "---"  
-        - section: "Task-1"
+        - section: "Kubernettes"
           contents:
            - "Task1.qmd"
-        - section: "Task-2"
+        - section: "Quarto docker"
           contents:
            - "Task2.qmd"
 
@@ -66,9 +66,9 @@ website:
     - id: "theory" 
       title: "Theory"
       contents:
-        - text: "Theory"
+        - text: "Documentation"
         - text: "---"
-        - section: "Theory"
+        - section: "Links"
           contents:
            - "Theory1.qmd"      
         - section: "Patterns"
