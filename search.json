@@ -2,9 +2,9 @@
   {
     "objectID": "Task2.html",
     "href": "Task2.html",
-    "title": "Task-2",
+    "title": "Quarto with docker",
     "section": "",
-    "text": "docker quarto"
+    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
     "objectID": "Theory1.html",
@@ -25,14 +25,21 @@
     "href": "testing.html",
     "title": "Testing",
     "section": "",
-    "text": "Unit Integration Functional"
+    "text": "Unit\nIntegration\nFunctional"
   },
   {
     "objectID": "Project1.html",
     "href": "Project1.html",
     "title": "Chromebook",
     "section": "",
-    "text": "Installed on Acer Spin513 qualcomm snpadragon\n\nreferences:\n\ndocumentation\n\nApplications installed:\n\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 2"
+    "text": "Installed on Acer Spin513 qualcomm snpadragon\n\nreferences:\n\ndocumentation\n\n\n\n\n\nfig 1\n\n\n\nApplications installed:\n\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 3"
+  },
+  {
+    "objectID": "Project1.html#docker",
+    "href": "Project1.html#docker",
+    "title": "Chromebook",
+    "section": "Docker",
+    "text": "Docker"
   },
   {
     "objectID": "Project2.html",
@@ -72,9 +79,9 @@
   {
     "objectID": "LabMD01-1.html",
     "href": "LabMD01-1.html",
-    "title": "Lab ME 01-1",
+    "title": "Quarto publish",
     "section": "",
-    "text": "Publish\n\n\n\n\n\n\n\n\nfig 1"
+    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
     "objectID": "about.html",
