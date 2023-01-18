@@ -17,7 +17,7 @@ Installed on Acer Spin513 qualcomm snpadragon
 
 ## Visual code
 
-![fig 1](images/chromebookVisualCode.PNG)
+![fig 1](images/chromebookVisualCode.png)
 
 :::
 
