@@ -11,13 +11,19 @@ Installed on Acer Spin513 qualcomm snpadragon
 
 [documentation](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started)
 
+### Linux terminal
+
+![fig 1](images/linuxterminal.png)
+
+
+
 - Applications installed:
 
 :::{.callout-note  collapse="false" }
 
 ## Visual code
 
-![fig 1](images/chromebookVisualCode.png)
+![fig 2](images/chromebookVisualCode.png)
 
 :::
 
@@ -26,7 +32,9 @@ Installed on Acer Spin513 qualcomm snpadragon
 
 ## NetBeans - Java
 
-![fig 2](images/netbeans.PNG)
+![fig 3](images/netbeans.PNG)
 
 :::
 
+
+## Docker
