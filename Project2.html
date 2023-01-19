@@ -265,6 +265,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#sonarqube" id="toc-sonarqube" class="nav-link active" data-scroll-target="#sonarqube">SonarQube</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#how-to-use-sonarqube" id="toc-how-to-use-sonarqube" class="nav-link" data-scroll-target="#how-to-use-sonarqube">How to use SonarQube</a>
+  <ul class="collapse">
+  <li><a href="#comand-line" id="toc-comand-line" class="nav-link" data-scroll-target="#comand-line">comand line</a></li>
+  <li><a href="#reference-how-to-use-sonarqube" id="toc-reference-how-to-use-sonarqube" class="nav-link" data-scroll-target="#reference-how-to-use-sonarqube">Reference how to use SonarQube</a></li>
+  </ul></li>
   <li><a href="#links-references" id="toc-links-references" class="nav-link" data-scroll-target="#links-references">Links references</a></li>
   </ul>
 </nav>
@@ -293,6 +299,27 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="sonarqube">SonarQube</h2>
 <p>SonarQube like SAST</p>
 <p><a href="https://www.sonarsource.com/products/sonarqube/">SonarQube</a></p>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<ul>
+<li>open source</li>
+<li>good comments</li>
+</ul>
+</section>
+<section id="how-to-use-sonarqube" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-sonarqube">How to use SonarQube</h2>
+<section id="comand-line" class="level3">
+<h3 class="anchored" data-anchor-id="comand-line">comand line</h3>
+<pre><code>mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=&lt;nombproject&gt; \
+  -Dsonar.host.url=&lt;ip&gt; \
+  -Dsonar.login=&lt;token&gt;</code></pre>
+</section>
+<section id="reference-how-to-use-sonarqube" class="level3">
+<h3 class="anchored" data-anchor-id="reference-how-to-use-sonarqube">Reference how to use SonarQube</h3>
+<p><a href="https://docs.sonarqube.org/9.6/analyzing-source-code/scanners/sonarscanner-for-maven/">Instructions</a></p>
+</section>
 </section>
 <section id="links-references" class="level2">
 <h2 class="anchored" data-anchor-id="links-references">Links references</h2>

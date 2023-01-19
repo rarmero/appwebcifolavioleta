@@ -49,6 +49,20 @@
     "text": "SonarQube like SAST\nSonarQube"
   },
   {
+    "objectID": "Project2.html#motivation",
+    "href": "Project2.html#motivation",
+    "title": "SonarQube",
+    "section": "Motivation",
+    "text": "Motivation\n\nopen source\ngood comments"
+  },
+  {
+    "objectID": "Project2.html#how-to-use-sonarqube",
+    "href": "Project2.html#how-to-use-sonarqube",
+    "title": "SonarQube",
+    "section": "How to use SonarQube",
+    "text": "How to use SonarQube\n\ncomand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\nReference how to use SonarQube\nInstructions"
+  },
+  {
     "objectID": "Project2.html#links-references",
     "href": "Project2.html#links-references",
     "title": "SonarQube",
