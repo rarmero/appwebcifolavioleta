@@ -55,7 +55,8 @@ website:
            - "Project1.qmd"
         - section: "Project2"
           contents:
-           - "Project2.qmd"   
+           - "Project2.qmd"
+           - "Project2Management.qmd"
         - section: "Project3"
           contents:
            - "Project3.qmd"
