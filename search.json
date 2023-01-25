@@ -53,7 +53,7 @@
     "href": "Project2.html#motivation",
     "title": "SonarQube",
     "section": "Motivation",
-    "text": "Motivation\n\nopen source\ngood comments"
+    "text": "Motivation\n\nopen source\ngood comments\n\n\ngenerating token\nInstructions"
   },
   {
     "objectID": "Project2.html#how-to-use-sonarqube",
@@ -103,5 +103,12 @@
     "title": "About …..",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "Project2Management.html",
+    "href": "Project2Management.html",
+    "title": "SonarQube Management",
+    "section": "",
+    "text": "jira\ngithub workspace"
   }
 ]
