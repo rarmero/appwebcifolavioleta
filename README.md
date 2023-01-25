@@ -2,5 +2,5 @@
 
 - Delivery of exercesises (Labs)
 - Personal projects
-- Tasks
+- Devops
 - Theory
