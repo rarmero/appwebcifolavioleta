@@ -8,7 +8,7 @@ title: "About ....."
 - Systems, OS, servers, infraestructure, networking, helpdesk.
 - Management.
 - Budgets.
-- Training
+- Training.
 
 
 
