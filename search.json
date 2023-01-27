@@ -60,7 +60,7 @@
     "href": "Project2.html#how-to-use-sonarqube",
     "title": "SonarQube",
     "section": "How to use SonarQube",
-    "text": "How to use SonarQube\n\ncomand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\nReference how to use SonarQube\nInstructions"
+    "text": "How to use SonarQube\n\ncomand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\njenkins\n\n\n\n\n\n\npipeline with jenkins\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\nReference how to use SonarQube\nInstructions"
   },
   {
     "objectID": "Project2.html#links-references",
