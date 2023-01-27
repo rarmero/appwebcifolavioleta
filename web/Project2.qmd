@@ -27,11 +27,18 @@ mvn clean verify sonar:sonar \
   -Dsonar.host.url=<ip> \
   -Dsonar.login=<token>
 ```
+### jenkins
+
+:::{.callout-note  collapse="false" }
+
+#### pipeline with jenkins
+
+![fig 1](images/sonarqubejenkins.png)
+:::
 
 ### Reference how to use SonarQube
 
 [Instructions](https://docs.sonarqube.org/9.6/analyzing-source-code/scanners/sonarscanner-for-maven/){.external}  
-
 
 ## Links references
 
