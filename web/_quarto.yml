@@ -50,14 +50,14 @@ website:
       contents:
         - text: "Projects"
         - text: "---"  
-        - section: "Project1"
+        - section: "Chromebook"
           contents:
            - "Project1.qmd"
-        - section: "Project2"
+        - section: "Static application security testing"
           contents:
            - "Project2.qmd"
            - "Project2Management.qmd"
-        - section: "Project3"
+        - section: "Dynamic application security testing"
           contents:
            - "Project3.qmd"
         - section: "Project4"
