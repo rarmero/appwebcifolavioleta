@@ -4,5 +4,5 @@ title: "Web App Cifo La Violeta"
 
 - Delivery of exercesises (Labs)
 - Personal projects
-- Tasks
+- Devops
 - Theory

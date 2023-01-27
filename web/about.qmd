@@ -2,4 +2,13 @@
 title: "About ....."
 ---
 
-About this site
+25 years of experiences in:
+
+- Software developing.
+- Systems, OS, servers, infraestructure, networking, helpdesk.
+- Management.
+- Budgets.
+- Training
+
+
+
