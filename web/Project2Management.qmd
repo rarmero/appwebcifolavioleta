@@ -22,4 +22,4 @@ title: "SonarQube Management"
 
 ## Jira
 
-[Project on Github](https://github.com/rarmerosoft/sonarqubecifolavioleta)
+[Project on Github](https://github.com/rarmerosoft/sonarqubecifolavioleta){.external} 

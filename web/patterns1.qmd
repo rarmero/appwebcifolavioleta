@@ -2,8 +2,8 @@
 title: "Design Patterns"
 ---
 
-- Links
+### Links
 
-- [UML by Takaaki Teshima](https://dev.to/takaakit)
+- [UML by Takaaki Teshima](https://dev.to/takaakit){.external}  
  
-- [Patterns catalog](https://hillside.net/index.php/patterns/patterns-catalog)
+- [Patterns catalog](https://hillside.net/index.php/patterns/patterns-catalog){.external}  

@@ -3,5 +3,5 @@ title: "Software Tools"
 ---
 
 
-- [Tools to consider](https://www.worldranksolutions.com/7-best-open-source-dast-tools-to-consider/)
-- [Free DAST](https://www.g2.com/categories/dynamic-application-security-testing-dast/free)
+- [Tools to consider](https://www.worldranksolutions.com/7-best-open-source-dast-tools-to-consider/){.external} 
+- [Free DAST](https://www.g2.com/categories/dynamic-application-security-testing-dast/free){.external} 

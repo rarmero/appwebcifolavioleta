@@ -2,8 +2,8 @@
 title: "Links"
 ---
 
-- [Cloud Native Interactive Landscape](https://landscape.cncf.io/)
+- [Cloud Native Interactive Landscape](https://landscape.cncf.io/){.external} 
 
 
-- [OWASP](https://www.synopsys.com/glossary/what-is-owasp-top-10.html)
-- [Differences SAST-DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/)
+- [OWASP](https://www.synopsys.com/glossary/what-is-owasp-top-10.html){.external} 
+- [Differences SAST-DAST](https://www.synopsys.com/blogs/software-security/sast-vs-dast-difference/){.external} 

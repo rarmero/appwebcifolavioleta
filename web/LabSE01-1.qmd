@@ -4,4 +4,4 @@ title: "Lab SE 01-1"
 
 ## Delivery of exercesises
 
-[GitHub Source](https://github.com/rarmero/labscifolavioleta/tree/main/src/LabSE01-1)
+[GitHub Source](https://github.com/rarmero/labscifolavioleta/tree/main/src/LabSE01-1){.external} 

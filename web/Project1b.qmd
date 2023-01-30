@@ -2,6 +2,6 @@
 title: "Others ways to mobility"
 ---
 
-- [Never install](https://neverinstall.com/)
-- [Air Table](https://www.airtable.com/)
-- [Zapier](https://zapier.com/)
+- [Never install](https://neverinstall.com/){.external} 
+- [Air Table](https://www.airtable.com/){.external} 
+- [Zapier](https://zapier.com/){.external} 

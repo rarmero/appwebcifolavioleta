@@ -9,7 +9,7 @@ Installed on Acer Spin513 qualcomm snpadragon
 
 - references:
 
-[documentation](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started)
+[documentation](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started){.external} 
 
 ### Linux terminal
 
