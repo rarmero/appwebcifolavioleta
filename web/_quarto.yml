@@ -50,7 +50,7 @@ website:
       contents:
         - text: "Projects"
         - text: "---"  
-        - section: "Chromebook"
+        - section: "Mobility"
           contents:
            - "Project1.qmd"
         - section: "Static application security testing"
