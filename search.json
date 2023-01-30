@@ -35,6 +35,13 @@
     "text": "Links\nUML by Takaaki Teshima\nPatterns catalog"
   },
   {
+    "objectID": "pipeline.html",
+    "href": "pipeline.html",
+    "title": "Pipeline",
+    "section": "",
+    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+  },
+  {
     "objectID": "Project1.html",
     "href": "Project1.html",
     "title": "Chrome OS applications",
