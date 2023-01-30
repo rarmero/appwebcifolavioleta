@@ -1,45 +1,31 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About …..",
+    "objectID": "Task2.html",
+    "href": "Task2.html",
+    "title": "Quarto with docker",
     "section": "",
-    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
+    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web App Cifo La Violeta",
+    "objectID": "Theory1.html",
+    "href": "Theory1.html",
+    "title": "Links",
     "section": "",
-    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
+    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
   },
   {
-    "objectID": "LabMD01-1.html",
-    "href": "LabMD01-1.html",
-    "title": "Quarto publish",
+    "objectID": "Task1.html",
+    "href": "Task1.html",
+    "title": "Kubernettes",
     "section": "",
-    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
+    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
   },
   {
-    "objectID": "LabSE01-1.html",
-    "href": "LabSE01-1.html",
-    "title": "Lab SE 01-1",
+    "objectID": "testing.html",
+    "href": "testing.html",
+    "title": "Testing",
     "section": "",
-    "text": "GitHub Source"
-  },
-  {
-    "objectID": "patterns1.html",
-    "href": "patterns1.html",
-    "title": "Design Patterns",
-    "section": "",
-    "text": "Links\nUML by Takaaki Teshima\nPatterns catalog"
-  },
-  {
-    "objectID": "pipeline.html",
-    "href": "pipeline.html",
-    "title": "Pipeline",
-    "section": "",
-    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+    "text": "Unit\nIntegration\nFunctional"
   },
   {
     "objectID": "Project1.html",
@@ -54,13 +40,6 @@
     "title": "Chrome OS applications",
     "section": "Docker",
     "text": "Docker"
-  },
-  {
-    "objectID": "Project1b.html",
-    "href": "Project1b.html",
-    "title": "Others ways to mobility",
-    "section": "",
-    "text": "Never install\nAir Table\nZapier"
   },
   {
     "objectID": "Project2.html",
@@ -91,6 +70,48 @@
     "text": "Links references\n\n\nList of tools"
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web App Cifo La Violeta",
+    "section": "",
+    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
+  },
+  {
+    "objectID": "Project3.html",
+    "href": "Project3.html",
+    "title": "Software Tools",
+    "section": "",
+    "text": "Tools to consider\nFree DAST"
+  },
+  {
+    "objectID": "patterns1.html",
+    "href": "patterns1.html",
+    "title": "Design Patterns",
+    "section": "",
+    "text": "Links\nUML by Takaaki Teshima\nPatterns catalog"
+  },
+  {
+    "objectID": "LabMD01-1.html",
+    "href": "LabMD01-1.html",
+    "title": "Quarto publish",
+    "section": "",
+    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About …..",
+    "section": "",
+    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
+  },
+  {
+    "objectID": "LabSE01-1.html",
+    "href": "LabSE01-1.html",
+    "title": "Lab SE 01-1",
+    "section": "",
+    "text": "GitHub Source"
+  },
+  {
     "objectID": "Project2Management.html",
     "href": "Project2Management.html",
     "title": "SonarQube Management",
@@ -112,38 +133,17 @@
     "text": "Jira\nProject on Github"
   },
   {
-    "objectID": "Project3.html",
-    "href": "Project3.html",
-    "title": "Software Tools",
+    "objectID": "pipeline.html",
+    "href": "pipeline.html",
+    "title": "Pipeline",
     "section": "",
-    "text": "Tools to consider\nFree DAST"
+    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
   },
   {
-    "objectID": "Task1.html",
-    "href": "Task1.html",
-    "title": "Kubernettes",
+    "objectID": "Project1b.html",
+    "href": "Project1b.html",
+    "title": "Others ways to mobility",
     "section": "",
-    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
-  },
-  {
-    "objectID": "Task2.html",
-    "href": "Task2.html",
-    "title": "Quarto with docker",
-    "section": "",
-    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "testing.html",
-    "href": "testing.html",
-    "title": "Testing",
-    "section": "",
-    "text": "Unit\nIntegration\nFunctional"
-  },
-  {
-    "objectID": "Theory1.html",
-    "href": "Theory1.html",
-    "title": "Links",
-    "section": "",
-    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
+    "text": "Never install\nAir Table\nZapier"
   }
 ]
