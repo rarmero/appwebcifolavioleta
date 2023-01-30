@@ -1,0 +1,7 @@
+---
+title: "Others ways to mobility"
+---
+
+- [Never install](https://neverinstall.com/)
+- [Air Table](https://www.airtable.com/)
+- [Zapier](https://zapier.com/)
