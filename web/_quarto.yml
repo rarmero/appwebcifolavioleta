@@ -35,6 +35,9 @@ website:
       contents:
         - text: "Devops"
         - text: "---"  
+        - section: "Pipeline"
+          contents:
+           - "pipeline.qmd"
         - section: "Kubernettes"
           contents:
            - "Task1.qmd"

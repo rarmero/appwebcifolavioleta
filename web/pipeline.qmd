@@ -1,0 +1,11 @@
+---
+title: "Pipeline"
+---
+
+
+```{mermaid}
+flowchart LR
+  A[SonarQube] --> B[Test]
+  B --> C[Build]
+  C --> D[Publish]
+```
