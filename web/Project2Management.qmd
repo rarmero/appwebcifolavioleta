@@ -2,5 +2,24 @@
 title: "SonarQube Management"
 ---
 
-- jira
-- github workspace
+## Sotware to manage the project
+
+|Software|
+|:-      |
+|Jira    |
+|Github  |
+
+
+## Jira
+
+:::{.callout-note  collapse="false" }
+
+### panel jira
+
+![fig 1](images/jira1.PNG)
+:::
+
+
+## Jira
+
+[Project on Github](https://github.com/rarmerosoft/sonarqubecifolavioleta)

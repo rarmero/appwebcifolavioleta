@@ -53,6 +53,7 @@ website:
         - section: "Mobility"
           contents:
            - "Project1.qmd"
+           - "Project1b.qmd"
         - section: "Static application security testing"
           contents:
            - "Project2.qmd"
