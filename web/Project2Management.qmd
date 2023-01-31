@@ -14,12 +14,12 @@ title: "SonarQube Management"
 
 :::{.callout-note  collapse="false" }
 
-### panel jira
+### Panel jira
 
 ![fig 1](images/jira1.PNG)
 :::
 
 
-## Jira
+## Github
 
 [Project on Github](https://github.com/rarmerosoft/sonarqubecifolavioleta){.external} 
