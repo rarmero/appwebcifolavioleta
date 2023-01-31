@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -289,15 +289,13 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#sonarqube" id="toc-sonarqube" class="nav-link active" data-scroll-target="#sonarqube">SonarQube</a></li>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a>
-  <ul class="collapse">
-  <li><a href="#generating-token" id="toc-generating-token" class="nav-link" data-scroll-target="#generating-token">generating token</a></li>
-  </ul></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
   <li><a href="#how-to-use-sonarqube" id="toc-how-to-use-sonarqube" class="nav-link" data-scroll-target="#how-to-use-sonarqube">How to use SonarQube</a>
   <ul class="collapse">
-  <li><a href="#comand-line" id="toc-comand-line" class="nav-link" data-scroll-target="#comand-line">comand line</a></li>
-  <li><a href="#jenkins" id="toc-jenkins" class="nav-link" data-scroll-target="#jenkins">jenkins</a></li>
-  <li><a href="#reference-how-to-use-sonarqube" id="toc-reference-how-to-use-sonarqube" class="nav-link" data-scroll-target="#reference-how-to-use-sonarqube">Reference how to use SonarQube</a></li>
+  <li><a href="#generating-token" id="toc-generating-token" class="nav-link" data-scroll-target="#generating-token">1. Generating token</a></li>
+  <li><a href="#comand-line" id="toc-comand-line" class="nav-link" data-scroll-target="#comand-line">2. comand line</a></li>
+  <li><a href="#reference-how-to-use-sonarqube" id="toc-reference-how-to-use-sonarqube" class="nav-link" data-scroll-target="#reference-how-to-use-sonarqube">3. Reference how to use SonarQube</a></li>
+  <li><a href="#jenkins" id="toc-jenkins" class="nav-link" data-scroll-target="#jenkins">4. Jenkins</a></li>
   </ul></li>
   <li><a href="#links-references" id="toc-links-references" class="nav-link" data-scroll-target="#links-references">Links references</a></li>
   </ul>
@@ -334,22 +332,27 @@ ul.task-list li input[type="checkbox"] {
 <li>open source</li>
 <li>good comments</li>
 </ul>
-<section id="generating-token" class="level3">
-<h3 class="anchored" data-anchor-id="generating-token">generating token</h3>
-<p><a href="https://sonarqube.inria.fr/sonarqube/documentation/user-guide/user-token/#:~:text=Generating%20a%20token,will%20see%20the%20token%20value." class="external">Instructions</a></p>
-</section>
 </section>
 <section id="how-to-use-sonarqube" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-sonarqube">How to use SonarQube</h2>
+<section id="generating-token" class="level3">
+<h3 class="anchored" data-anchor-id="generating-token">1. Generating token</h3>
+<p><a href="https://sonarqube.inria.fr/sonarqube/documentation/user-guide/user-token/#:~:text=Generating%20a%20token,will%20see%20the%20token%20value." class="external">Instructions</a></p>
+</section>
 <section id="comand-line" class="level3">
-<h3 class="anchored" data-anchor-id="comand-line">comand line</h3>
+<h3 class="anchored" data-anchor-id="comand-line">2. comand line</h3>
 <pre><code>mvn clean verify sonar:sonar \
   -Dsonar.projectKey=&lt;nombproject&gt; \
   -Dsonar.host.url=&lt;ip&gt; \
   -Dsonar.login=&lt;token&gt;</code></pre>
 </section>
+<section id="reference-how-to-use-sonarqube" class="level3">
+<h3 class="anchored" data-anchor-id="reference-how-to-use-sonarqube">3. Reference how to use SonarQube</h3>
+<p><a href="https://docs.sonarqube.org/9.6/analyzing-source-code/scanners/sonarscanner-for-maven/" class="external">Instructions</a></p>
+</section>
 <section id="jenkins" class="level3">
-<h3 class="anchored" data-anchor-id="jenkins">jenkins</h3>
+<h3 class="anchored" data-anchor-id="jenkins">4. Jenkins</h3>
+<p><a href="https://docs.sonarqube.org/9.6/analyzing-source-code/scanners/jenkins-extension-sonarqube/">Instructions</a></p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -371,10 +374,6 @@ pipeline with jenkins
 </div>
 </div>
 </div>
-</section>
-<section id="reference-how-to-use-sonarqube" class="level3">
-<h3 class="anchored" data-anchor-id="reference-how-to-use-sonarqube">Reference how to use SonarQube</h3>
-<p><a href="https://docs.sonarqube.org/9.6/analyzing-source-code/scanners/sonarscanner-for-maven/" class="external">Instructions</a></p>
 </section>
 </section>
 <section id="links-references" class="level2">
