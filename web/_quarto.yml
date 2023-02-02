@@ -61,6 +61,7 @@ website:
           contents:
            - "Project2.qmd"
            - "Project2Management.qmd"
+           - "javasonarqube.qmd"
         - section: "Dynamic application security testing"
           contents:
            - "Project3.qmd"
