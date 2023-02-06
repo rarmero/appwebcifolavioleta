@@ -26,6 +26,9 @@ website:
         - section: "Lab#MD01-1"
           contents:
            - "LabMD01-1.qmd"
+        - section: "Lab#SE00-1"
+          contents: 
+           - "LabSE00-1.qmd"
         - section: "Lab#SE01-1"
           contents: 
            - "LabSE01-1.qmd"
