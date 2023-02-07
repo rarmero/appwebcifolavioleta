@@ -1,0 +1,21 @@
+---
+title: Rest Api
+execute:
+  echo: false
+---
+
+Code : `MF01-0492`
+
+
+
+### First approach
+
+```{ojs}
+d3 = require('d3')
+
+d3.json("https://api.github.com/repos/rarmero/appwebcifolavioleta/contents", function(data)
+{
+    console.log(data);
+});
+
+```

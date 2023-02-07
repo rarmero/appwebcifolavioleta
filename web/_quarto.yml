@@ -27,6 +27,7 @@ website:
           contents:
            - "LabMD01-1.qmd"
            - "LabMDObservable.qmd"
+           - "LabMDResApi.qmd"
         - section: "Java Labs"
           contents: 
            - "LabSE00-1.qmd"
