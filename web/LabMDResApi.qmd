@@ -20,16 +20,23 @@ d3.json("https://api.github.com/repos/rarmero/appwebcifolavioleta/contents", fun
 
 ```
 
-### second  approach
+### Second  approach with map
 
 ```{ojs}
-data = await FileAttachment("books.csv").csv({ typed: true })
-books = data.map(function(element){
-    return element;
+contents = await d3.json("https://api.github.com/repos/rarmero/appwebcifolavioleta/contents")
+
+names = contents.map(contents => {
+const name = contents.name;
+const url = contents.html_url;
+return 
+{
+  name,
+  url
+}
 }
 )
 
-Inputs.table(books, { sort: "value", reverse: true })
+Inputs.table(names, { sort: "value", reverse: true })
 
 ```
 
