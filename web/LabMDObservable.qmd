@@ -1,0 +1,51 @@
+---
+title: Quarto Markdown, code & data
+execute:
+  echo: false
+---
+
+Code : `UF03-1843`
+
+
+## FileAttachment
+
+```{ojs}
+data = await FileAttachment("books.csv").csv({ typed: true })
+```
+
+### Example to show specific field position in the array.
+
+```{ojs}
+data[0]["title"]
+```
+
+::: {.callout-tip collapse="false" layout-ncol=2 icon=true}
+
+## code
+
+```
+data[0]["title"]
+```
+:::
+
+### Example to show specific position in the array.
+
+```{ojs}
+data[1]
+```
+
+::: {.callout-tip collapse="false" layout-ncol=2 icon=true}
+
+## code
+
+```
+data[1]
+```
+
+:::
+
+## list of all content.
+
+```{ojs}
+data
+```

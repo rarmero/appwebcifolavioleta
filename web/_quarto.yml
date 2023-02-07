@@ -23,16 +23,14 @@ website:
       style: "floating"
       contents:
         - text: "Labs"
-        - section: "Lab#MD01-1"
+        - section: "MarkUp Languages"
           contents:
            - "LabMD01-1.qmd"
-        - section: "Lab#SE00-1"
+           - "LabMDObservable.qmd"
+        - section: "Java Labs"
           contents: 
            - "LabSE00-1.qmd"
-        - section: "Lab#SE01-1"
-          contents: 
            - "LabSE01-1.qmd"
-           
     - id: "tasks" 
       title: "Devops"
       contents:
