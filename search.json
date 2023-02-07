@@ -77,6 +77,27 @@
     "text": "Links references\n\n\nList of tools"
   },
   {
+    "objectID": "LabMDObservable.html",
+    "href": "LabMDObservable.html",
+    "title": "Quarto Markdown, code & data",
+    "section": "",
+    "text": "Code : UF03-1843"
+  },
+  {
+    "objectID": "LabMDObservable.html#fileattachment",
+    "href": "LabMDObservable.html#fileattachment",
+    "title": "Quarto Markdown, code & data",
+    "section": "FileAttachment",
+    "text": "FileAttachment\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nExample to show specific field position in the array.\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\nExample to show specific position in the array.\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
+  },
+  {
+    "objectID": "LabMDObservable.html#list-of-all-content.",
+    "href": "LabMDObservable.html#list-of-all-content.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content.",
+    "text": "list of all content.\n\ndata"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Web App Cifo La Violeta",
