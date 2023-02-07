@@ -19,3 +19,17 @@ d3.json("https://api.github.com/repos/rarmero/appwebcifolavioleta/contents", fun
 });
 
 ```
+
+### second  approach
+
+```{ojs}
+data = await FileAttachment("books.csv").csv({ typed: true })
+books = data.map(function(element){
+    return element;
+}
+)
+
+Inputs.table(books, { sort: "value", reverse: true })
+
+```
+
