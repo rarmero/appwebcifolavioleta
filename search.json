@@ -98,6 +98,13 @@
     "text": "list of all content.\n\ndata"
   },
   {
+    "objectID": "LabMDObservable.html#list-of-all-content-with-map.",
+    "href": "LabMDObservable.html#list-of-all-content-with-map.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content with map.",
+    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Web App Cifo La Violeta",
@@ -144,7 +151,7 @@
     "href": "LabMDResApi.html",
     "title": "Rest Api",
     "section": "",
-    "text": "Code : MF01-0492\n\nFirst approach\n\nd3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsecond approach\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = data.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
+    "text": "Code : MF01-0492\n\nFirst approach\n\nd3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond approach with map\n\ncontents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\nconst url = contents.html_url;\nreturn \n{\n  name,\n  url\n}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })"
   },
   {
     "objectID": "Project2Management.html",
