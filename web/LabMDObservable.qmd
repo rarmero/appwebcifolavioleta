@@ -49,3 +49,16 @@ data[1]
 ```{ojs}
 data
 ```
+
+## list of all content with map.
+
+```{ojs}
+datacsv = await FileAttachment("books.csv").csv({ typed: true })
+books = datacsv.map(function(element){
+    return element;
+}
+)
+
+Inputs.table(books, { sort: "value", reverse: true })
+
+```
