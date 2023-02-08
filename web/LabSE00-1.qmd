@@ -1,7 +1,35 @@
 ---
 title: "Lab SE 00-1"
+number-sections: true
 ---
 
-## Delivery of exercesises
+## Definition
+
+[10 CHARACTERISTICS OF A GOOD STUDENT](https://lindastade.com/10-characteristics-of-a-good-student/){.external} 
+
+## Code
+
+### Java Code
+
+```Java
+
+   int growthMindset;
+   int brave;
+   int organised;
+   int consistent;
+   int ableToDealWithFailure;
+   int setGoals;
+   int ableToConnectLearningToLife;
+   int howToLookAfterTheirMentalHealth;
+   int PartnersWithTeachers;
+   int valuesEducation;
+
+```
+
+### Rules
+
+#### A GOOD STUDENT HAS A GROWTH MINDSET
+
+### Code repository
 
 [GitHub Source](https://github.com/rarmero/labscifolavioleta/tree/main/src/LabSE00-1){.external} 
