@@ -22,4 +22,7 @@ title: "SonarQube Management"
 
 ## Github
 
-[Project on Github](https://github.com/rarmerosoft/sonarqubecifolavioleta){.external} 
+
+![fig 2](images/githubsonarqubewiki.PNG)
+
+[Project on Github](https://github.com/rarmerosoft/sonarqubecifolavioleta/projects?query=is%3Aopen){.external} 
