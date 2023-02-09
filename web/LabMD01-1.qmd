@@ -2,6 +2,8 @@
 title: "Quarto publish"
 ---
 
+## How to publish
+
 - [Instructions](https://quarto.org/docs/publishing/github-pages.html){.external} 
 
 :::{.callout-note  collapse="false" }
