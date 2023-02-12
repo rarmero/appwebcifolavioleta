@@ -81,7 +81,8 @@ website:
            - "Theory1.qmd"      
         - section: "Patterns"
           contents:
-           - "patterns1.qmd"    
+           - "patterns1.qmd"
+           - "PatternCommand.qmd"    
 
   page-footer: 
     background: dark

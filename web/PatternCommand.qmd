@@ -1,0 +1,20 @@
+---
+title: "Command"
+---
+
+## Motivation
+
+> We have a laboratory to develop a software to manage a library.
+[View details](https://albertprofe.github.io/wiki/javase/selab0-3.html)
+\
+You can see more details about the pattern, [here](https://albertprofe.github.io/wiki/javase/se-pattern-intro.html#design-patterns-cheat-sheet)
+\
+> We need a menu system.
+
+
+## GitHub code
+
+Below I build a menu frame to develop concrete actions of the lab
+
+
+- [view code](https://github.com/rarmero/labscifolavioleta/tree/main/src/menu){.external} 
