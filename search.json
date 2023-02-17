@@ -200,7 +200,14 @@
     "href": "Project3.html#nikto",
     "title": "Software Tools",
     "section": "Nikto",
-    "text": "Nikto\n\nNikto web\n\n\nNikto alternatives\n\narachni\nZAP[]\nskipfish"
+    "text": "Nikto\n\nNikto web"
+  },
+  {
+    "objectID": "Project3.html#zap",
+    "href": "Project3.html#zap",
+    "title": "Software Tools",
+    "section": "ZAP",
+    "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
   },
   {
     "objectID": "Task1.html",
