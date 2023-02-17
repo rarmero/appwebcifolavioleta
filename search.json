@@ -1,31 +1,17 @@
 [
   {
-    "objectID": "Task2.html",
-    "href": "Task2.html",
-    "title": "Quarto with docker",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About …..",
     "section": "",
-    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
+    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
   },
   {
-    "objectID": "Theory1.html",
-    "href": "Theory1.html",
-    "title": "Links",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web App Cifo La Violeta",
     "section": "",
-    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
-  },
-  {
-    "objectID": "Task1.html",
-    "href": "Task1.html",
-    "title": "Kubernettes",
-    "section": "",
-    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
-  },
-  {
-    "objectID": "testing.html",
-    "href": "testing.html",
-    "title": "Testing",
-    "section": "",
-    "text": "Unit\nIntegration\nFunctional"
+    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
   },
   {
     "objectID": "javasonarqube.html",
@@ -35,46 +21,11 @@
     "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
   },
   {
-    "objectID": "Project1.html",
-    "href": "Project1.html",
-    "title": "Chrome OS applications",
+    "objectID": "LabMD01-1.html",
+    "href": "LabMD01-1.html",
+    "title": "Quarto publish",
     "section": "",
-    "text": "Installed on Acer Spin513 qualcomm snpadragon\n\nreferences:\n\ndocumentation\n\n\n\n\n\nfig 1\n\n\n\nApplications installed:\n\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 3"
-  },
-  {
-    "objectID": "Project1.html#docker",
-    "href": "Project1.html#docker",
-    "title": "Chrome OS applications",
-    "section": "Docker",
-    "text": "Docker"
-  },
-  {
-    "objectID": "Project2.html",
-    "href": "Project2.html",
-    "title": "SonarQube",
-    "section": "",
-    "text": "SonarQube like SAST\nSonarQube"
-  },
-  {
-    "objectID": "Project2.html#motivation",
-    "href": "Project2.html#motivation",
-    "title": "SonarQube",
-    "section": "Motivation",
-    "text": "Motivation\n\nopen source\ngood comments"
-  },
-  {
-    "objectID": "Project2.html#how-to-use-sonarqube",
-    "href": "Project2.html#how-to-use-sonarqube",
-    "title": "SonarQube",
-    "section": "How to use SonarQube",
-    "text": "How to use SonarQube\n\n1. Generating token\nInstructions\n\n\n2. comand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\n3. Reference how to use SonarQube\nInstructions\n\n\n4. Jenkins\nInstructions\n\n\n\n\n\n\npipeline with jenkins\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "Project2.html#links-references",
-    "href": "Project2.html#links-references",
-    "title": "SonarQube",
-    "section": "Links references",
-    "text": "Links references\n\n\nList of tools"
+    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
     "objectID": "LabMDObservable.html",
@@ -105,39 +56,25 @@
     "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web App Cifo La Violeta",
+    "objectID": "LabMDResApi.html",
+    "href": "LabMDResApi.html",
+    "title": "Rest Api",
     "section": "",
-    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
+    "text": "Code : MF01-0492\n\nFirst approach\n\nd3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond approach with map\n\ncontents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\n\nconst url = contents.html_url;\nreturn {name,url}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })"
   },
   {
-    "objectID": "Project3.html",
-    "href": "Project3.html",
-    "title": "Software Tools",
+    "objectID": "LabSE00-1.html",
+    "href": "LabSE00-1.html",
+    "title": "Lab SE 00-1",
     "section": "",
-    "text": "Tools to consider\nFree DAST"
+    "text": "10 CHARACTERISTICS OF A GOOD STUDENT"
   },
   {
-    "objectID": "patterns1.html",
-    "href": "patterns1.html",
-    "title": "Design Patterns",
-    "section": "",
-    "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
-  },
-  {
-    "objectID": "LabMD01-1.html",
-    "href": "LabMD01-1.html",
-    "title": "Quarto publish",
-    "section": "",
-    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About …..",
-    "section": "",
-    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
+    "objectID": "LabSE00-1.html#code",
+    "href": "LabSE00-1.html#code",
+    "title": "Lab SE 00-1",
+    "section": "2 Code",
+    "text": "2 Code\n\n2.1 Java Code\n\n   int growthMindset;\n   int brave;\n   int organised;\n   int consistent;\n   int ableToDealWithFailure;\n   int setGoals;\n   int ableToConnectLearningToLife;\n   int howToLookAfterTheirMentalHealth;\n   int PartnersWithTeachers;\n   int valuesEducation;\n\n\n2.2 Rules\n\n2.2.1 A GOOD STUDENT HAS A GROWTH MINDSET\n\n\n\n2.3 Code repository\nGitHub Source"
   },
   {
     "objectID": "LabSE01-1.html",
@@ -161,11 +98,67 @@
     "text": "GitHub code\nBelow I build a menu frame to develop concrete actions of the lab\n\nview code"
   },
   {
-    "objectID": "LabMDResApi.html",
-    "href": "LabMDResApi.html",
-    "title": "Rest Api",
+    "objectID": "patterns1.html",
+    "href": "patterns1.html",
+    "title": "Design Patterns",
     "section": "",
-    "text": "Code : MF01-0492\n\nFirst approach\n\nd3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond approach with map\n\ncontents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\n\nconst url = contents.html_url;\nreturn {name,url}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })"
+    "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
+  },
+  {
+    "objectID": "pipeline.html",
+    "href": "pipeline.html",
+    "title": "Pipeline",
+    "section": "",
+    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+  },
+  {
+    "objectID": "Project1.html",
+    "href": "Project1.html",
+    "title": "Chrome OS applications",
+    "section": "",
+    "text": "Installed on Acer Spin513 qualcomm snpadragon\n\nreferences:\n\ndocumentation\n\n\n\n\n\nfig 1\n\n\n\nApplications installed:\n\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 3"
+  },
+  {
+    "objectID": "Project1.html#docker",
+    "href": "Project1.html#docker",
+    "title": "Chrome OS applications",
+    "section": "Docker",
+    "text": "Docker"
+  },
+  {
+    "objectID": "Project1b.html",
+    "href": "Project1b.html",
+    "title": "Others ways to mobility",
+    "section": "",
+    "text": "Never install\nAir Table\nZapier"
+  },
+  {
+    "objectID": "Project2.html",
+    "href": "Project2.html",
+    "title": "SonarQube",
+    "section": "",
+    "text": "SonarQube like SAST\nSonarQube"
+  },
+  {
+    "objectID": "Project2.html#motivation",
+    "href": "Project2.html#motivation",
+    "title": "SonarQube",
+    "section": "Motivation",
+    "text": "Motivation\n\nopen source\ngood comments"
+  },
+  {
+    "objectID": "Project2.html#how-to-use-sonarqube",
+    "href": "Project2.html#how-to-use-sonarqube",
+    "title": "SonarQube",
+    "section": "How to use SonarQube",
+    "text": "How to use SonarQube\n\n1. Generating token\nInstructions\n\n\n2. comand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\n3. Reference how to use SonarQube\nInstructions\n\n\n4. Jenkins\nInstructions\n\n\n\n\n\n\npipeline with jenkins\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "Project2.html#links-references",
+    "href": "Project2.html#links-references",
+    "title": "SonarQube",
+    "section": "Links references",
+    "text": "Links references\n\n\nList of tools"
   },
   {
     "objectID": "Project2Management.html",
@@ -189,31 +182,52 @@
     "text": "Github\n\n\n\nfig 2\n\n\nProject on Github"
   },
   {
-    "objectID": "LabSE00-1.html",
-    "href": "LabSE00-1.html",
-    "title": "Lab SE 00-1",
+    "objectID": "Project3.html",
+    "href": "Project3.html",
+    "title": "Software Tools",
     "section": "",
-    "text": "10 CHARACTERISTICS OF A GOOD STUDENT"
+    "text": "Tools to consider\nMore Free DAST"
   },
   {
-    "objectID": "LabSE00-1.html#code",
-    "href": "LabSE00-1.html#code",
-    "title": "Lab SE 00-1",
-    "section": "2 Code",
-    "text": "2 Code\n\n2.1 Java Code\n\n   int growthMindset;\n   int brave;\n   int organised;\n   int consistent;\n   int ableToDealWithFailure;\n   int setGoals;\n   int ableToConnectLearningToLife;\n   int howToLookAfterTheirMentalHealth;\n   int PartnersWithTeachers;\n   int valuesEducation;\n\n\n2.2 Rules\n\n2.2.1 A GOOD STUDENT HAS A GROWTH MINDSET\n\n\n\n2.3 Code repository\nGitHub Source"
+    "objectID": "Project3.html#owasp",
+    "href": "Project3.html#owasp",
+    "title": "Software Tools",
+    "section": "OWASP",
+    "text": "OWASP\n\nowasp\ntesting guide\nDocumentation\ntesting guide(dpf)"
   },
   {
-    "objectID": "pipeline.html",
-    "href": "pipeline.html",
-    "title": "Pipeline",
-    "section": "",
-    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+    "objectID": "Project3.html#nikto",
+    "href": "Project3.html#nikto",
+    "title": "Software Tools",
+    "section": "Nikto",
+    "text": "Nikto\n\nNikto web\n\n\nNikto alternatives\n\narachni\nZAP[]\nskipfish"
   },
   {
-    "objectID": "Project1b.html",
-    "href": "Project1b.html",
-    "title": "Others ways to mobility",
+    "objectID": "Task1.html",
+    "href": "Task1.html",
+    "title": "Kubernettes",
     "section": "",
-    "text": "Never install\nAir Table\nZapier"
+    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "Task2.html",
+    "href": "Task2.html",
+    "title": "Quarto with docker",
+    "section": "",
+    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "testing.html",
+    "href": "testing.html",
+    "title": "Testing",
+    "section": "",
+    "text": "Unit\nIntegration\nFunctional"
+  },
+  {
+    "objectID": "Theory1.html",
+    "href": "Theory1.html",
+    "title": "Links",
+    "section": "",
+    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
   }
 ]
