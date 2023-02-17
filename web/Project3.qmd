@@ -19,10 +19,22 @@ title: "Software Tools"
 
 ## Nikto
 
->[Nikto web](https://www.cirt.net/nikto2)
+>
+[Nikto web](https://www.cirt.net/nikto2){.external}
 
-### Nikto alternatives
+## ZAP
+
+- [ZAP](https://www.zaproxy.org/){.external}
+
+> Interesting thing, use zap via web. 
+
+- [Webswing Usage](https://www.zaproxy.org/docs/docker/webswing/){.external}
+- [Webswing](https://www.zaproxy.org/blog/2021-02-03-run-zap-without-java-using-docker-and-webswing/){.external}
+
+### alternatives
 
 - [arachni](https://www.arachni-scanner.com/){.external}
-- [ZAP](https://www.zaproxy.org/){.external}[]
+
 - [skipfish](https://www.kali.org/tools/skipfish/){.external}
+
+- [wapiti](https://wapiti-scanner.github.io/){.external}
