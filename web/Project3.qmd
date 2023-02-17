@@ -2,6 +2,27 @@
 title: "Software Tools"
 ---
 
+## Introduction to DAST
 
-- [Tools to consider](https://www.worldranksolutions.com/7-best-open-source-dast-tools-to-consider/){.external} 
-- [Free DAST](https://www.g2.com/categories/dynamic-application-security-testing-dast/free){.external} 
+- [Tools to consider](https://www.worldranksolutions.com/7-best-open-source-dast-tools-to-consider/){.external}
+
+- [More Free DAST](https://www.g2.com/categories/dynamic-application-security-testing-dast/free){.external} 
+
+
+## OWASP
+
+- [owasp](https://owasp.org/){.external}
+- [testing guide](https://owasp.org/www-project-web-security-testing-guide/){.external}
+- [Documentation](https://github.com/OWASP/wstg/tree/master/document){.external}
+
+- [testing guide(dpf)](https://owasp.org/www-project-web-security-testing-guide/assets/archive/OWASP_Testing_Guide_v4.pdf){.external}
+
+## Nikto
+
+>[Nikto web](https://www.cirt.net/nikto2)
+
+### Nikto alternatives
+
+- [arachni](https://www.arachni-scanner.com/){.external}
+- [ZAP](https://www.zaproxy.org/){.external}[]
+- [skipfish](https://www.kali.org/tools/skipfish/){.external}
