@@ -1,17 +1,31 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About …..",
+    "objectID": "Task2.html",
+    "href": "Task2.html",
+    "title": "Quarto with docker",
     "section": "",
-    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
+    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web App Cifo La Violeta",
+    "objectID": "Theory1.html",
+    "href": "Theory1.html",
+    "title": "Links",
     "section": "",
-    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
+    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
+  },
+  {
+    "objectID": "Task1.html",
+    "href": "Task1.html",
+    "title": "Kubernettes",
+    "section": "",
+    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "testing.html",
+    "href": "testing.html",
+    "title": "Testing",
+    "section": "",
+    "text": "Unit\nIntegration\nFunctional"
   },
   {
     "objectID": "javasonarqube.html",
@@ -19,97 +33,6 @@
     "title": "Java code MOOC Helsinki",
     "section": "",
     "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "LabMD01-1.html",
-    "href": "LabMD01-1.html",
-    "title": "Quarto publish",
-    "section": "",
-    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "LabMDObservable.html",
-    "href": "LabMDObservable.html",
-    "title": "Quarto Markdown, code & data",
-    "section": "",
-    "text": "Code : UF03-1843"
-  },
-  {
-    "objectID": "LabMDObservable.html#fileattachment",
-    "href": "LabMDObservable.html#fileattachment",
-    "title": "Quarto Markdown, code & data",
-    "section": "FileAttachment",
-    "text": "FileAttachment\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nExample to show specific field position in the array.\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\nExample to show specific position in the array.\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
-  },
-  {
-    "objectID": "LabMDObservable.html#list-of-all-content.",
-    "href": "LabMDObservable.html#list-of-all-content.",
-    "title": "Quarto Markdown, code & data",
-    "section": "list of all content.",
-    "text": "list of all content.\n\ndata"
-  },
-  {
-    "objectID": "LabMDObservable.html#list-of-all-content-with-map.",
-    "href": "LabMDObservable.html#list-of-all-content-with-map.",
-    "title": "Quarto Markdown, code & data",
-    "section": "list of all content with map.",
-    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "LabMDResApi.html",
-    "href": "LabMDResApi.html",
-    "title": "Rest Api",
-    "section": "",
-    "text": "Code : MF01-0492\n\nFirst approach\n\nd3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond approach with map\n\ncontents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\n\nconst url = contents.html_url;\nreturn {name,url}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "LabSE00-1.html",
-    "href": "LabSE00-1.html",
-    "title": "Lab SE 00-1",
-    "section": "",
-    "text": "10 CHARACTERISTICS OF A GOOD STUDENT"
-  },
-  {
-    "objectID": "LabSE00-1.html#code",
-    "href": "LabSE00-1.html#code",
-    "title": "Lab SE 00-1",
-    "section": "2 Code",
-    "text": "2 Code\n\n2.1 Java Code\n\n   int growthMindset;\n   int brave;\n   int organised;\n   int consistent;\n   int ableToDealWithFailure;\n   int setGoals;\n   int ableToConnectLearningToLife;\n   int howToLookAfterTheirMentalHealth;\n   int PartnersWithTeachers;\n   int valuesEducation;\n\n\n2.2 Rules\n\n2.2.1 A GOOD STUDENT HAS A GROWTH MINDSET\n\n\n\n2.3 Code repository\nGitHub Source"
-  },
-  {
-    "objectID": "LabSE01-1.html",
-    "href": "LabSE01-1.html",
-    "title": "Lab SE 01-1",
-    "section": "",
-    "text": "GitHub Source"
-  },
-  {
-    "objectID": "PatternCommand.html",
-    "href": "PatternCommand.html",
-    "title": "Command",
-    "section": "",
-    "text": "We have a laboratory to develop a software to manage a library. View details\nYou can see more details about the pattern, here\nWe need a menu system."
-  },
-  {
-    "objectID": "PatternCommand.html#github-code",
-    "href": "PatternCommand.html#github-code",
-    "title": "Command",
-    "section": "GitHub code",
-    "text": "GitHub code\nBelow I build a menu frame to develop concrete actions of the lab\n\nview code"
-  },
-  {
-    "objectID": "patterns1.html",
-    "href": "patterns1.html",
-    "title": "Design Patterns",
-    "section": "",
-    "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
-  },
-  {
-    "objectID": "pipeline.html",
-    "href": "pipeline.html",
-    "title": "Pipeline",
-    "section": "",
-    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
   },
   {
     "objectID": "Project1.html",
@@ -124,13 +47,6 @@
     "title": "Chrome OS applications",
     "section": "Docker",
     "text": "Docker"
-  },
-  {
-    "objectID": "Project1b.html",
-    "href": "Project1b.html",
-    "title": "Others ways to mobility",
-    "section": "",
-    "text": "Never install\nAir Table\nZapier"
   },
   {
     "objectID": "Project2.html",
@@ -161,25 +77,39 @@
     "text": "Links references\n\n\nList of tools"
   },
   {
-    "objectID": "Project2Management.html",
-    "href": "Project2Management.html",
-    "title": "SonarQube Management",
+    "objectID": "LabMDObservable.html",
+    "href": "LabMDObservable.html",
+    "title": "Quarto Markdown, code & data",
     "section": "",
-    "text": "Software\n\n\n\n\nJira\n\n\nGithub"
+    "text": "Code : UF03-1843"
   },
   {
-    "objectID": "Project2Management.html#jira",
-    "href": "Project2Management.html#jira",
-    "title": "SonarQube Management",
-    "section": "Jira",
-    "text": "Jira\n\n\n\n\n\n\nPanel jira\n\n\n\n\n\n\n\n\nfig 1"
+    "objectID": "LabMDObservable.html#fileattachment",
+    "href": "LabMDObservable.html#fileattachment",
+    "title": "Quarto Markdown, code & data",
+    "section": "FileAttachment",
+    "text": "FileAttachment\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nExample to show specific field position in the array.\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\nExample to show specific position in the array.\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
   },
   {
-    "objectID": "Project2Management.html#github",
-    "href": "Project2Management.html#github",
-    "title": "SonarQube Management",
-    "section": "Github",
-    "text": "Github\n\n\n\nfig 2\n\n\nProject on Github"
+    "objectID": "LabMDObservable.html#list-of-all-content.",
+    "href": "LabMDObservable.html#list-of-all-content.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content.",
+    "text": "list of all content.\n\ndata"
+  },
+  {
+    "objectID": "LabMDObservable.html#list-of-all-content-with-map.",
+    "href": "LabMDObservable.html#list-of-all-content-with-map.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content with map.",
+    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web App Cifo La Violeta",
+    "section": "",
+    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
   },
   {
     "objectID": "Project3.html",
@@ -210,31 +140,122 @@
     "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
   },
   {
-    "objectID": "Task1.html",
-    "href": "Task1.html",
-    "title": "Kubernettes",
+    "objectID": "patterns1.html",
+    "href": "patterns1.html",
+    "title": "Design Patterns",
     "section": "",
-    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
+    "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
   },
   {
-    "objectID": "Task2.html",
-    "href": "Task2.html",
-    "title": "Quarto with docker",
+    "objectID": "LabMD01-1.html",
+    "href": "LabMD01-1.html",
+    "title": "Quarto publish",
     "section": "",
-    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
+    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
-    "objectID": "testing.html",
-    "href": "testing.html",
-    "title": "Testing",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About …..",
     "section": "",
-    "text": "Unit\nIntegration\nFunctional"
+    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
   },
   {
-    "objectID": "Theory1.html",
-    "href": "Theory1.html",
-    "title": "Links",
+    "objectID": "LabSE01-1.html",
+    "href": "LabSE01-1.html",
+    "title": "Lab SE 01-1",
     "section": "",
-    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
+    "text": "GitHub Source"
+  },
+  {
+    "objectID": "PatternCommand.html",
+    "href": "PatternCommand.html",
+    "title": "Command",
+    "section": "",
+    "text": "We have a laboratory to develop a software to manage a library. View details\nYou can see more details about the pattern, here\nWe need a menu system."
+  },
+  {
+    "objectID": "PatternCommand.html#github-code",
+    "href": "PatternCommand.html#github-code",
+    "title": "Command",
+    "section": "GitHub code",
+    "text": "GitHub code\nBelow I build a menu frame to develop concrete actions of the lab\n\nview code"
+  },
+  {
+    "objectID": "LabMDResApi.html",
+    "href": "LabMDResApi.html",
+    "title": "Rest Api",
+    "section": "",
+    "text": "Code : MF01-0492\n\nFirst approach\n\nd3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond approach with map\n\ncontents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\n\nconst url = contents.html_url;\nreturn {name,url}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "Project2Management.html",
+    "href": "Project2Management.html",
+    "title": "SonarQube Management",
+    "section": "",
+    "text": "Software\n\n\n\n\nJira\n\n\nGithub"
+  },
+  {
+    "objectID": "Project2Management.html#jira",
+    "href": "Project2Management.html#jira",
+    "title": "SonarQube Management",
+    "section": "Jira",
+    "text": "Jira\n\n\n\n\n\n\nPanel jira\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "Project2Management.html#github",
+    "href": "Project2Management.html#github",
+    "title": "SonarQube Management",
+    "section": "Github",
+    "text": "Github\n\n\n\nfig 2\n\n\nProject on Github"
+  },
+  {
+    "objectID": "LabSE00-1.html",
+    "href": "LabSE00-1.html",
+    "title": "Lab SE 00-1",
+    "section": "",
+    "text": "10 CHARACTERISTICS OF A GOOD STUDENT"
+  },
+  {
+    "objectID": "LabSE00-1.html#code",
+    "href": "LabSE00-1.html#code",
+    "title": "Lab SE 00-1",
+    "section": "2 Code",
+    "text": "2 Code\n\n2.1 Java Code\n\n   int growthMindset;\n   int brave;\n   int organised;\n   int consistent;\n   int ableToDealWithFailure;\n   int setGoals;\n   int ableToConnectLearningToLife;\n   int howToLookAfterTheirMentalHealth;\n   int PartnersWithTeachers;\n   int valuesEducation;\n\n\n2.2 Rules\n\n2.2.1 A GOOD STUDENT HAS A GROWTH MINDSET\n\n\n\n2.3 Code repository\nGitHub Source"
+  },
+  {
+    "objectID": "pipeline.html",
+    "href": "pipeline.html",
+    "title": "Pipeline",
+    "section": "",
+    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+  },
+  {
+    "objectID": "Project1b.html",
+    "href": "Project1b.html",
+    "title": "Others ways to mobility",
+    "section": "",
+    "text": "Never install\nAir Table\nZapier"
+  },
+  {
+    "objectID": "oil/ListOils.html",
+    "href": "oil/ListOils.html",
+    "title": "Listing of oils",
+    "section": "",
+    "text": "Oils\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nOils\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "oil/oil12.html",
+    "href": "oil/oil12.html",
+    "title": "Oils",
+    "section": "",
+    "text": "FINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\nfig 1\n\n\n\ndetails\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€17.00\n\n\n\nFINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra\nGarrafa 2L Extracció en fred Campanya 2022-2023 SIURANA - SANTA OLIVA (TARRAGONA) Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\n\n\n\nNote\n\n\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic."
+  },
+  {
+    "objectID": "oil/oil1.html",
+    "href": "oil/oil1.html",
+    "title": "Oils",
+    "section": "",
+    "text": "FINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\nfig 1\n\n\n\ndetails\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€34.00\n\n\n\nFINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra\n\nGarrafa 5L\nExtracció en fred\nCampanya 2022-2023\nSIURANA - SANTA OLIVA (TARRAGONA)\nOliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\n\n\n\n\nNote\n\n\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic."
   }
 ]
