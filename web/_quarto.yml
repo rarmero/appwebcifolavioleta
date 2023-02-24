@@ -27,6 +27,8 @@ website:
           contents:
            - "LabMD01-1.qmd"
            - "oil/ListOils.qmd"
+           - "oil/ListOilsGrid.qmd"
+           - "oil/ListOilsTable.qmd"
            - "LabMDObservable.qmd"
            - "LabMDResApi.qmd"
         - section: "Java Labs"

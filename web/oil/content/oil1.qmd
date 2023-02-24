@@ -1,5 +1,7 @@
 ---
-title: "Oils"
+title: "FINCA MAS PERDUT"
+categories: "Verges Extra"
+subtitle: "Garrafa 5L"
 ---
 
 # FINCA MAS PERDUT
@@ -8,7 +10,7 @@ Oli d'Oliva ARBEQUINA Verge Extra
 
 ## Fitxa
 
-![fig 1](imagesoil/fincas_mas_perdut_arbequina_10L.jpeg){fig-alt="Garrafa 5L."}
+![fig 1](../imagesoil/fincas_mas_perdut_arbequina_10L.jpeg){fig-alt="Garrafa 5L."}
 
 
 | Categoria                |  SKU | Preu   |

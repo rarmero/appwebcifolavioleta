@@ -1,0 +1,8 @@
+---
+title: "Listings table"
+listing:
+ contents: content/*.qmd
+ type: table
+ fields: [categories,subtitle]
+ table-hover: true
+---

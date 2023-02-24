@@ -1,6 +1,6 @@
 ---
-title: "Listings default"
+title: "Listings grid"
 listing:
- type: default
+ type: grid
  contents: content/*.qmd
 ---

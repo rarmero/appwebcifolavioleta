@@ -1,10 +1,12 @@
 ---
-title: "Oils"
+title: "FINCA MAS PERDUT"
+categories: "Verges Extra"
+subtitle: "Garrafa 2L"
 ---
 
-FINCA MAS PERDUT Oli d'Oliva ARBEQUINA Verge Extra  
+Oli d'Oliva ARBEQUINA Verge Extra  
 
-![fig 1](imagesoil/fincas_mas_perdut_arbequina_2L.jpeg)
+![fig 1](../imagesoil/fincas_mas_perdut_arbequina_2L.jpeg)
 
 
 | Categoria                |  SKU | Preu   |
