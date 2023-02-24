@@ -15,7 +15,9 @@ FINCA MAS PERDUT Oli d'Oliva ARBEQUINA Verge Extra
 
 
 
-FINCA MAS PERDUT Oli d'Oliva ARBEQUINA Verge Extra 
+::: {.panel-tabset}
+
+## Detall
 
 Garrafa 2L
 Extracció en fred
@@ -23,12 +25,22 @@ Campanya 2022-2023
 SIURANA - SANTA OLIVA (TARRAGONA)
 Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.
 
-:::{.callout-note  collapse="false" }
-Baix rendiment per olivera, olives amb màxima expressió i concentració, símbol d'identitat.
 
-Lema: respectar l'entorn, cuidar les olives i mimar l'olivera.
+## Nota
 
-Arbequines de categoria superior d'extracció en fred.
 
-Oli delicat, suau i molt aromàtic.
+- Baix rendiment per olivera, olives amb màxima expressió i concentració, símbol d'identitat.
+
+- Lema: respectar l'entorn, cuidar les olives i mimar l'olivera.
+
+- Arbequines de categoria superior d'extracció en fred.
+
+- Oli delicat, suau i molt aromàtic.
+
 :::
+
+
+
+
+
+

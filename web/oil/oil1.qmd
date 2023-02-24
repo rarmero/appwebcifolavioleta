@@ -2,18 +2,22 @@
 title: "Oils"
 ---
 
-FINCA MAS PERDUT Oli d'Oliva ARBEQUINA Verge Extra  
+# FINCA MAS PERDUT
 
-![fig 1](imagesoil/fincas_mas_perdut_arbequina_10L.jpeg)
+Oli d'Oliva ARBEQUINA Verge Extra  
+
+## Fitxa
+
+![fig 1](imagesoil/fincas_mas_perdut_arbequina_10L.jpeg){fig-alt="Garrafa 5L."}
 
 
 | Categoria                |  SKU | Preu   |
 |--------------------------|-----:|-------:|
 | Olis d'Oliva Verges Extra|  10  | €34.00 |
 
-: details
+: fitxa
 
-FINCA MAS PERDUT Oli d'Oliva ARBEQUINA Verge Extra 
+## Detalls
 
 - Garrafa 5L
 - Extracció en fred
@@ -23,6 +27,9 @@ FINCA MAS PERDUT Oli d'Oliva ARBEQUINA Verge Extra
 
 
 :::{.callout-note  collapse="false" }
+
+## Nota
+
 Baix rendiment per olivera, olives amb màxima expressió i concentració, símbol d'identitat.
 
 Lema: respectar l'entorn, cuidar les olives i mimar l'olivera.
@@ -30,4 +37,13 @@ Lema: respectar l'entorn, cuidar les olives i mimar l'olivera.
 Arbequines de categoria superior d'extracció en fred.
 
 Oli delicat, suau i molt aromàtic.
+:::
+
+
+:::{.callout-caution  collapse="false" }
+
+## Atenció 
+
+informació important
+
 :::

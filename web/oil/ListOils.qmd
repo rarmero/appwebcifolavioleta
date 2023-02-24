@@ -1,4 +1,4 @@
 ---
-title: "Listing of oils"
+title: "Listings"
 listing: default
 ---

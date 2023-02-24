@@ -26,6 +26,7 @@ website:
         - section: "MarkUp Languages"
           contents:
            - "LabMD01-1.qmd"
+           - "oil/ListOils.qmd"
            - "LabMDObservable.qmd"
            - "LabMDResApi.qmd"
         - section: "Java Labs"
