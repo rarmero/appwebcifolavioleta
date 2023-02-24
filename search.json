@@ -84,25 +84,39 @@
     "text": "GitHub Source"
   },
   {
-    "objectID": "oil/ListOils.html",
-    "href": "oil/ListOils.html",
-    "title": "Listings",
-    "section": "",
-    "text": "Oils\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nOils\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "oil/oil1.html",
-    "href": "oil/oil1.html",
-    "title": "Oils",
+    "objectID": "oil/content/oil1.html",
+    "href": "oil/content/oil1.html",
+    "title": "FINCA MAS PERDUT",
     "section": "",
     "text": "Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\n\n\nfig 1\n\n\n\nfitxa\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€34.00\n\n\n\n\n\n\n\nGarrafa 5L\nExtracció en fred\nCampanya 2022-2023\nSIURANA - SANTA OLIVA (TARRAGONA)\nOliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\n\n\n\n\nNota\n\n\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\n\n\n\n\nAtenció\n\n\n\n\n\ninformació important\n\n\n\n\nlab delivery Code (UF03-1843)"
   },
   {
-    "objectID": "oil/oil12.html",
-    "href": "oil/oil12.html",
-    "title": "Oils",
+    "objectID": "oil/content/oil12.html",
+    "href": "oil/content/oil12.html",
+    "title": "FINCA MAS PERDUT",
     "section": "",
-    "text": "FINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\nfig 1\n\n\n\ndetails\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€17.00\n\n\n\n\nDetallsNota\n\n\nGarrafa 2L Extracció en fred Campanya 2022-2023 SIURANA - SANTA OLIVA (TARRAGONA) Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\nlab delivery Code (UF03-1843)"
+    "text": "Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\nfig 1\n\n\n\ndetails\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€17.00\n\n\n\n\nDetallsNota\n\n\nGarrafa 2L Extracció en fred Campanya 2022-2023 SIURANA - SANTA OLIVA (TARRAGONA) Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\nlab delivery Code (UF03-1843)"
+  },
+  {
+    "objectID": "oil/ListOils.html",
+    "href": "oil/ListOils.html",
+    "title": "Listings default",
+    "section": "",
+    "text": "FINCA MAS PERDUT\n\n\nGarrafa 5L\n\n\n\n\n\n\n\n \n\n\n\n\n  \n\n\n\n\nFINCA MAS PERDUT\n\n\nGarrafa 2L\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "oil/ListOilsGrid.html",
+    "href": "oil/ListOilsGrid.html",
+    "title": "Listings grid",
+    "section": "",
+    "text": "FINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "oil/ListOilsTable.html",
+    "href": "oil/ListOilsTable.html",
+    "title": "Listings table",
+    "section": "",
+    "text": "Categories\n\n\nSubtitle\n\n\n\n\n\n\nVerges Extra\n\n\nGarrafa 5L\n\n\n\n\nVerges Extra\n\n\nGarrafa 2L\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "PatternCommand.html",

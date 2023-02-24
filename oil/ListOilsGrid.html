@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - Rest Api</title>
+<title>App with web tecnologies - Listings grid</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,88 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,11 +60,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -136,7 +103,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">App with web tecnologies</span>
     </a>
   </div>
@@ -146,7 +113,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -156,19 +123,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-devops">    
         <li class="dropdown-header">Pipeline</li>
         <li>
-    <a class="dropdown-item" href="./pipeline.html">
+    <a class="dropdown-item" href="../pipeline.html">
  <span class="dropdown-text">Pipeline</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Kubernettes</li>
         <li>
-    <a class="dropdown-item" href="./Task1.html">
+    <a class="dropdown-item" href="../Task1.html">
  <span class="dropdown-text">Kubernettes</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Quarto docker</li>
         <li>
-    <a class="dropdown-item" href="./Task2.html">
+    <a class="dropdown-item" href="../Task2.html">
  <span class="dropdown-text">Quarto with docker</span></a>
   </li>  
     </ul>
@@ -180,37 +147,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
         <li class="dropdown-header">Mobility</li>
         <li>
-    <a class="dropdown-item" href="./Project1.html">
+    <a class="dropdown-item" href="../Project1.html">
  <span class="dropdown-text">Chrome OS applications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Project1b.html">
+    <a class="dropdown-item" href="../Project1b.html">
  <span class="dropdown-text">Others ways to mobility</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Static application security testing</li>
         <li>
-    <a class="dropdown-item" href="./Project2.html">
+    <a class="dropdown-item" href="../Project2.html">
  <span class="dropdown-text">SonarQube</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Project2Management.html">
+    <a class="dropdown-item" href="../Project2Management.html">
  <span class="dropdown-text">SonarQube Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./javasonarqube.html">
+    <a class="dropdown-item" href="../javasonarqube.html">
  <span class="dropdown-text">Java code MOOC Helsinki</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Dynamic application security testing</li>
         <li>
-    <a class="dropdown-item" href="./Project3.html">
+    <a class="dropdown-item" href="../Project3.html">
  <span class="dropdown-text">Software Tools</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Project4</li>
         <li>
-    <a class="dropdown-item" href="./testing.html">
+    <a class="dropdown-item" href="../testing.html">
  <span class="dropdown-text">Testing</span></a>
   </li>  
     </ul>
@@ -222,37 +189,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-labs">    
         <li class="dropdown-header">MarkUp Languages</li>
         <li>
-    <a class="dropdown-item" href="./LabMD01-1.html">
+    <a class="dropdown-item" href="../LabMD01-1.html">
  <span class="dropdown-text">Quarto publish</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOils.html">
+    <a class="dropdown-item" href="../oil/ListOils.html">
  <span class="dropdown-text">Listings default</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOilsGrid.html">
+    <a class="dropdown-item" href="../oil/ListOilsGrid.html">
  <span class="dropdown-text">Listings grid</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOilsTable.html">
+    <a class="dropdown-item" href="../oil/ListOilsTable.html">
  <span class="dropdown-text">Listings table</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabMDObservable.html">
+    <a class="dropdown-item" href="../LabMDObservable.html">
  <span class="dropdown-text">Quarto Markdown, code &amp; data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabMDResApi.html">
+    <a class="dropdown-item" href="../LabMDResApi.html">
  <span class="dropdown-text">Rest Api</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Java Labs</li>
         <li>
-    <a class="dropdown-item" href="./LabSE00-1.html">
+    <a class="dropdown-item" href="../LabSE00-1.html">
  <span class="dropdown-text">Lab SE 00-1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabSE01-1.html">
+    <a class="dropdown-item" href="../LabSE01-1.html">
  <span class="dropdown-text">Lab SE 01-1</span></a>
   </li>  
     </ul>
@@ -264,23 +231,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-theory">    
         <li class="dropdown-header">Documentation</li>
         <li>
-    <a class="dropdown-item" href="./Theory1.html">
+    <a class="dropdown-item" href="../Theory1.html">
  <span class="dropdown-text">Links</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Patterns</li>
         <li>
-    <a class="dropdown-item" href="./patterns1.html">
+    <a class="dropdown-item" href="../patterns1.html">
  <span class="dropdown-text">Design Patterns</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./PatternCommand.html">
+    <a class="dropdown-item" href="../PatternCommand.html">
  <span class="dropdown-text">Command</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
  <span class="menu-text">About …..</span></a>
   </li>  
 </ul>
@@ -290,7 +257,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Rest Api</h1>
+      <h1 class="quarto-secondary-nav-title">Listings grid</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -316,32 +283,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LabMD01-1.html" class="sidebar-item-text sidebar-link">Quarto publish</a>
+  <a href="../LabMD01-1.html" class="sidebar-item-text sidebar-link">Quarto publish</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oil/ListOils.html" class="sidebar-item-text sidebar-link">Listings default</a>
+  <a href="../oil/ListOils.html" class="sidebar-item-text sidebar-link">Listings default</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oil/ListOilsGrid.html" class="sidebar-item-text sidebar-link">Listings grid</a>
+  <a href="../oil/ListOilsGrid.html" class="sidebar-item-text sidebar-link active">Listings grid</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./oil/ListOilsTable.html" class="sidebar-item-text sidebar-link">Listings table</a>
+  <a href="../oil/ListOilsTable.html" class="sidebar-item-text sidebar-link">Listings table</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
+  <a href="../LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LabMDResApi.html" class="sidebar-item-text sidebar-link active">Rest Api</a>
+  <a href="../LabMDResApi.html" class="sidebar-item-text sidebar-link">Rest Api</a>
   </div>
 </li>
       </ul>
@@ -356,12 +323,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LabSE00-1.html" class="sidebar-item-text sidebar-link">Lab SE 00-1</a>
+  <a href="../LabSE00-1.html" class="sidebar-item-text sidebar-link">Lab SE 00-1</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./LabSE01-1.html" class="sidebar-item-text sidebar-link">Lab SE 01-1</a>
+  <a href="../LabSE01-1.html" class="sidebar-item-text sidebar-link">Lab SE 01-1</a>
   </div>
 </li>
       </ul>
@@ -371,21 +338,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#first-approach" id="toc-first-approach" class="nav-link active" data-scroll-target="#first-approach">First approach</a></li>
-  <li><a href="#second-approach-with-map" id="toc-second-approach-with-map" class="nav-link" data-scroll-target="#second-approach-with-map">Second approach with map</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Rest Api</h1>
+<h1 class="title d-none d-lg-block">Listings grid</h1>
 </div>
 
 
@@ -400,84 +360,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>Code : <code>MF01-0492</code></p>
-<section id="first-approach" class="level3">
-<h3 class="anchored" data-anchor-id="first-approach">First approach</h3>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="14" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>d3 <span class="op">=</span> <span class="pp">require</span>(<span class="st">'d3'</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents"</span><span class="op">,</span> <span class="kw">function</span>(data)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>{</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(data)<span class="op">;</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="declaration">
 
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="expression">
 
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="second-approach-with-map" class="level3">
-<h3 class="anchored" data-anchor-id="second-approach-with-map">Second approach with map</h3>
-<div class="cell">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="26" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>contents <span class="op">=</span> <span class="cf">await</span> d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents"</span>)</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> contents<span class="op">.</span><span class="fu">map</span>(contents <span class="kw">=&gt;</span> {</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> name <span class="op">=</span> contents<span class="op">.</span><span class="at">name</span><span class="op">;</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> url <span class="op">=</span> contents<span class="op">.</span><span class="at">html_url</span><span class="op">;</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> {name<span class="op">,</span>url}</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(names<span class="op">,</span> { <span class="dt">sort</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span> <span class="dt">reverse</span><span class="op">:</span> <span class="kw">true</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-1" data-nodetype="declaration">
 
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-2" data-nodetype="declaration">
 
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Verges Extra" data-listing-file-modified-sort="1677242796042" data-listing-reading-time-sort="0.65">
+<a href="../oil/content/oil1.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../oil/imagesoil/fincas_mas_perdut_arbequina_10L.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+FINCA MAS PERDUT
+</h5>
+<div class="card-text listing-description">
+Oli d’Oliva ARBEQUINA Verge Extra
 </div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-3" data-nodetype="expression">
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 
 </div>
 </div>
 </div>
 </div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Verges Extra" data-listing-file-modified-sort="1677242767532" data-listing-reading-time-sort="0.59">
+<a href="../oil/content/oil12.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../oil/imagesoil/fincas_mas_perdut_arbequina_2L.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+FINCA MAS PERDUT
+</h5>
+<div class="card-text listing-description">
+Oli d’Oliva ARBEQUINA Verge Extra
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
 
-
-</section>
-
-</main> <!-- /main -->
-
-<script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"d3 = require('d3')\r\n\r\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\r\n{\r\n    console.log(data);\r\n});\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"contents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\r\n\r\nnames = contents.map(contents => {\r\nconst name = contents.name;\r\n\r\nconst url = contents.html_url;\r\nreturn {name,url}\r\n}\r\n)\r\n\r\nInputs.table(names, { sort: \"value\", reverse: true })\r\n\r\n"}]}
-</script>
-<script type="module">
-window._ojs.paths.runtimeToDoc = "../..";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

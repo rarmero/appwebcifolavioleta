@@ -2,8 +2,22 @@
   {
     "listing": "/oil/ListOils.html",
     "items": [
-      "/oil/oil1.html",
-      "/oil/oil12.html"
+      "/oil/content/oil1.html",
+      "/oil/content/oil12.html"
+    ]
+  },
+  {
+    "listing": "/oil/ListOilsGrid.html",
+    "items": [
+      "/oil/content/oil1.html",
+      "/oil/content/oil12.html"
+    ]
+  },
+  {
+    "listing": "/oil/ListOilsTable.html",
+    "items": [
+      "/oil/content/oil1.html",
+      "/oil/content/oil12.html"
     ]
   }
 ]
