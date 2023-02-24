@@ -2,8 +2,6 @@
 title: "Oils"
 ---
 
-Code : `UF03-1843`
-
 # FINCA MAS PERDUT
 
 Oli d'Oliva ARBEQUINA Verge Extra  
@@ -49,3 +47,7 @@ Oli delicat, suau i molt aromàtic.
 informació important
 
 :::
+
+>
+lab delivery
+ `Code (UF03-1843)`
