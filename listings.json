@@ -25,5 +25,9 @@
       "/oil/content/oil12.html",
       "/oil/content/oil3.html"
     ]
+  },
+  {
+    "listing": "/oil/ListOilsCustom.html",
+    "items": []
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - Design Patterns</title>
+<title>App with web tecnologies - Listings Custom</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,9 +60,39 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-id','listing-category','listing-SKU','listing-price','listing-title','listing-subtitle','listing-web',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-id","listing-category","listing-SKU","listing-price","listing-title","listing-subtitle","listing-web"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
@@ -71,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">App with web tecnologies</span>
     </a>
   </div>
@@ -81,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -91,19 +123,19 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-devops">    
         <li class="dropdown-header">Pipeline</li>
         <li>
-    <a class="dropdown-item" href="./pipeline.html">
+    <a class="dropdown-item" href="../pipeline.html">
  <span class="dropdown-text">Pipeline</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Kubernettes</li>
         <li>
-    <a class="dropdown-item" href="./Task1.html">
+    <a class="dropdown-item" href="../Task1.html">
  <span class="dropdown-text">Kubernettes</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Quarto docker</li>
         <li>
-    <a class="dropdown-item" href="./Task2.html">
+    <a class="dropdown-item" href="../Task2.html">
  <span class="dropdown-text">Quarto with docker</span></a>
   </li>  
     </ul>
@@ -115,37 +147,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
         <li class="dropdown-header">Mobility</li>
         <li>
-    <a class="dropdown-item" href="./Project1.html">
+    <a class="dropdown-item" href="../Project1.html">
  <span class="dropdown-text">Chrome OS applications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Project1b.html">
+    <a class="dropdown-item" href="../Project1b.html">
  <span class="dropdown-text">Others ways to mobility</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Static application security testing</li>
         <li>
-    <a class="dropdown-item" href="./Project2.html">
+    <a class="dropdown-item" href="../Project2.html">
  <span class="dropdown-text">SonarQube</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Project2Management.html">
+    <a class="dropdown-item" href="../Project2Management.html">
  <span class="dropdown-text">SonarQube Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./javasonarqube.html">
+    <a class="dropdown-item" href="../javasonarqube.html">
  <span class="dropdown-text">Java code MOOC Helsinki</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Dynamic application security testing</li>
         <li>
-    <a class="dropdown-item" href="./Project3.html">
+    <a class="dropdown-item" href="../Project3.html">
  <span class="dropdown-text">Software Tools</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Project4</li>
         <li>
-    <a class="dropdown-item" href="./testing.html">
+    <a class="dropdown-item" href="../testing.html">
  <span class="dropdown-text">Testing</span></a>
   </li>  
     </ul>
@@ -157,41 +189,41 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-labs">    
         <li class="dropdown-header">MarkUp Languages</li>
         <li>
-    <a class="dropdown-item" href="./LabMD01-1.html">
+    <a class="dropdown-item" href="../LabMD01-1.html">
  <span class="dropdown-text">Quarto publish</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOils.html">
+    <a class="dropdown-item" href="../oil/ListOils.html">
  <span class="dropdown-text">Listings default</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOilsGrid.html">
+    <a class="dropdown-item" href="../oil/ListOilsGrid.html">
  <span class="dropdown-text">Listings grid</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOilsTable.html">
+    <a class="dropdown-item" href="../oil/ListOilsTable.html">
  <span class="dropdown-text">Listings table</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOilsCustom.html">
+    <a class="dropdown-item" href="../oil/ListOilsCustom.html">
  <span class="dropdown-text">Listings Custom</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabMDObservable.html">
+    <a class="dropdown-item" href="../LabMDObservable.html">
  <span class="dropdown-text">Quarto Markdown, code &amp; data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabMDResApi.html">
+    <a class="dropdown-item" href="../LabMDResApi.html">
  <span class="dropdown-text">Rest Api</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Java Labs</li>
         <li>
-    <a class="dropdown-item" href="./LabSE00-1.html">
+    <a class="dropdown-item" href="../LabSE00-1.html">
  <span class="dropdown-text">Lab SE 00-1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabSE01-1.html">
+    <a class="dropdown-item" href="../LabSE01-1.html">
  <span class="dropdown-text">Lab SE 01-1</span></a>
   </li>  
     </ul>
@@ -203,23 +235,23 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-theory">    
         <li class="dropdown-header">Documentation</li>
         <li>
-    <a class="dropdown-item" href="./Theory1.html">
+    <a class="dropdown-item" href="../Theory1.html">
  <span class="dropdown-text">Links</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Patterns</li>
         <li>
-    <a class="dropdown-item" href="./patterns1.html">
+    <a class="dropdown-item" href="../patterns1.html">
  <span class="dropdown-text">Design Patterns</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./PatternCommand.html">
+    <a class="dropdown-item" href="../PatternCommand.html">
  <span class="dropdown-text">Command</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
  <span class="menu-text">About …..</span></a>
   </li>  
 </ul>
@@ -229,7 +261,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Design Patterns</h1>
+      <h1 class="quarto-secondary-nav-title">Listings Custom</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -243,40 +275,69 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
-  Theory
+  Labs
   </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">Documentation</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">MarkUp Languages</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Theory1.html" class="sidebar-item-text sidebar-link">Links</a>
+  <a href="../LabMD01-1.html" class="sidebar-item-text sidebar-link">Quarto publish</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOils.html" class="sidebar-item-text sidebar-link">Listings default</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsGrid.html" class="sidebar-item-text sidebar-link">Listings grid</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsTable.html" class="sidebar-item-text sidebar-link">Listings table</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsCustom.html" class="sidebar-item-text sidebar-link active">Listings Custom</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMDResApi.html" class="sidebar-item-text sidebar-link">Rest Api</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">Patterns</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Java Labs</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./patterns1.html" class="sidebar-item-text sidebar-link active">Design Patterns</a>
+  <a href="../LabSE00-1.html" class="sidebar-item-text sidebar-link">Lab SE 00-1</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./PatternCommand.html" class="sidebar-item-text sidebar-link">Command</a>
+  <a href="../LabSE01-1.html" class="sidebar-item-text sidebar-link">Lab SE 01-1</a>
   </div>
 </li>
       </ul>
@@ -286,20 +347,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#links" id="toc-links" class="nav-link active" data-scroll-target="#links">Links</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Design Patterns</h1>
+<h1 class="title d-none d-lg-block">Listings Custom</h1>
 </div>
 
 
@@ -314,17 +369,92 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="links" class="level3">
-<h3 class="anchored" data-anchor-id="links">Links</h3>
-<ul>
-<li><p><a href="https://dev.to/takaakit" class="external">UML by Takaaki Teshima</a></p></li>
-<li><p><a href="https://hillside.net/index.php/patterns/patterns-catalog" class="external">Patterns catalog</a></p></li>
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-id" data-direction="asc">
+          id
+        </option>
+         <option value="listing-category" data-direction="asc">
+          category
+        </option>
+         <option value="listing-SKU" data-direction="asc">
+          SKU
+        </option>
+         <option value="listing-price" data-direction="asc">
+          Preu
+        </option>
+         <option value="listing-title" data-direction="asc">
+          Producto
+        </option>
+         <option value="listing-subtitle" data-direction="asc">
+          Capacitat
+        </option>
+         <option value="listing-web" data-direction="asc">
+          web
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+
+<table class="list">
+ <tbody><tr>
+  <td>Title</td> <td>Preu</td> <td>Capacitat</td> <td>web</td>
+</tr> 
+  <tr>
+  <td class="listing-category"> 
+      Olis d'Oliva Verges Extra
+   </td> 
+  <td> €34.00 </td> 
+  <td> 2L </td>
+  <td><a href="https://www.masdelscastellans.com/"> mas dels castellans</a></td>
+  </tr> 
+  <tr>
+  <td class="listing-category"> 
+      Olis d'Oliva Verges Extra
+   </td> 
+  <td> €24.00 </td> 
+  <td>  </td>
+  <td><a href="https://www.masdelscastellans.com/"> mas dels castellans</a></td>
+  </tr> 
+</tbody></table><div class="listing-no-matching d-none">
+No matching items
+</div><footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">it does not matter how slowly you go so long as you do not stop (Confucios)</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/rarmero">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://es.linkedin.com/in/rafaelcarrion">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
 </ul>
+    </div>
+  </div>
+</footer><table>
 
 
-</section>
 
-</main> <!-- /main -->
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -458,29 +588,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-</div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-      <div class="nav-footer-center">it does not matter how slowly you go so long as you do not stop (Confucios)</div>
-    <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/rarmero">
-      <i class="bi bi-github" role="img">
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://es.linkedin.com/in/rafaelcarrion">
-      <i class="bi bi-linkedin" role="img">
-</i> 
-    </a>
-  </li>  
-</ul>
-    </div>
-  </div>
-</footer>
+ <!-- /content -->
 
 
 
-</body></html>
+
+</table></div></main></div></body></html>

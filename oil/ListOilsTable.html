@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-categories','listing-subtitle','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-title","listing-author"],
     };
@@ -205,6 +205,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Listings table</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="../oil/ListOilsCustom.html">
+ <span class="dropdown-text">Listings Custom</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../LabMDObservable.html">
  <span class="dropdown-text">Quarto Markdown, code &amp; data</span></a>
   </li>  
@@ -303,6 +307,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsCustom.html" class="sidebar-item-text sidebar-link">Listings Custom</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
   </div>
 </li>
@@ -366,6 +375,19 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title-sort" data-direction="asc">
+          Producto
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Origen
+        </option>
+     </select>
+  </div>
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
       <input type="text" class="search form-control" placeholder="Filter">
@@ -376,48 +398,92 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr>
 <th>
-Categories
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Producto</a>
 </th>
 <th>
-Subtitle
+<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Origen</a>
+</th>
+<th>
+Categoria
+</th>
+<th>
+Capacitat
+</th>
+<th>
+Desc
 </th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="Celler" data-listing-file-modified-sort="1677281427943" data-listing-reading-time-sort="0.88" data-listing-title-sort="FINCA MAS PERDUT" data-listing-filename-sort="celler1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="0" data-categories="Celler" data-listing-file-modified-sort="1677314972654" data-listing-reading-time-sort="0.88" data-listing-title-sort="ARBEQUINA" data-listing-filename-sort="celler1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
+<td class="listing-title">
+<a href="../oil/content/celler1.html" class="title">ARBEQUINA</a>
+</td>
+<td class="listing-author">
+FINCA MAS PERDUT
+</td>
 <td class="listing-categories">
 Celler
 </td>
 <td class="listing-subtitle">
 Ampolla
 </td>
+<td class="listing-description">
+Preu €19.50; Campanya 2022-2023
+</td>
 </tr>
-<tr data-index="1" data-categories="Verges Extra" data-listing-file-modified-sort="1677283603669" data-listing-reading-time-sort="0.65" data-listing-title-sort="FINCA MAS PERDUT" data-listing-filename-sort="oil1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="1" data-categories="Verges Extra" data-listing-file-modified-sort="1677314871946" data-listing-reading-time-sort="0.65" data-listing-title-sort="ARBEQUINA" data-listing-filename-sort="oil1.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
+<td class="listing-title">
+<a href="../oil/content/oil1.html" class="title">ARBEQUINA</a>
+</td>
+<td class="listing-author">
+FINCA MAS PERDUT
+</td>
 <td class="listing-categories">
 Verges Extra
 </td>
 <td class="listing-subtitle">
 Garrafa 5L
 </td>
+<td class="listing-description">
+Campanya 2022-2023
+</td>
 </tr>
-<tr data-index="2" data-categories="Verges Extra" data-listing-file-modified-sort="1677273950545" data-listing-reading-time-sort="0.59" data-listing-title-sort="FINCA MAS PERDUT" data-listing-filename-sort="oil12.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="2" data-categories="Verges Extra" data-listing-file-modified-sort="1677315047609" data-listing-reading-time-sort="0.59" data-listing-title-sort="ARBEQUINA" data-listing-filename-sort="oil12.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
+<td class="listing-title">
+<a href="../oil/content/oil12.html" class="title">ARBEQUINA</a>
+</td>
+<td class="listing-author">
+FINCA MAS PERDUT
+</td>
 <td class="listing-categories">
 Verges Extra
 </td>
 <td class="listing-subtitle">
 Garrafa 2L
 </td>
+<td class="listing-description">
+Preu €17.00; Campanya 2022-2023
+</td>
 </tr>
-<tr data-index="3" data-categories="Gourmet" data-listing-file-modified-sort="1677283882550" data-listing-reading-time-sort="1.23" data-listing-title-sort="MAS DELS CASTELLANS" data-listing-filename-sort="oil3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+<tr data-index="3" data-categories="Gourmet" data-listing-file-modified-sort="1677314988883" data-listing-reading-time-sort="1.23" data-listing-title-sort="Estoig Lo Castell" data-listing-filename-sort="oil3.qmd" onclick="href = this.querySelector('a').getAttribute('href');
  if (href) { window.location=href ; return false; }">
+<td class="listing-title">
+<a href="../oil/content/oil3.html" class="title">Estoig Lo Castell</a>
+</td>
+<td class="listing-author">
+</td>
 <td class="listing-categories">
 Gourmet
 </td>
 <td class="listing-subtitle">
 Estoig
+</td>
+<td class="listing-description">
+Preu €27.15; Campanya 2022-2023
 </td>
 </tr>
 </tbody>
