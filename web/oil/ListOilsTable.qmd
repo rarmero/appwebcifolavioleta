@@ -5,4 +5,5 @@ listing:
  type: table
  fields: [categories,subtitle]
  table-hover: true
+ categories: true
 ---

@@ -3,4 +3,5 @@ title: "Listings grid"
 listing:
  type: grid
  contents: content/*.qmd
+ categories: true
 ---

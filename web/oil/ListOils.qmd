@@ -3,4 +3,5 @@ title: "Listings default"
 listing:
  type: default
  contents: content/*.qmd
+ categories: true
 ---
