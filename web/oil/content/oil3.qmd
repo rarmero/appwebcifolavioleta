@@ -1,8 +1,9 @@
 ---
-title: "MAS DELS CASTELLANS"
+title: Estoig Lo Castell
+Author: "MAS DELS CASTELLANS"
 subtitle: "Estoig"
-description: "Estoig"
 categories: "Gourmet"
+description: Preu €27.15; Campanya 2022-2023
 ---
 
 ## Preu

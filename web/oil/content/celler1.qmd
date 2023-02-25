@@ -1,7 +1,9 @@
 ---
-title: "FINCA MAS PERDUT"
+title: "ARBEQUINA"
+author: "FINCA MAS PERDUT"
 categories: "Celler"
 subtitle: "Ampolla"
+description: Preu €19.50; Campanya 2022-2023
 ---
 
 

@@ -1,7 +1,9 @@
 ---
-title: "FINCA MAS PERDUT"
+title: "ARBEQUINA"
+author: "FINCA MAS PERDUT"
 categories: "Verges Extra"
 subtitle: "Garrafa 2L"
+description: Preu €17.00; Campanya 2022-2023
 ---
 
 Oli d'Oliva ARBEQUINA Verge Extra  
