@@ -1,0 +1,18 @@
+---
+title: "Listings Custom"
+listing:
+  sort-ui: true
+  filter-ui: true
+  page-size: 10
+  template: ListCustom.ejs
+  contents: 
+   - oildata.yml
+  field-display-names:
+    title: "Producto"
+    subtitle: Capacitat
+    author: "Origen"
+    categories: "Categoria"
+    description: "Desc"
+    price: "Preu"
+  
+---

@@ -1,0 +1,19 @@
+```{=html}
+
+<table class="list">
+ <tr>
+  <td>Title</td> <td>Preu</td> <td>Capacitat</td> <td>web</td>
+</tr> 
+<% for (const item of items) { %>
+  <tr>
+  <td class="listing-category"> 
+   
+      <%=item.category%>
+   </td> 
+  <td> <%= item.price %> </td> 
+  <td> <%= item.subtitle %> </td>
+  <td><a href="<%- item.web %>"> <%= item.title %></a></td>
+  </tr> 
+<% } %>
+<table>
+```

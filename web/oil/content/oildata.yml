@@ -1,0 +1,13 @@
+- id : 1  
+  category: Olis d'Oliva Verges Extra
+  SKU: 10
+  price: €34.00
+  title: mas dels castellans
+  subtitle: 2L
+  web: https://www.masdelscastellans.com/
+- id: 2 
+  category: Olis d'Oliva Verges Extra
+  SKU: 12
+  price: €24.00
+  title: mas dels castellans
+  web: https://www.masdelscastellans.com/
