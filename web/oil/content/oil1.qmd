@@ -1,7 +1,9 @@
 ---
-title: "FINCA MAS PERDUT"
+title: "ARBEQUINA"
+author: "FINCA MAS PERDUT"
 categories: "Verges Extra"
 subtitle: "Garrafa 5L"
+description: ampanya 2022-2023
 ---
 
 # FINCA MAS PERDUT

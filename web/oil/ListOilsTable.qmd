@@ -3,7 +3,13 @@ title: "Listings table"
 listing:
  contents: content/*.qmd
  type: table
- fields: [categories,subtitle]
- table-hover: true
  categories: true
+ fields: [title,author,categories,subtitle,description]
+ table-hover: true
+ field-display-names:
+   title: "Producto"
+   subtitle: Capacitat
+   author: "Origen"
+   categories: "Categoria"
+   description: "Desc"
 ---
