@@ -10,4 +10,12 @@
   SKU: 12
   price: €24.00
   title: mas dels castellans
+  subtitle: 5L
+  web: https://www.masdelscastellans.com/
+- id: 3 
+  author: Olis d'Oliva Verges Extra
+  SKU: 18
+  price: €34.50s
+  title: LOS CERROS DE ÚBEDA
+  subtitle: 5L 
   web: https://www.masdelscastellans.com/

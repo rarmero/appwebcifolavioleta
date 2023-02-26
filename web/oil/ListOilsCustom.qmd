@@ -5,6 +5,7 @@ listing:
   filter-ui: true
   page-size: 10
   template: ListCustom.ejs
+  fields: [title,author,subtitle,web,price]
   contents: 
    - oildata.yml
   field-display-names:

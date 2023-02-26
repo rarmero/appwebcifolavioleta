@@ -4,7 +4,8 @@
   <thead>
  <tr>
   <th width="300px">Producto</th>
-  <th width="300px">Origen</th> <th width="100px">Preu</th> <th width="100px">Capacitat</th> <th width="300px">web</th>
+  <th width="500px">Origen</th> <th width="100px">Preu</th>
+  <th width="100px">Capacitat</th> <th width="300px">web</th>
 </tr> 
   </thead>
 <tbody class="list">
@@ -15,9 +16,12 @@
   <td class="listing-author">    
       <%= item.author %>
    </td> 
-  <td> <%= item.price %> </td> 
-  <td> <%= item.subtitle %> </td>
-  <td><a href="<%- item.web %>"> <%= item.title %></a></td>
+  <td class="listing-price">
+     <%= item.price %> </td> 
+  <td class="listing-subtitle">
+     <%= item.subtitle %> </td>
+  <td class="listing-web">
+    <a href="<%- item.web %>"> <%= item.title %></a></td>
   </tr> 
 <% } %>
 </tbody>
