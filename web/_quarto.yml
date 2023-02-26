@@ -26,10 +26,12 @@ website:
         - section: "MarkUp Languages"
           contents:
            - "LabMD01-1.qmd"
-           - "oil/ListOils.qmd"
-           - "oil/ListOilsGrid.qmd"
-           - "oil/ListOilsTable.qmd"
-           - "oil/ListOilsCustom.qmd"
+           - section: List
+             contents: 
+              - "oil/ListOils.qmd"
+              - "oil/ListOilsGrid.qmd"
+              - "oil/ListOilsTable.qmd"
+              - "oil/ListOilsCustom.qmd"
            - "LabMDObservable.qmd"
            - "LabMDResApi.qmd"
         - section: "Java Labs"
