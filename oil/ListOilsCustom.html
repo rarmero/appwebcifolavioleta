@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-id','listing-author','listing-SKU','listing-price','listing-title','listing-subtitle','listing-web',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-web','listing-price',{ data: ['index'] },{ data: ['categories'] }],
       
       searchColumns: ["listing-id","listing-author","listing-SKU","listing-price","listing-title","listing-subtitle","listing-web"],
     };
@@ -375,14 +375,8 @@ ul.task-list li input[type="checkbox"] {
      <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
-         <option value="listing-id" data-direction="asc">
-          id
-        </option>
          <option value="listing-author" data-direction="asc">
           Origen
-        </option>
-         <option value="listing-SKU" data-direction="asc">
-          SKU
         </option>
          <option value="listing-price" data-direction="asc">
           Preu
@@ -408,7 +402,8 @@ ul.task-list li input[type="checkbox"] {
   <thead>
  <tr>
   <th width="300px">Producto</th>
-  <th width="300px">Origen</th> <th width="100px">Preu</th> <th width="100px">Capacitat</th> <th width="300px">web</th>
+  <th width="500px">Origen</th> <th width="100px">Preu</th>
+  <th width="100px">Capacitat</th> <th width="300px">web</th>
 </tr> 
   </thead>
 <tbody class="list">
@@ -418,9 +413,12 @@ ul.task-list li input[type="checkbox"] {
   <td class="listing-author">    
       AOlis d'Oliva Verges Extra
    </td> 
-  <td> €34.00 </td> 
-  <td> 2L </td>
-  <td><a href="https://www.masdelscastellans.com/"> mas dels castellans</a></td>
+  <td class="listing-price">
+     €34.00 </td> 
+  <td class="listing-subtitle">
+     2L </td>
+  <td class="listing-web">
+    <a href="https://www.masdelscastellans.com/"> mas dels castellans</a></td>
   </tr> 
   <tr data-index="1">
     <td class="listing-title">
@@ -428,9 +426,25 @@ ul.task-list li input[type="checkbox"] {
   <td class="listing-author">    
       Olis d'Oliva Verges Extra
    </td> 
-  <td> €24.00 </td> 
-  <td>  </td>
-  <td><a href="https://www.masdelscastellans.com/"> mas dels castellans</a></td>
+  <td class="listing-price">
+     €24.00 </td> 
+  <td class="listing-subtitle">
+     5L </td>
+  <td class="listing-web">
+    <a href="https://www.masdelscastellans.com/"> mas dels castellans</a></td>
+  </tr> 
+  <tr data-index="2">
+    <td class="listing-title">
+       LOS CERROS DE ÚBEDA </td>
+  <td class="listing-author">    
+      Olis d'Oliva Verges Extra
+   </td> 
+  <td class="listing-price">
+     €34.50s </td> 
+  <td class="listing-subtitle">
+     5L </td>
+  <td class="listing-web">
+    <a href="https://www.masdelscastellans.com/"> LOS CERROS DE ÚBEDA</a></td>
   </tr> 
 </tbody>
 </table><div class="listing-no-matching d-none">
