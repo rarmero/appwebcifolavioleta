@@ -1,19 +1,25 @@
 ```{=html}
 
-<table class="list">
+<table>
+  <thead>
  <tr>
-  <td>Title</td> <td>Preu</td> <td>Capacitat</td> <td>web</td>
+  <th width="300px">Producto</th>
+  <th width="300px">Origen</th> <th width="100px">Preu</th> <th width="100px">Capacitat</th> <th width="300px">web</th>
 </tr> 
+  </thead>
+<tbody class="list">
 <% for (const item of items) { %>
-  <tr>
-  <td class="listing-category"> 
-   
-      <%=item.category%>
+  <tr <%= metadataAttrs(item) %>>
+    <td class="listing-title">
+       <%= item.title %> </td>
+  <td class="listing-author">    
+      <%= item.author %>
    </td> 
   <td> <%= item.price %> </td> 
   <td> <%= item.subtitle %> </td>
   <td><a href="<%- item.web %>"> <%= item.title %></a></td>
   </tr> 
 <% } %>
+</tbody>
 <table>
 ```
