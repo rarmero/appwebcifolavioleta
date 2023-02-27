@@ -35,10 +35,17 @@ website:
               - "oil/fileAttachment.qmd"
            - "LabMDObservable.qmd"
            - "LabMDResApi.qmd"
-        - section: "Java Labs"
+        - section: "Java SEE Labs"
           contents: 
            - "LabSE00-1.qmd"
            - "LabSE01-1.qmd"
+        - section: "Springboot Labs"
+          contents: 
+           - "springboot/springbootMongodb.qmd"
+           - "springboot/springbootThymeleaf.qmd"
+        - section: "Mongodb"
+          contents: 
+           - "mongodb/mongodb.qmd"
     - id: "tasks" 
       title: "Devops"
       contents:
