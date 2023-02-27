@@ -1,12 +1,17 @@
 [
   {
-    "listing": "/oil/ListOilsTable.html",
+    "listing": "/oil/ListOils.html",
     "items": [
       "/oil/content/celler1.html",
       "/oil/content/oil1.html",
       "/oil/content/oil12.html",
-      "/oil/content/oil3.html"
+      "/oil/content/oil3.html",
+      "/oil/content/fileAttachment.html"
     ]
+  },
+  {
+    "listing": "/oil/ListOilsCustom.html",
+    "items": []
   },
   {
     "listing": "/oil/ListOilsGrid.html",
@@ -14,20 +19,18 @@
       "/oil/content/celler1.html",
       "/oil/content/oil1.html",
       "/oil/content/oil12.html",
-      "/oil/content/oil3.html"
+      "/oil/content/oil3.html",
+      "/oil/content/fileAttachment.html"
     ]
   },
   {
-    "listing": "/oil/ListOils.html",
+    "listing": "/oil/ListOilsTable.html",
     "items": [
       "/oil/content/celler1.html",
       "/oil/content/oil1.html",
       "/oil/content/oil12.html",
-      "/oil/content/oil3.html"
+      "/oil/content/oil3.html",
+      "/oil/content/fileAttachment.html"
     ]
-  },
-  {
-    "listing": "/oil/ListOilsCustom.html",
-    "items": []
   }
 ]

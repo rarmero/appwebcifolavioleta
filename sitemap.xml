@@ -1,115 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Task2.html</loc>
-    <lastmod>2023-02-26T21:57:24.412Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Theory1.html</loc>
-    <lastmod>2023-02-26T21:57:24.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Task1.html</loc>
-    <lastmod>2023-02-26T21:57:25.027Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/testing.html</loc>
-    <lastmod>2023-02-26T21:57:25.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/javasonarqube.html</loc>
-    <lastmod>2023-02-26T21:57:25.646Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Project1.html</loc>
-    <lastmod>2023-02-26T21:57:25.954Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Project2.html</loc>
-    <lastmod>2023-02-26T21:57:26.273Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/LabMDObservable.html</loc>
-    <lastmod>2023-02-26T21:57:26.803Z</lastmod>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/about.html</loc>
+    <lastmod>2023-02-27T11:16:06.094Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/index.html</loc>
-    <lastmod>2023-02-26T21:57:27.099Z</lastmod>
+    <lastmod>2023-02-27T11:16:06.808Z</lastmod>
   </url>
   <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Project3.html</loc>
-    <lastmod>2023-02-26T21:57:27.407Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/patterns1.html</loc>
-    <lastmod>2023-02-26T21:57:27.707Z</lastmod>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/javasonarqube.html</loc>
+    <lastmod>2023-02-27T11:16:07.574Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/LabMD01-1.html</loc>
-    <lastmod>2023-02-26T21:57:28.005Z</lastmod>
+    <lastmod>2023-02-27T11:16:08.331Z</lastmod>
   </url>
   <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/about.html</loc>
-    <lastmod>2023-02-26T21:57:28.301Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/LabSE01-1.html</loc>
-    <lastmod>2023-02-26T21:57:28.596Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/PatternCommand.html</loc>
-    <lastmod>2023-02-26T21:57:28.912Z</lastmod>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/LabMDObservable.html</loc>
+    <lastmod>2023-02-27T11:16:09.219Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/LabMDResApi.html</loc>
-    <lastmod>2023-02-26T21:57:29.415Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Project2Management.html</loc>
-    <lastmod>2023-02-26T21:57:29.722Z</lastmod>
+    <lastmod>2023-02-27T11:16:10.127Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/LabSE00-1.html</loc>
-    <lastmod>2023-02-26T21:57:30.039Z</lastmod>
+    <lastmod>2023-02-27T11:16:10.850Z</lastmod>
   </url>
   <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/pipeline.html</loc>
-    <lastmod>2023-02-26T21:57:30.345Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/Project1b.html</loc>
-    <lastmod>2023-02-26T21:57:30.652Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/ListOilsTable.html</loc>
-    <lastmod>2023-02-26T21:57:31.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/ListOilsGrid.html</loc>
-    <lastmod>2023-02-26T21:57:31.346Z</lastmod>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/LabSE01-1.html</loc>
+    <lastmod>2023-02-27T11:16:11.586Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/celler1.html</loc>
-    <lastmod>2023-02-26T21:57:31.689Z</lastmod>
+    <lastmod>2023-02-27T11:16:12.312Z</lastmod>
   </url>
   <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/oil12.html</loc>
-    <lastmod>2023-02-26T21:57:31.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/oil3.html</loc>
-    <lastmod>2023-02-26T21:57:32.309Z</lastmod>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/fileAttachment.html</loc>
+    <lastmod>2023-02-27T11:16:13.187Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/oil1.html</loc>
-    <lastmod>2023-02-26T21:57:32.629Z</lastmod>
+    <lastmod>2023-02-27T11:16:13.903Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/oil12.html</loc>
+    <lastmod>2023-02-27T11:16:14.656Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/content/oil3.html</loc>
+    <lastmod>2023-02-27T11:16:15.370Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/oil/ListOils.html</loc>
-    <lastmod>2023-02-26T21:57:32.984Z</lastmod>
+    <lastmod>2023-02-27T11:16:16.175Z</lastmod>
   </url>
   <url>
     <loc>https://rarmero.github.io/appwebcifolavioleta/oil/ListOilsCustom.html</loc>
-    <lastmod>2023-02-26T21:57:33.297Z</lastmod>
+    <lastmod>2023-02-27T11:16:16.888Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/ListOilsGrid.html</loc>
+    <lastmod>2023-02-27T11:16:17.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/oil/ListOilsTable.html</loc>
+    <lastmod>2023-02-27T11:16:18.429Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/PatternCommand.html</loc>
+    <lastmod>2023-02-27T11:16:19.137Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/patterns1.html</loc>
+    <lastmod>2023-02-27T11:16:19.851Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/pipeline.html</loc>
+    <lastmod>2023-02-27T11:16:20.578Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Project1.html</loc>
+    <lastmod>2023-02-27T11:16:21.330Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Project1b.html</loc>
+    <lastmod>2023-02-27T11:16:22.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Project2.html</loc>
+    <lastmod>2023-02-27T11:16:22.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Project2Management.html</loc>
+    <lastmod>2023-02-27T11:16:23.507Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Project3.html</loc>
+    <lastmod>2023-02-27T11:16:24.234Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Task1.html</loc>
+    <lastmod>2023-02-27T11:16:24.953Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Task2.html</loc>
+    <lastmod>2023-02-27T11:16:25.668Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/testing.html</loc>
+    <lastmod>2023-02-27T11:16:26.375Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rarmero.github.io/appwebcifolavioleta/Theory1.html</loc>
+    <lastmod>2023-02-27T11:16:27.081Z</lastmod>
   </url>
 </urlset>
