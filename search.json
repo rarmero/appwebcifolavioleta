@@ -105,27 +105,6 @@
     "text": "Com degustar-la:\nGràcies al seu sabor rodó i suau, recomanem maridar Zayt amb un twist de cítrics i a elecció del consumidor, romaní o oliva. Sabor mediterrani, complex i olor a la nostra terra, Zayt segur que supera les seves espectatives.\nProba alguna cosa diferent i única!!\n\nlab delivery Code (UF03-1843)"
   },
   {
-    "objectID": "oil/content/fileAttachment.html",
-    "href": "oil/content/fileAttachment.html",
-    "title": "File Attachment",
-    "section": "",
-    "text": "data = await FileAttachment(\"oildata.csv\").csv()"
-  },
-  {
-    "objectID": "oil/content/fileAttachment.html#list-of-all-content-with-map.",
-    "href": "oil/content/fileAttachment.html#list-of-all-content-with-map.",
-    "title": "File Attachment",
-    "section": "list of all content with map.",
-    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"oildata.csv\").csv({ typed: true })\noils = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(oils, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "oil/content/fileAttachment.html#list-of-some-fields-with-map.",
-    "href": "oil/content/fileAttachment.html#list-of-some-fields-with-map.",
-    "title": "File Attachment",
-    "section": "list of some fields with map.",
-    "text": "list of some fields with map.\n\ndataoil = datacsv.map(function(element){\n    return element.author +  \", \" + element.title;\n})\n\ndataoil[2]"
-  },
-  {
     "objectID": "oil/content/oil1.html",
     "href": "oil/content/oil1.html",
     "title": "ARBEQUINA",
@@ -154,11 +133,32 @@
     "text": "Descripció\nMAS DELS CASTELLANS estoig Lo Castell\n\n1 ampolla vidre 0,50L Oli d’Oliva EMPELTRE Collita Temprana Verge Extra\n1 ampolla vidre 0,50L Oli d’Oliva EMPELTRE Verge Extra\n\n1 tarro vidre 250gr Olives verdes SEVILLENQUES d’Aragó\n\nExtraccions en fred\n\nCampanya 2022-2023 | |\n\n\nMATARRAÑA - CALACEITE (TERUEL)\n\n\nlab delivery Code (UF03-1843)"
   },
   {
+    "objectID": "oil/fileAttachment.html",
+    "href": "oil/fileAttachment.html",
+    "title": "File Attachment",
+    "section": "",
+    "text": "data = await FileAttachment(\"content/oildata.csv\").csv()"
+  },
+  {
+    "objectID": "oil/fileAttachment.html#list-of-all-content-with-map.",
+    "href": "oil/fileAttachment.html#list-of-all-content-with-map.",
+    "title": "File Attachment",
+    "section": "list of all content with map.",
+    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"content/oildata.csv\").csv({ typed: true })\noils = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(oils, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "oil/fileAttachment.html#list-of-some-fields-with-map.",
+    "href": "oil/fileAttachment.html#list-of-some-fields-with-map.",
+    "title": "File Attachment",
+    "section": "list of some fields with map.",
+    "text": "list of some fields with map.\n\ndataoil = datacsv.map(function(element){\n    return element.author +  \", \" + element.title;\n})\n\ndataoil[2]"
+  },
+  {
     "objectID": "oil/ListOils.html",
     "href": "oil/ListOils.html",
     "title": "Listings default",
     "section": "",
-    "text": "ARBEQUINA\n\n\nAmpolla\n\n\n\n\nCeller\n\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 5L\n\n\n\n\nVerges Extra\n\n\n\n\nCampanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 2L\n\n\n\n\nVerges Extra\n\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nEstoig Lo Castell\n\n\nEstoig\n\n\n\n\nGourmet\n\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Attachment\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "text": "ARBEQUINA\n\n\nAmpolla\n\n\n\n\nCeller\n\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 5L\n\n\n\n\nVerges Extra\n\n\n\n\nCampanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 2L\n\n\n\n\nVerges Extra\n\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nEstoig Lo Castell\n\n\nEstoig\n\n\n\n\nGourmet\n\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n \n\n\n\n\nNo matching items"
   },
   {
     "objectID": "oil/ListOilsCustom.html",
@@ -172,14 +172,14 @@
     "href": "oil/ListOilsGrid.html",
     "title": "Listings grid",
     "section": "",
-    "text": "ARBEQUINA\n\n\n\nCeller\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nCampanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstoig Lo Castell\n\n\n\nGourmet\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nFile Attachment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "ARBEQUINA\n\n\n\nCeller\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nCampanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstoig Lo Castell\n\n\n\nGourmet\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "oil/ListOilsTable.html",
     "href": "oil/ListOilsTable.html",
     "title": "Listings table",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Producto\n        \n         \n          Origen\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProducto\n\n\nOrigen\n\n\nCategoria\n\n\nCapacitat\n\n\nDesc\n\n\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nCeller\n\n\nAmpolla\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 5L\n\n\nCampanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 2L\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\nEstoig Lo Castell\n\n\n\n\nGourmet\n\n\nEstoig\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\nFile Attachment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Producto\n        \n         \n          Origen\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProducto\n\n\nOrigen\n\n\nCategoria\n\n\nCapacitat\n\n\nDesc\n\n\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nCeller\n\n\nAmpolla\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 5L\n\n\nCampanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 2L\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\nEstoig Lo Castell\n\n\n\n\nGourmet\n\n\nEstoig\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "PatternCommand.html",
