@@ -6,7 +6,7 @@ execute:
 
 ```{ojs}
 
-data = await FileAttachment("oildata.csv").csv()
+data = await FileAttachment("content/oildata.csv").csv()
 
 ```
 
@@ -17,7 +17,7 @@ data[0]
 ## list of all content with map.
 
 ```{ojs}
-datacsv = await FileAttachment("oildata.csv").csv({ typed: true })
+datacsv = await FileAttachment("content/oildata.csv").csv({ typed: true })
 oils = datacsv.map(function(element){
     return element;
 }

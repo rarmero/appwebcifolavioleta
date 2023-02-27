@@ -32,7 +32,7 @@ website:
               - "oil/ListOilsGrid.qmd"
               - "oil/ListOilsTable.qmd"
               - "oil/ListOilsCustom.qmd"
-              - "oil/content/fileAttachment.qmd"
+              - "oil/fileAttachment.qmd"
            - "LabMDObservable.qmd"
            - "LabMDResApi.qmd"
         - section: "Java Labs"
