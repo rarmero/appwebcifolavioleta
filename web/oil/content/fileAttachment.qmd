@@ -1,0 +1,40 @@
+---
+title: File Attachment
+execute:
+  echo: false
+---
+
+```{ojs}
+
+data = await FileAttachment("oildata.csv").csv()
+
+```
+
+```{ojs}
+data[0]
+```
+
+## list of all content with map.
+
+```{ojs}
+datacsv = await FileAttachment("oildata.csv").csv({ typed: true })
+oils = datacsv.map(function(element){
+    return element;
+}
+)
+
+Inputs.table(oils, { sort: "value", reverse: true })
+
+```
+
+
+## list of some fields with map.
+
+```{ojs}
+dataoil = datacsv.map(function(element){
+    return element.author +  ", " + element.title;
+})
+
+dataoil[2]
+```
+
