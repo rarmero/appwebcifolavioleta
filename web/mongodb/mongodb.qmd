@@ -1,0 +1,52 @@
+---
+title: "Mongodb Labs"
+---
+
+# Connect to Atlas Mongodb
+
+
+## first attempt with mongodb-driver-sync
+
+### Dependency
+
+```java
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongodb-driver-sync</artifactId>
+    <version>4.4.2</version>
+</dependency>
+```
+
+### Accessing to properties
+
+```java
+ final Properties myAppProperties = new Properties();
+ myAppProperties.load(new FileInputStream("src/main/resources/application.properties"));
+
+ MongoClient mongoClient = MongoClients.create(myAppProperties.getProperty("app.uri"))
+
+ MongoDatabase database = mongoClient.getDatabase(myAppProperties.getProperty("app.database"));
+
+```
+
+### Get data
+
+```java
+  MongoCollection<Document> collection = database.getCollection("reserve");
+
+//Retrieving the documents
+FindIterable<Document> iterDoc = collection.find();
+Iterator it = iterDoc.iterator();
+while (it.hasNext()) {
+System.out.println("********************************" + it.next());
+}
+```
+
+### Result
+```
+Document{{_id=63f3c23835bf045fc8c4eeba, idUser=123, idPointCharge=123, dateStart=Sun Jan 01 00:00:00 CET 2023, dateEnd=Sat Jan 01 00:00:00 CET 2022, accepted=0}}
+Document{{_id=63f3ccfd35bf045fc8c4eebc, idUser=123, idPointCharge=124, dateStart=Mon Jan 01 00:00:00 CET 2024, dateEnd=Mon Jan 01 00:00:00 CET 2024, accepted=0}}
+```
+
+
+
