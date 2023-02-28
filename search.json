@@ -84,6 +84,13 @@
     "text": "GitHub Source"
   },
   {
+    "objectID": "mongodb/mongodb.html",
+    "href": "mongodb/mongodb.html",
+    "title": "Mongodb Labs",
+    "section": "",
+    "text": "<dependency>\n    <groupId>org.mongodb</groupId>\n    <artifactId>mongodb-driver-sync</artifactId>\n    <version>4.4.2</version>\n</dependency>\n\n\n\n final Properties myAppProperties = new Properties();\n myAppProperties.load(new FileInputStream(\"src/main/resources/application.properties\"));\n\n MongoClient mongoClient = MongoClients.create(myAppProperties.getProperty(\"app.uri\"))\n\n MongoDatabase database = mongoClient.getDatabase(myAppProperties.getProperty(\"app.database\"));\n\n\n\n  MongoCollection<Document> collection = database.getCollection(\"reserve\");\n\n//Retrieving the documents\nFindIterable<Document> iterDoc = collection.find();\nIterator it = iterDoc.iterator();\nwhile (it.hasNext()) {\nSystem.out.println(\"********************************\" + it.next());\n}\n\n\n\nDocument{{_id=63f3c23835bf045fc8c4eeba, idUser=123, idPointCharge=123, dateStart=Sun Jan 01 00:00:00 CET 2023, dateEnd=Sat Jan 01 00:00:00 CET 2022, accepted=0}}\nDocument{{_id=63f3ccfd35bf045fc8c4eebc, idUser=123, idPointCharge=124, dateStart=Mon Jan 01 00:00:00 CET 2024, dateEnd=Mon Jan 01 00:00:00 CET 2024, accepted=0}}"
+  },
+  {
     "objectID": "oil/content/celler1.html",
     "href": "oil/content/celler1.html",
     "title": "ARBEQUINA",
