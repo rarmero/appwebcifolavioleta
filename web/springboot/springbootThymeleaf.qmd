@@ -1,3 +1,34 @@
 ---
-title: "spgringboot thymeleaf"
+title: "spgringboot with thymeleaf"
 ---
+
+```{mermaid}
+flowchart LR
+  A[Client] --> B[localhost:8086/reservation/reservations] --> C[Backend]
+  C --> D[localhost:8081/reservations]
+  
+```
+
+## Call to url below
+
+<http://localhost:8086/reservation/reservations?datestart=20-08-2023&dateend=21-08-2023>
+
+## Calling to server
+
+```Java
+ ResponseEntity<List<Reservation>> response = restTemplate.exchange(
+                "http://localhost:8081/reservations?datestart=" + dateStart + "&dateend=" + dateEnd,
+                HttpMethod.GET,
+                null,
+                new ParameterizedTypeReference<List<Reservation>>() {}
+```
+
+## Project folders
+
+![fig 1](images/foldersAppClientThymeLeaf.PNG)
+
+![fig 2](images/foldersProjectBackend.PNG)
+
+## Result
+
+![fig 3](images/pagelistreservation.PNG)
