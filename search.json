@@ -315,6 +315,41 @@
     "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
   },
   {
+    "objectID": "springboot/springbootThymeleaf.html",
+    "href": "springboot/springbootThymeleaf.html",
+    "title": "spgringboot with thymeleaf",
+    "section": "",
+    "text": "flowchart LR\n  A[Client] --> B[localhost:8086/reservation/reservations] --> C[Backend]\n  C --> D[localhost:8081/reservations]"
+  },
+  {
+    "objectID": "springboot/springbootThymeleaf.html#call-to-url-below",
+    "href": "springboot/springbootThymeleaf.html#call-to-url-below",
+    "title": "spgringboot with thymeleaf",
+    "section": "Call to url below",
+    "text": "Call to url below\nhttp://localhost:8086/reservation/reservations?datestart=20-08-2023&dateend=21-08-2023"
+  },
+  {
+    "objectID": "springboot/springbootThymeleaf.html#calling-to-server",
+    "href": "springboot/springbootThymeleaf.html#calling-to-server",
+    "title": "spgringboot with thymeleaf",
+    "section": "Calling to server",
+    "text": "Calling to server\n ResponseEntity<List<Reservation>> response = restTemplate.exchange(\n                \"http://localhost:8081/reservations?datestart=\" + dateStart + \"&dateend=\" + dateEnd,\n                HttpMethod.GET,\n                null,\n                new ParameterizedTypeReference<List<Reservation>>() {}"
+  },
+  {
+    "objectID": "springboot/springbootThymeleaf.html#project-folders",
+    "href": "springboot/springbootThymeleaf.html#project-folders",
+    "title": "spgringboot with thymeleaf",
+    "section": "Project folders",
+    "text": "Project folders\n\n\n\nfig 1\n\n\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "springboot/springbootThymeleaf.html#result",
+    "href": "springboot/springbootThymeleaf.html#result",
+    "title": "spgringboot with thymeleaf",
+    "section": "Result",
+    "text": "Result\n\n\n\nfig 3"
+  },
+  {
     "objectID": "Task1.html",
     "href": "Task1.html",
     "title": "Kubernettes",
