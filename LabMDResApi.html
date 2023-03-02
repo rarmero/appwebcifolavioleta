@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -532,7 +532,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </main> <!-- /main -->
 
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"d3 = require('d3')\r\n\r\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\r\n{\r\n    console.log(data);\r\n});\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"contents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\r\n\r\nnames = contents.map(contents => {\r\nconst name = contents.name;\r\n\r\nconst url = contents.html_url;\r\nreturn {name,url}\r\n}\r\n)\r\n\r\nInputs.table(names, { sort: \"value\", reverse: true })\r\n\r\n"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"d3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"contents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\n\nconst url = contents.html_url;\nreturn {name,url}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })\n\n"}]}
 </script>
 <script type="module">
 window._ojs.paths.runtimeToDoc = "../..";
