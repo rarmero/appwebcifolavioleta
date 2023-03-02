@@ -25,10 +25,10 @@ flowchart LR
 
 ## Project folders
 
-![fig 1](images/foldersAppClientThymeLeaf.PNG)
+![fig 1](../images/foldersAppClientThymeLeaf.PNG)
 
-![fig 2](images/foldersProjectBackend.PNG)
+![fig 2](../images/foldersProjectBackend.PNG)
 
 ## Result
 
-![fig 3](images/pagelistreservation.PNG)
+![fig 3](../images/pagelistreservation.PNG)
