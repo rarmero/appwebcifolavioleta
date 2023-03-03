@@ -37,3 +37,25 @@ Inputs.table(names, { sort: "value", reverse: true })
 
 ```
 
+## Holidays
+
+Select the country to know public holidays
+```{ojs}
+viewof countrySelected = Inputs.select(["US", "ES"], {value: "ES"})
+```
+
+
+```{ojs}
+
+holidaysContent = await d3.json("https://date.nager.at/api/v2/publicholidays/2023/" +countrySelected)
+
+holidays = holidaysContent.map(holidaysContent => {
+const name = holidaysContent.name;
+const date = holidaysContent.date;
+return {name,date}
+}
+)
+
+Inputs.table(holidays, { sort: "value", reverse: true })
+
+```
