@@ -2,39 +2,46 @@
 title: "Chrome OS applications"
 ---
 
-## Visual Code on chromebook
+## Specificacions
 
-Installed on Acer Spin513 qualcomm snpadragon
+- Installed on Acer Spin513 qualcomm snpadragon
+- OS Debian linux 11 (bullseye) 
 
 
-- references:
 
-[documentation](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started){.external} 
+## References:
 
-### Linux terminal
+- [visual Code](https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started){.external} 
+- [docker](https://docs.docker.com/engine/install/debian/){.external} 
+
+
+## Linux terminal
 
 ![fig 1](images/linuxterminal.png)
 
 
-
-- Applications installed:
+## Applications installed:
 
 :::{.callout-note  collapse="false" }
 
-## Visual code
+### Visual code
 
-![fig 2](images/chromebookVisualCode.png)
+![fig 2](images/chromebookVisualCode.PNG)
 
 :::
 
-
 :::{.callout-note  collapse="false" }
 
-## NetBeans - Java
+### NetBeans - Java
 
 ![fig 3](images/netbeans.PNG)
 
 :::
 
+:::{.callout-note  collapse="false" }
 
-## Docker
+### Docker
+ 
+![fig 4](images/docker_running_on_chromeos.png)
+
+:::
