@@ -62,3 +62,17 @@ books = datacsv.map(function(element){
 Inputs.table(books, { sort: "value", reverse: true })
 
 ```
+
+## CNCF Cloud Native Interactive Landscape
+
+```{ojs}
+interactivecsv = await FileAttachment("interactive-landscape.csv").csv({ typed: true })
+interactive = interactivecsv.map(function(element){
+    return element;
+}
+)
+
+Inputs.table(interactive, { sort: "value", reverse: true })
+
+```
+
