@@ -16,91 +16,91 @@
   {
     "objectID": "springboot/springbootmvc.html",
     "href": "springboot/springbootmvc.html",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "",
     "text": "Serving Web Content with Spring MVC\nHandling Form Submission\nValidating Form Input\nSecuring a Web Application"
   },
   {
     "objectID": "springboot/springbootmvc.html#model",
     "href": "springboot/springbootmvc.html#model",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "Model",
     "text": "Model\npublic class Reservation {\n   private int idUser;\n   private int idPointCharge;\n   private Date dateStart;\n   private Date dateEnd;\n   private Boolean accepted;\n\n}"
   },
   {
     "objectID": "springboot/springbootmvc.html#dependencies",
     "href": "springboot/springbootmvc.html#dependencies",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "Dependencies",
     "text": "Dependencies\n<dependencies>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-web</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-thymeleaf</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n    </dependencies>"
   },
   {
     "objectID": "springboot/springbootmvc.html#views",
     "href": "springboot/springbootmvc.html#views",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "Views",
     "text": "Views\nwebpages"
   },
   {
     "objectID": "springboot/springbootmvc.html#annotacions-used",
     "href": "springboot/springbootmvc.html#annotacions-used",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "Annotacions used",
     "text": "Annotacions used\n\n@Controller\n@GetMapping\n@PostMapping\n@RequestMapping"
   },
   {
     "objectID": "springboot/springbootmvc.html#using-dates",
     "href": "springboot/springbootmvc.html#using-dates",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "using dates",
     "text": "using dates\nOne approach is set date format in application.properties\nspring.mvc.format.date=yyyy-MM-dd\nspring.mvc.format.date-time=yyyy-MM-dd HH:mm:ss\nspring.mvc.format.time=HH:mm:ss"
   },
   {
     "objectID": "springboot/springbootmvc.html#content-of-example-on-github",
     "href": "springboot/springbootmvc.html#content-of-example-on-github",
-    "title": "spgringboot MVC",
+    "title": "springboot MVC",
     "section": "content of example on github",
     "text": "content of example on github\nsource"
   },
   {
     "objectID": "springboot/springbootMongodb.html",
     "href": "springboot/springbootMongodb.html",
-    "title": "spgringboot mongodb",
+    "title": "springboot mongodb",
     "section": "",
     "text": "fig 1"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html",
     "href": "springboot/springbootThymeleaf.html",
-    "title": "spgringboot with thymeleaf",
+    "title": "springboot with thymeleaf",
     "section": "",
-    "text": "flowchart LR\n  A[Client] --> B[localhost:8086/reservation/reservations] --> C[Backend]\n  C --> D[localhost:8081/reservations]"
+    "text": "I use a library to define the model. I use two springboots: one to do the query and another to response. The client is on port 8086 and the backend on port 8001\n\n\n\n\n\nflowchart LR\n  A[Client] --> B[reservation/reservations] --> C[Backend]\n  C --> D[reservations]"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html#call-to-url-below",
     "href": "springboot/springbootThymeleaf.html#call-to-url-below",
-    "title": "spgringboot with thymeleaf",
+    "title": "springboot with thymeleaf",
     "section": "Call to url below",
     "text": "Call to url below\nhttp://localhost:8086/reservation/reservations?datestart=20-08-2023&dateend=21-08-2023"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html#calling-to-server",
     "href": "springboot/springbootThymeleaf.html#calling-to-server",
-    "title": "spgringboot with thymeleaf",
+    "title": "springboot with thymeleaf",
     "section": "Calling to server",
     "text": "Calling to server\n ResponseEntity<List<Reservation>> response = restTemplate.exchange(\n                \"http://localhost:8081/reservations?datestart=\" + dateStart + \"&dateend=\" + dateEnd,\n                HttpMethod.GET,\n                null,\n                new ParameterizedTypeReference<List<Reservation>>() {}"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html#project-folders",
     "href": "springboot/springbootThymeleaf.html#project-folders",
-    "title": "spgringboot with thymeleaf",
+    "title": "springboot with thymeleaf",
     "section": "Project folders",
     "text": "Project folders\n\n\n\nfig 1\n\n\n\n\n\nfig 2"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html#result",
     "href": "springboot/springbootThymeleaf.html#result",
-    "title": "spgringboot with thymeleaf",
+    "title": "springboot with thymeleaf",
     "section": "Result",
     "text": "Result\n\n\n\nfig 3"
   },

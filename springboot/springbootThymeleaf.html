@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - spgringboot with thymeleaf</title>
+<title>App with web tecnologies - springboot with thymeleaf</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -252,15 +252,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <li class="dropdown-header">Springboot Labs</li>
         <li>
     <a class="dropdown-item" href="../springboot/springbootMongodb.html">
- <span class="dropdown-text">spgringboot mongodb</span></a>
+ <span class="dropdown-text">springboot mongodb</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../springboot/springbootThymeleaf.html">
- <span class="dropdown-text">spgringboot with thymeleaf</span></a>
+ <span class="dropdown-text">springboot with thymeleaf</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../springboot/springbootmvc.html">
- <span class="dropdown-text">spgringboot MVC</span></a>
+ <span class="dropdown-text">springboot MVC</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Mongodb</li>
@@ -303,7 +303,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">spgringboot with thymeleaf</h1>
+      <h1 class="quarto-secondary-nav-title">springboot with thymeleaf</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -409,17 +409,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootMongodb.html" class="sidebar-item-text sidebar-link">spgringboot mongodb</a>
+  <a href="../springboot/springbootMongodb.html" class="sidebar-item-text sidebar-link">springboot mongodb</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link active">spgringboot with thymeleaf</a>
+  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link active">springboot with thymeleaf</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootmvc.html" class="sidebar-item-text sidebar-link">spgringboot MVC</a>
+  <a href="../springboot/springbootmvc.html" class="sidebar-item-text sidebar-link">springboot MVC</a>
   </div>
 </li>
       </ul>
@@ -448,7 +448,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#call-to-url-below" id="toc-call-to-url-below" class="nav-link active" data-scroll-target="#call-to-url-below">Call to url below</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#call-to-url-below" id="toc-call-to-url-below" class="nav-link" data-scroll-target="#call-to-url-below">Call to url below</a></li>
   <li><a href="#calling-to-server" id="toc-calling-to-server" class="nav-link" data-scroll-target="#calling-to-server">Calling to server</a></li>
   <li><a href="#project-folders" id="toc-project-folders" class="nav-link" data-scroll-target="#project-folders">Project folders</a></li>
   <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
@@ -460,7 +461,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">spgringboot with thymeleaf</h1>
+<h1 class="title d-none d-lg-block">springboot with thymeleaf</h1>
 </div>
 
 
@@ -475,14 +476,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<blockquote class="blockquote">
+<p>I use a library to define the model. I use two springboots: one to do the query and another to response. The client is on port 8086 and the backend on port 8001</p>
+</blockquote>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <p>
 </p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-  A[Client] --&gt; B[localhost:8086/reservation/reservations] --&gt; C[Backend]
-  C --&gt; D[localhost:8081/reservations]
-  
+  A[Client] --&gt; B[reservation/reservations] --&gt; C[Backend]
+  C --&gt; D[reservations]
 </pre>
 <div id="mermaid-tooltip-1" class="mermaidTooltip">
 
@@ -491,6 +496,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
+</section>
 <section id="call-to-url-below" class="level2">
 <h2 class="anchored" data-anchor-id="call-to-url-below">Call to url below</h2>
 <p><a href="http://localhost:8086/reservation/reservations?datestart=20-08-2023&amp;dateend=21-08-2023" class="uri">http://localhost:8086/reservation/reservations?datestart=20-08-2023&amp;dateend=21-08-2023</a></p>
