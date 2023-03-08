@@ -43,6 +43,7 @@ website:
           contents: 
            - "springboot/springbootMongodb.qmd"
            - "springboot/springbootThymeleaf.qmd"
+           - "springboot/springbootmvc.qmd"
         - section: "Mongodb"
           contents: 
            - "mongodb/mongodb.qmd"

@@ -1,0 +1,78 @@
+---
+title: "spgringboot MVC"
+---
+
+# Resources from spring.io
+
+- [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/){.external}
+- [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/){.external}
+- [Validating Form Input](https://spring.io/guides/gs/validating-form-input/){.external}
+- [Securing a Web Application](https://spring.io/guides/gs/securing-web/){.external}
+
+# Example: Reserves management
+
+
+## Model
+
+```java
+public class Reservation {
+   private int idUser;
+   private int idPointCharge;
+   private Date dateStart;
+   private Date dateEnd;
+   private Boolean accepted;
+
+}
+
+```
+
+
+## Dependencies
+
+```java
+<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+```
+
+
+## Views
+
+
+[webpages](https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootControllerView/src/main/resources/templates){.external}
+
+
+## Annotacions used
+
+- @Controller
+- @GetMapping
+- @PostMapping
+- @RequestMapping
+
+
+## using dates
+
+One approach is set date format in `application.properties`
+
+```java
+spring.mvc.format.date=yyyy-MM-dd
+spring.mvc.format.date-time=yyyy-MM-dd HH:mm:ss
+spring.mvc.format.time=HH:mm:ss
+```
+
+
+## content of example on github
+
+[source](https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootControllerView){.external}
