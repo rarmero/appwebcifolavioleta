@@ -14,6 +14,55 @@
     "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
   },
   {
+    "objectID": "springboot/springbootmvc.html",
+    "href": "springboot/springbootmvc.html",
+    "title": "spgringboot MVC",
+    "section": "",
+    "text": "Serving Web Content with Spring MVC\nHandling Form Submission\nValidating Form Input\nSecuring a Web Application"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#model",
+    "href": "springboot/springbootmvc.html#model",
+    "title": "spgringboot MVC",
+    "section": "Model",
+    "text": "Model\npublic class Reservation {\n   private int idUser;\n   private int idPointCharge;\n   private Date dateStart;\n   private Date dateEnd;\n   private Boolean accepted;\n\n}"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#dependencies",
+    "href": "springboot/springbootmvc.html#dependencies",
+    "title": "spgringboot MVC",
+    "section": "Dependencies",
+    "text": "Dependencies\n<dependencies>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-web</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-thymeleaf</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n    </dependencies>"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#views",
+    "href": "springboot/springbootmvc.html#views",
+    "title": "spgringboot MVC",
+    "section": "Views",
+    "text": "Views\nwebpages"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#annotacions-used",
+    "href": "springboot/springbootmvc.html#annotacions-used",
+    "title": "spgringboot MVC",
+    "section": "Annotacions used",
+    "text": "Annotacions used\n\n@Controller\n@GetMapping\n@PostMapping\n@RequestMapping"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#using-dates",
+    "href": "springboot/springbootmvc.html#using-dates",
+    "title": "spgringboot MVC",
+    "section": "using dates",
+    "text": "using dates\nOne approach is set date format in application.properties\nspring.mvc.format.date=yyyy-MM-dd\nspring.mvc.format.date-time=yyyy-MM-dd HH:mm:ss\nspring.mvc.format.time=HH:mm:ss"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#content-of-example-on-github",
+    "href": "springboot/springbootmvc.html#content-of-example-on-github",
+    "title": "spgringboot MVC",
+    "section": "content of example on github",
+    "text": "content of example on github\nsource"
+  },
+  {
     "objectID": "springboot/springbootMongodb.html",
     "href": "springboot/springbootMongodb.html",
     "title": "spgringboot mongodb",
@@ -159,6 +208,13 @@
     "title": "Quarto Markdown, code & data",
     "section": "list of all content with map.",
     "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
+    "href": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
+    "title": "Quarto Markdown, code & data",
+    "section": "CNCF Cloud Native Interactive Landscape",
+    "text": "CNCF Cloud Native Interactive Landscape\n\ninteractivecsv = await FileAttachment(\"interactive-landscape.csv\").csv({ typed: true })\ninteractive = interactivecsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(interactive, { sort: \"value\", reverse: true })"
   },
   {
     "objectID": "index.html",
