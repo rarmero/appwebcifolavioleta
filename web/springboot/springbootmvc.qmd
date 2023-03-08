@@ -1,5 +1,5 @@
 ---
-title: "spgringboot MVC"
+title: "springboot MVC"
 ---
 
 # Resources from spring.io

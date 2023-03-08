@@ -1,13 +1,21 @@
 ---
-title: "spgringboot with thymeleaf"
+title: "springboot with thymeleaf"
 ---
+
+
+## Introduction
+
+>I use a library to define the model.
+>I use two springboots: one to do the query and another to response. 
+>The client is on port 8086 and the backend on port 8001
 
 ```{mermaid}
 flowchart LR
-  A[Client] --> B[localhost:8086/reservation/reservations] --> C[Backend]
-  C --> D[localhost:8081/reservations]
-  
+  A[Client] --> B[reservation/reservations] --> C[Backend]
+  C --> D[reservations]
 ```
+
+
 
 ## Call to url below
 
