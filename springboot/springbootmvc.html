@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -537,6 +537,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb3"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">date</span><span class="op">=</span>yyyy<span class="op">-</span>MM<span class="op">-</span>dd</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">date</span><span class="op">-</span>time<span class="op">=</span>yyyy<span class="op">-</span>MM<span class="op">-</span>dd HH<span class="op">:</span>mm<span class="op">:</span>ss</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">time</span><span class="op">=</span>HH<span class="op">:</span>mm<span class="op">:</span>ss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Be careful with the mapping. html input type and property of attribute java class.</p>
+<pre><code>
+ Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors&lt;EOL&gt;Field error in object 'reservation' on field 'dateEnd': rejected value [13/12/2023];
+ codes [typeMismatch.reservation.dateEnd,typeMismatch.dateEnd,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reservation.dateEnd,dateEnd]; arguments [];
+ default message [dateEnd]]; 
+ default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'dateEnd'; Failed to convert from type [java.lang.String] to type [java.util.Date] for value '13/12/2023']
+ Field error in object 'reservation' on field 'dateStart': rejected value [12/12/2023];
+ codes [typeMismatch.reservation.dateStart,typeMismatch.dateStart,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reservation.dateStart,dateStart]; arguments []; default message [dateStart]];
+ default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'dateStart';
+ Failed to convert from type [java.lang.String] to type [java.util.Date] for value '12/12/2023']]</code></pre>
+<pre><code>  &lt;input type="text" class="form-control" th:field="*{dateStart}" /&gt;</code></pre>
+<blockquote class="blockquote">
+<p>The correct html type is date, type=“date”</p>
+</blockquote>
 </section>
 <section id="content-of-example-on-github" class="level2">
 <h2 class="anchored" data-anchor-id="content-of-example-on-github">content of example on github</h2>
