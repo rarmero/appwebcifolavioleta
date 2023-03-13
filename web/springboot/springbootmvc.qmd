@@ -72,6 +72,29 @@ spring.mvc.format.date-time=yyyy-MM-dd HH:mm:ss
 spring.mvc.format.time=HH:mm:ss
 ```
 
+Be careful with the mapping.
+html input type and property of attribute java class.
+
+```
+
+ Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'reservation' on field 'dateEnd': rejected value [13/12/2023];
+ codes [typeMismatch.reservation.dateEnd,typeMismatch.dateEnd,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reservation.dateEnd,dateEnd]; arguments [];
+ default message [dateEnd]]; 
+ default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'dateEnd'; Failed to convert from type [java.lang.String] to type [java.util.Date] for value '13/12/2023']
+ Field error in object 'reservation' on field 'dateStart': rejected value [12/12/2023];
+ codes [typeMismatch.reservation.dateStart,typeMismatch.dateStart,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reservation.dateStart,dateStart]; arguments []; default message [dateStart]];
+ default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'dateStart';
+ Failed to convert from type [java.lang.String] to type [java.util.Date] for value '12/12/2023']]
+```
+
+
+```
+  <input type="text" class="form-control" th:field="*{dateStart}" />
+``` 
+
+>The correct html type is date, type="date"
+
+
 
 ## content of example on github
 
