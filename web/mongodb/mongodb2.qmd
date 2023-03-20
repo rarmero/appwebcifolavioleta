@@ -16,6 +16,13 @@ title: "Mongodb Labs:spring-boot-starter-data-mongodb"
 </dependency>
 ```
 
+### Defining properties
+
+```java
+app.uri=mongodb+srv://<user>:<password>@cluster0.<namecluster>.mongodb.net/electrolinera
+app.database=electrolinera
+```
+
 
 ## Get Data from controller
 
