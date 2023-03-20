@@ -23,8 +23,16 @@ app.uri=mongodb+srv://<user>:<password>@cluster0.<namecluster>.mongodb.net/elect
 app.database=electrolinera
 ```
 
+### Extending repository
 
-## Get Data from controller
+```Java
+@Repository
+public interface ReservationRepository extends MongoRepository<Reservation, String> {
+```
+
+
+
+### Get Data from controller
 
 ```java
 import com.example.mongodb2.model.Reservation;
