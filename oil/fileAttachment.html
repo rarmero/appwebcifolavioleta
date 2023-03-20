@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -265,7 +265,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <li class="dropdown-header">Mongodb</li>
         <li>
     <a class="dropdown-item" href="../mongodb/mongodb.html">
- <span class="dropdown-text">Mongodb Labs</span></a>
+ <span class="dropdown-text">Mongodb Labs:mongodb-driver-sync</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../mongodb/mongodb2.html">
+ <span class="dropdown-text">Mongodb Labs:spring-boot-starter-data-mongodb</span></a>
   </li>  
     </ul>
   </li>
@@ -433,7 +437,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">Mongodb Labs</a>
+  <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">Mongodb Labs:mongodb-driver-sync</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb2.html" class="sidebar-item-text sidebar-link">Mongodb Labs:spring-boot-starter-data-mongodb</a>
   </div>
 </li>
       </ul>
@@ -551,7 +560,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </main> <!-- /main -->
 
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"\r\ndata = await FileAttachment(\"content/oildata.csv\").csv()\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"data[0]\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"datacsv = await FileAttachment(\"content/oildata.csv\").csv({ typed: true })\r\noils = datacsv.map(function(element){\r\n    return element;\r\n}\r\n)\r\n\r\nInputs.table(oils, { sort: \"value\", reverse: true })\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"dataoil = datacsv.map(function(element){\r\n    return element.author +  \", \" + element.title;\r\n})\r\n\r\ndataoil[2]\r\n"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"\ndata = await FileAttachment(\"content/oildata.csv\").csv()\n\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"data[0]\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"datacsv = await FileAttachment(\"content/oildata.csv\").csv({ typed: true })\noils = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(oils, { sort: \"value\", reverse: true })\n\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"dataoil = datacsv.map(function(element){\n    return element.author +  \", \" + element.title;\n})\n\ndataoil[2]\n"}]}
 </script>
 <script type="module">
 window._ojs.paths.runtimeToDoc = "../../oil";

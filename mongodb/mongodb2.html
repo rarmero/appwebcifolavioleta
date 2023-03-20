@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - springboot with thymeleaf</title>
+<title>App with web tecnologies - Mongodb Labs:spring-boot-starter-data-mongodb</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,9 +121,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     "search-submit-button-title": "Submit"
   }
 }</script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -307,7 +304,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">springboot with thymeleaf</h1>
+      <h1 class="quarto-secondary-nav-title">Mongodb Labs:spring-boot-starter-data-mongodb</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -405,12 +402,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Springboot Labs</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Springboot Labs</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../springboot/springbootMongodb.html" class="sidebar-item-text sidebar-link">springboot mongodb</a>
@@ -418,7 +415,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link active">springboot with thymeleaf</a>
+  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link">springboot with thymeleaf</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -430,12 +427,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Mongodb</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Mongodb</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">Mongodb Labs:mongodb-driver-sync</a>
@@ -443,7 +440,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb2.html" class="sidebar-item-text sidebar-link">Mongodb Labs:spring-boot-starter-data-mongodb</a>
+  <a href="../mongodb/mongodb2.html" class="sidebar-item-text sidebar-link active">Mongodb Labs:spring-boot-starter-data-mongodb</a>
   </div>
 </li>
       </ul>
@@ -457,11 +454,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#call-to-url-below" id="toc-call-to-url-below" class="nav-link" data-scroll-target="#call-to-url-below">Call to url below</a></li>
-  <li><a href="#calling-to-server" id="toc-calling-to-server" class="nav-link" data-scroll-target="#calling-to-server">Calling to server</a></li>
-  <li><a href="#project-folders" id="toc-project-folders" class="nav-link" data-scroll-target="#project-folders">Project folders</a></li>
+  <li><a href="#connect-to-atlas-mongodb" id="toc-connect-to-atlas-mongodb" class="nav-link active" data-scroll-target="#connect-to-atlas-mongodb">Connect to Atlas Mongodb</a>
+  <ul class="collapse">
+  <li><a href="#second-attempt-with-spring-boot-starter-data-mongodb" id="toc-second-attempt-with-spring-boot-starter-data-mongodb" class="nav-link" data-scroll-target="#second-attempt-with-spring-boot-starter-data-mongodb">second attempt with spring-boot-starter-data-mongodb</a>
+  <ul class="collapse">
+  <li><a href="#dependency" id="toc-dependency" class="nav-link" data-scroll-target="#dependency">Dependency</a></li>
+  </ul></li>
+  <li><a href="#get-data-from-controller" id="toc-get-data-from-controller" class="nav-link" data-scroll-target="#get-data-from-controller">Get Data from controller</a>
+  <ul class="collapse">
   <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -470,7 +473,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">springboot with thymeleaf</h1>
+<h1 class="title d-none d-lg-block">Mongodb Labs:spring-boot-starter-data-mongodb</h1>
 </div>
 
 
@@ -485,64 +488,77 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<blockquote class="blockquote">
-<p>I use a library to define the model. I use two springboots: one to do the query and another to response. The client is on port 8086 and the backend on port 8001</p>
-</blockquote>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<p>
-</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
-  A[Client] --&gt; B[reservation/reservations] --&gt; C[Backend]
-  C --&gt; D[reservations]
-</pre>
-<div id="mermaid-tooltip-1" class="mermaidTooltip">
-
-</div>
-<p></p>
-</div>
-</div>
-</div>
+<section id="connect-to-atlas-mongodb" class="level1">
+<h1>Connect to Atlas Mongodb</h1>
+<section id="second-attempt-with-spring-boot-starter-data-mongodb" class="level2">
+<h2 class="anchored" data-anchor-id="second-attempt-with-spring-boot-starter-data-mongodb">second attempt with spring-boot-starter-data-mongodb</h2>
+<section id="dependency" class="level3">
+<h3 class="anchored" data-anchor-id="dependency">Dependency</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>data<span class="op">-</span>mongodb<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="call-to-url-below" class="level2">
-<h2 class="anchored" data-anchor-id="call-to-url-below">Call to url below</h2>
-<p><a href="http://localhost:8086/reservation/reservations?datestart=20-08-2023&amp;dateend=21-08-2023" class="uri">http://localhost:8086/reservation/reservations?datestart=20-08-2023&amp;dateend=21-08-2023</a></p>
 </section>
-<section id="calling-to-server" class="level2">
-<h2 class="anchored" data-anchor-id="calling-to-server">Calling to server</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> ResponseEntity<span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span>Reservation<span class="op">&gt;&gt;</span> response <span class="op">=</span> restTemplate<span class="op">.</span><span class="fu">exchange</span><span class="op">(</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                <span class="st">"http://localhost:8081/reservations?datestart="</span> <span class="op">+</span> dateStart <span class="op">+</span> <span class="st">"&amp;dateend="</span> <span class="op">+</span> dateEnd<span class="op">,</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                HttpMethod<span class="op">.</span><span class="fu">GET</span><span class="op">,</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                <span class="kw">null</span><span class="op">,</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                <span class="kw">new</span> ParameterizedTypeReference<span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span>Reservation<span class="op">&gt;&gt;()</span> <span class="op">{}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="project-folders" class="level2">
-<h2 class="anchored" data-anchor-id="project-folders">Project folders</h2>
+<section id="get-data-from-controller" class="level2">
+<h2 class="anchored" data-anchor-id="get-data-from-controller">Get Data from controller</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">com</span><span class="op">.</span><span class="im">example</span><span class="op">.</span><span class="im">mongodb2</span><span class="op">.</span><span class="im">model</span><span class="op">.</span><span class="im">Reservation</span><span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">com</span><span class="op">.</span><span class="im">example</span><span class="op">.</span><span class="im">mongodb2</span><span class="op">.</span><span class="im">repository</span><span class="op">.</span><span class="im">ReservationRepository</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">java</span><span class="op">.</span><span class="im">util</span><span class="op">.</span><span class="im">ArrayList</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">java</span><span class="op">.</span><span class="im">util</span><span class="op">.</span><span class="im">List</span><span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">beans</span><span class="op">.</span><span class="im">factory</span><span class="op">.</span><span class="im">annotation</span><span class="op">.</span><span class="im">Autowired</span><span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">http</span><span class="op">.</span><span class="im">HttpStatus</span><span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">http</span><span class="op">.</span><span class="im">ResponseEntity</span><span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">web</span><span class="op">.</span><span class="im">bind</span><span class="op">.</span><span class="im">annotation</span><span class="op">.</span><span class="im">CrossOrigin</span><span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">web</span><span class="op">.</span><span class="im">bind</span><span class="op">.</span><span class="im">annotation</span><span class="op">.</span><span class="im">GetMapping</span><span class="op">;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">web</span><span class="op">.</span><span class="im">bind</span><span class="op">.</span><span class="im">annotation</span><span class="op">.</span><span class="im">RequestMapping</span><span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">web</span><span class="op">.</span><span class="im">bind</span><span class="op">.</span><span class="im">annotation</span><span class="op">.</span><span class="im">RequestParam</span><span class="op">;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="im">org</span><span class="op">.</span><span class="im">springframework</span><span class="op">.</span><span class="im">web</span><span class="op">.</span><span class="im">bind</span><span class="op">.</span><span class="im">annotation</span><span class="op">.</span><span class="im">RestController</span><span class="op">;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="at">@CrossOrigin</span><span class="op">(</span>origins <span class="op">=</span> <span class="st">"http://localhost:8081"</span><span class="op">)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="at">@RestController</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="at">@RequestMapping</span><span class="op">(</span><span class="st">"/api"</span><span class="op">)</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> ReservationController <span class="op">{</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">@Autowired</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  ReservationRepository reservationRepository<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">@GetMapping</span><span class="op">(</span><span class="st">"/reservations"</span><span class="op">)</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">public</span> ResponseEntity<span class="op">&lt;</span><span class="bu">List</span><span class="op">&lt;</span>Reservation<span class="op">&gt;&gt;</span> <span class="fu">getAllReservations</span><span class="op">(</span><span class="at">@RequestParam</span><span class="op">(</span>required <span class="op">=</span> <span class="kw">false</span><span class="op">)</span> <span class="bu">Integer</span> idUser<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span> <span class="op">{</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">List</span><span class="op">&lt;</span>Reservation<span class="op">&gt;</span> reservations <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;</span>Reservation<span class="op">&gt;();</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>idUser <span class="op">==</span> <span class="kw">null</span><span class="op">)</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      reservationRepository<span class="op">.</span><span class="fu">findAll</span><span class="op">().</span><span class="fu">forEach</span><span class="op">(</span>reservations<span class="op">::</span>add<span class="op">);</span></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      reservationRepository<span class="op">.</span><span class="fu">findByIdUser</span><span class="op">(</span>idUser<span class="op">).</span><span class="fu">forEach</span><span class="op">(</span>reservations<span class="op">::</span>add<span class="op">);</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">(</span>reservations<span class="op">.</span><span class="fu">isEmpty</span><span class="op">())</span> <span class="op">{</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">new</span> ResponseEntity<span class="op">&lt;&gt;(</span>HttpStatus<span class="op">.</span><span class="fu">NO_CONTENT</span><span class="op">);</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">new</span> ResponseEntity<span class="op">&lt;&gt;(</span>reservations<span class="op">,</span> HttpStatus<span class="op">.</span><span class="fu">OK</span><span class="op">);</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span> <span class="cf">catch</span> <span class="op">(</span><span class="bu">Exception</span> e<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>        <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>e<span class="op">.</span><span class="fu">getMessage</span><span class="op">());</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="kw">new</span> ResponseEntity<span class="op">&lt;&gt;(</span><span class="kw">null</span><span class="op">,</span> HttpStatus<span class="op">.</span><span class="fu">INTERNAL_SERVER_ERROR</span><span class="op">);</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="op">}</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="result" class="level3">
+<h3 class="anchored" data-anchor-id="result">Result</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/foldersAppClientThymeLeaf.PNG" class="img-fluid figure-img"></p>
+<p><img src="../images/mongodbqueryresult.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">fig 1</figcaption><p></p>
 </figure>
 </div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/foldersProjectBackend.PNG" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">fig 2</figcaption><p></p>
-</figure>
-</div>
+
+
 </section>
-<section id="result" class="level2">
-<h2 class="anchored" data-anchor-id="result">Result</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/pagelistreservation.PNG" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">fig 3</figcaption><p></p>
-</figure>
-</div>
-
-
+</section>
 </section>
 
 </main> <!-- /main -->
