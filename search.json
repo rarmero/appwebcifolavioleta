@@ -364,6 +364,13 @@
     "text": "Serving Web Content with Spring MVC\nHandling Form Submission\nValidating Form Input\nSecuring a Web Application"
   },
   {
+    "objectID": "springboot/springbootmvc.html#dependencies",
+    "href": "springboot/springbootmvc.html#dependencies",
+    "title": "springboot MVC",
+    "section": "Dependencies",
+    "text": "Dependencies\n<dependencies>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-web</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-thymeleaf</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n    </dependencies>"
+  },
+  {
     "objectID": "springboot/springbootmvc.html#model",
     "href": "springboot/springbootmvc.html#model",
     "title": "springboot MVC",
@@ -371,11 +378,18 @@
     "text": "Model\npublic class Reservation {\n   private int idUser;\n   private int idPointCharge;\n   private Date dateStart;\n   private Date dateEnd;\n   private Boolean accepted;\n\n}"
   },
   {
-    "objectID": "springboot/springbootmvc.html#dependencies",
-    "href": "springboot/springbootmvc.html#dependencies",
+    "objectID": "springboot/springbootmvc.html#repository",
+    "href": "springboot/springbootmvc.html#repository",
     "title": "springboot MVC",
-    "section": "Dependencies",
-    "text": "Dependencies\n<dependencies>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-web</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-thymeleaf</artifactId>\n        </dependency>\n        <dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-test</artifactId>\n            <scope>test</scope>\n        </dependency>\n    </dependencies>"
+    "section": "Repository",
+    "text": "Repository\n@Repository\npublic class ReservationRepository {\n}"
+  },
+  {
+    "objectID": "springboot/springbootmvc.html#services",
+    "href": "springboot/springbootmvc.html#services",
+    "title": "springboot MVC",
+    "section": "Services",
+    "text": "Services\n\npublic interface ReservationService {\n\n    void reservationAdd(Reservation reservation);\n    List<Reservation> getAllReservations() ;\n    void reservationDelete(Reservation reservation);\n    void reservationDeleteById(int reservationId);\n    void reservationUpdate(int index,Reservation reservation);\n    Reservation reservationDetail(int index);\n    Reservation getReservationById(int index);\n    Reservation getReservationsByIdUser(int idUser);\n\n}\n\n@Service\npublic class ReservationServiceImpl implements ReservationService{\n\n    @Autowired\n    private ReservationRepository reservationRepository;\n\n// [.......]\n\n}"
   },
   {
     "objectID": "springboot/springbootmvc.html#views",

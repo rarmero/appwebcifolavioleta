@@ -457,8 +457,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#resources-from-spring.io" id="toc-resources-from-spring.io" class="nav-link active" data-scroll-target="#resources-from-spring.io">Resources from spring.io</a></li>
   <li><a href="#example-reserves-management" id="toc-example-reserves-management" class="nav-link" data-scroll-target="#example-reserves-management">Example: Reserves management</a>
   <ul class="collapse">
-  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model">Model</a></li>
   <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies">Dependencies</a></li>
+  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model">Model</a></li>
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
+  <li><a href="#services" id="toc-services" class="nav-link" data-scroll-target="#services">Services</a></li>
   <li><a href="#views" id="toc-views" class="nav-link" data-scroll-target="#views">Views</a></li>
   <li><a href="#annotacions-used" id="toc-annotacions-used" class="nav-link" data-scroll-target="#annotacions-used">Annotacions used</a></li>
   <li><a href="#using-dates" id="toc-using-dates" class="nav-link" data-scroll-target="#using-dates">using dates</a></li>
@@ -498,38 +500,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="example-reserves-management" class="level1">
 <h1>Example: Reserves management</h1>
-<section id="model" class="level2">
-<h2 class="anchored" data-anchor-id="model">Model</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Reservation <span class="op">{</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="dt">int</span> idUser<span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="dt">int</span> idPointCharge<span class="op">;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="bu">Date</span> dateStart<span class="op">;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="bu">Date</span> dateEnd<span class="op">;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="bu">Boolean</span> accepted<span class="op">;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
 <section id="dependencies" class="level2">
 <h2 class="anchored" data-anchor-id="dependencies">Dependencies</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>dependencies<span class="op">&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>web<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>thymeleaf<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>test<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>scope<span class="op">&gt;</span>test<span class="op">&lt;/</span>scope<span class="op">&gt;</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>dependencies<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>dependencies<span class="op">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>web<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>thymeleaf<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">springframework</span><span class="op">.</span><span class="fu">boot</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>spring<span class="op">-</span>boot<span class="op">-</span>starter<span class="op">-</span>test<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>scope<span class="op">&gt;</span>test<span class="op">&lt;/</span>scope<span class="op">&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>dependencies<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="model" class="level2">
+<h2 class="anchored" data-anchor-id="model">Model</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Reservation <span class="op">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="dt">int</span> idUser<span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="dt">int</span> idPointCharge<span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="bu">Date</span> dateStart<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="bu">Date</span> dateEnd<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>   <span class="kw">private</span> <span class="bu">Boolean</span> accepted<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="repository" class="level2">
+<h2 class="anchored" data-anchor-id="repository">Repository</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Repository</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> ReservationRepository <span class="op">{</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="services" class="level2">
+<h2 class="anchored" data-anchor-id="services">Services</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">interface</span> ReservationService <span class="op">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> <span class="fu">reservationAdd</span><span class="op">(</span>Reservation reservation<span class="op">);</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">List</span><span class="op">&lt;</span>Reservation<span class="op">&gt;</span> <span class="fu">getAllReservations</span><span class="op">()</span> <span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> <span class="fu">reservationDelete</span><span class="op">(</span>Reservation reservation<span class="op">);</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> <span class="fu">reservationDeleteById</span><span class="op">(</span><span class="dt">int</span> reservationId<span class="op">);</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">void</span> <span class="fu">reservationUpdate</span><span class="op">(</span><span class="dt">int</span> index<span class="op">,</span>Reservation reservation<span class="op">);</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    Reservation <span class="fu">reservationDetail</span><span class="op">(</span><span class="dt">int</span> index<span class="op">);</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    Reservation <span class="fu">getReservationById</span><span class="op">(</span><span class="dt">int</span> index<span class="op">);</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    Reservation <span class="fu">getReservationsByIdUser</span><span class="op">(</span><span class="dt">int</span> idUser<span class="op">);</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="at">@Service</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> ReservationServiceImpl <span class="kw">implements</span> ReservationService<span class="op">{</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Autowired</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> ReservationRepository reservationRepository<span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">// [.......]</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="views" class="level2">
 <h2 class="anchored" data-anchor-id="views">Views</h2>
-<p><a href="https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootControllerView/src/main/resources/templates" class="external">webpages</a></p>
+<p><a href="https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootControllerView/src/main/resources/templates/reservation" class="external">webpages</a></p>
 </section>
 <section id="annotacions-used" class="level2">
 <h2 class="anchored" data-anchor-id="annotacions-used">Annotacions used</h2>
@@ -543,9 +577,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="using-dates" class="level2">
 <h2 class="anchored" data-anchor-id="using-dates">using dates</h2>
 <p>One approach is set date format in <code>application.properties</code></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">date</span><span class="op">=</span>yyyy<span class="op">-</span>MM<span class="op">-</span>dd</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">date</span><span class="op">-</span>time<span class="op">=</span>yyyy<span class="op">-</span>MM<span class="op">-</span>dd HH<span class="op">:</span>mm<span class="op">:</span>ss</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">time</span><span class="op">=</span>HH<span class="op">:</span>mm<span class="op">:</span>ss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">date</span><span class="op">=</span>yyyy<span class="op">-</span>MM<span class="op">-</span>dd</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">date</span><span class="op">-</span>time<span class="op">=</span>yyyy<span class="op">-</span>MM<span class="op">-</span>dd HH<span class="op">:</span>mm<span class="op">:</span>ss</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>spring<span class="op">.</span><span class="fu">mvc</span><span class="op">.</span><span class="fu">format</span><span class="op">.</span><span class="fu">time</span><span class="op">=</span>HH<span class="op">:</span>mm<span class="op">:</span>ss</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Be careful with the mapping. html input type and property of attribute java class.</p>
 <pre><code>
  Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors&lt;EOL&gt;Field error in object 'reservation' on field 'dateEnd': rejected value [13/12/2023];
