@@ -31,12 +31,17 @@ flowchart LR
                 new ParameterizedTypeReference<List<Reservation>>() {}
 ```
 
+## Test call to server
+
+![fig 1](../images/testcallbackend.PNG)
+
+
 ## Project folders
 
-![fig 1](../images/foldersAppClientThymeLeaf.PNG)
+![fig 2](../images/foldersAppClientThymeLeaf.PNG)
 
-![fig 2](../images/foldersProjectBackend.PNG)
+![fig 3](../images/foldersProjectBackend.PNG)
 
 ## Result
 
-![fig 3](../images/pagelistreservation.PNG)
+![fig 4](../images/pagelistreservation.PNG)
