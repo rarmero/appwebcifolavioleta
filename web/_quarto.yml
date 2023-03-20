@@ -47,6 +47,7 @@ website:
         - section: "Mongodb"
           contents: 
            - "mongodb/mongodb.qmd"
+           - "mongodb/mongodb2.qmd"
     - id: "tasks" 
       title: "Devops"
       contents:
