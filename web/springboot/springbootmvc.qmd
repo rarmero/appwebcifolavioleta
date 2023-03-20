@@ -11,22 +11,6 @@ title: "springboot MVC"
 
 # Example: Reserves management
 
-
-## Model
-
-```java
-public class Reservation {
-   private int idUser;
-   private int idPointCharge;
-   private Date dateStart;
-   private Date dateEnd;
-   private Boolean accepted;
-
-}
-
-```
-
-
 ## Dependencies
 
 ```java
@@ -47,12 +31,61 @@ public class Reservation {
 	</dependencies>
 ```
 
+## Model
+
+```java
+public class Reservation {
+   private int idUser;
+   private int idPointCharge;
+   private Date dateStart;
+   private Date dateEnd;
+   private Boolean accepted;
+
+}
+
+```
+
+## Repository
+
+```Java
+@Repository
+public class ReservationRepository {
+}
+
+```
+## Services
+
+```Java
+
+public interface ReservationService {
+
+    void reservationAdd(Reservation reservation);
+    List<Reservation> getAllReservations() ;
+    void reservationDelete(Reservation reservation);
+    void reservationDeleteById(int reservationId);
+    void reservationUpdate(int index,Reservation reservation);
+    Reservation reservationDetail(int index);
+    Reservation getReservationById(int index);
+    Reservation getReservationsByIdUser(int idUser);
+
+}
+
+@Service
+public class ReservationServiceImpl implements ReservationService{
+
+    @Autowired
+    private ReservationRepository reservationRepository;
+
+// [.......]
+
+}
+
+```
 
 ## Views
 
 
-[webpages](https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootControllerView/src/main/resources/templates){.external}
-
+[webpages](https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootControllerView/src/main/resources/templates/reservation){.external}
 
 ## Annotacions used
 
