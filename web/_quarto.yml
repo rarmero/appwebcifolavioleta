@@ -53,7 +53,10 @@ website:
       contents:
         - text: "Devops"
         - text: "---"  
-        - section: "Pipeline"
+        - section: "Linux"
+          contents:
+           - "createmd.qmd"
+        - section: "Scripting"
           contents:
            - "pipeline.qmd"
         - section: "Kubernettes"

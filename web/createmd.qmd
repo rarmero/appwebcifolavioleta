@@ -1,0 +1,59 @@
+---
+title: "Script to create md file"
+---
+
+# Requirement
+
+publish books for the course
+
+# Design
+
+fill csv with content to create markdown file
+
+# code
+
+```bash
+# delete existing md files
+if [ -n "$(ls -A md 2>/dev/null)" ]
+then
+echo "removing existing files"
+rm md/*
+fi
+# read csv and create md files
+INPUT=books.csv
+OLDIFS=$IFS
+IFS=';'
+[ ! -f $INPUT ] && { echo "$INPUT file not found"; exit 99; }
+while read title autor subtitle date description categories subcategories image
+do
+name_file=$(echo "md/$title" | tr -d '"').qmd
+echo "---" >> $name_file
+echo "title: $title" >> $name_file
+echo "author: $autor" >> $name_file
+echo "subtitle: $subtitle" >> $name_file
+echo "date: $date" >> $name_file
+echo "date-modified: last-modified" >> $name_file
+echo "date-format: full" >> $name_file
+echo "description: $description" >> $name_file
+echo "categories: [$categories]" >> $name_file
+echo "subcategories: [$subcategories]" >> $name_file
+echo "format:" >> $name_file
+echo "  html" >> $name_file
+echo "---" >> $name_file
+echo "" >> $name_file
+echo "## Book Image" >> $name_file
+echo "" >> $name_file
+img=$(echo $image | tr -d '\n' | tr -d '\r')
+echo "![](/books/$img)" >> $name_file
+echo "" >> $name_file
+echo "## More info"  >> $name_file
+echo "" >> $name_file
+done < $INPUT
+IFS=$OLDIFS
+echo "operation finished"
+
+```
+
+## Result
+
+![fig 1](images/filesmd.PNG)
