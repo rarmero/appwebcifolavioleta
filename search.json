@@ -35,6 +35,48 @@
     "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
   },
   {
+    "objectID": "jobsps.html",
+    "href": "jobsps.html",
+    "title": "PowerShell Jobs",
+    "section": "",
+    "text": "PS D:\\srctest\\powershelltest> Start-Job -Scriptblock{Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers}\n\nId     Name            PSJobTypeName   State         HasMoreData     Location             Command\n--     ----            -------------   -----         -----------     --------             -------\n1      Job9            BackgroundJob   Running       True            localhost            Invoke-WebRequest -Uri \"…\n\nPS C:\\Users\\AdministradorCIFO> Receive-Job 1\n\ncovers     RunspaceId\n------     ----------\n{10308698} 0f626350-35fe-4576-aeb5-c21ef3610f70"
+  },
+  {
+    "objectID": "jobsps.html#code",
+    "href": "jobsps.html#code",
+    "title": "PowerShell Jobs",
+    "section": "Code",
+    "text": "Code\nType this code and save as job1.ps1\n$getBookJob = Start-Job –ScriptBlock {  \n    Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers\n}"
+  },
+  {
+    "objectID": "jobsps.html#run-job",
+    "href": "jobsps.html#run-job",
+    "title": "PowerShell Jobs",
+    "section": "Run job",
+    "text": "Run job\nD:\\srctest\\powershelltest\\job1.ps1"
+  },
+  {
+    "objectID": "jobsps.html#get-command--job",
+    "href": "jobsps.html#get-command--job",
+    "title": "PowerShell Jobs",
+    "section": "Get-Command *-Job",
+    "text": "Get-Command *-Job\nto manage the jobs\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "jobsps.html#wait-job-getbookjob",
+    "href": "jobsps.html#wait-job-getbookjob",
+    "title": "PowerShell Jobs",
+    "section": "Wait-Job $getBookJob",
+    "text": "Wait-Job $getBookJob\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "jobsps.html#receive-job-getbookjob",
+    "href": "jobsps.html#receive-job-getbookjob",
+    "title": "PowerShell Jobs",
+    "section": "Receive-Job $getBookJob",
+    "text": "Receive-Job $getBookJob\n\n\n\nfig 3"
+  },
+  {
     "objectID": "LabMD01-1.html",
     "href": "LabMD01-1.html",
     "title": "Quarto publish",
@@ -247,7 +289,7 @@
   {
     "objectID": "pipeline.html",
     "href": "pipeline.html",
-    "title": "Pipeline",
+    "title": "Pipeline sonarqube",
     "section": "",
     "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
   },
