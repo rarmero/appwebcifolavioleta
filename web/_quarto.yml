@@ -56,7 +56,10 @@ website:
         - section: "Linux"
           contents:
            - "createmd.qmd"
-        - section: "Scripting"
+        - section: "PowerShell"
+          contents:
+           - "jobsps.qmd"
+        - section: "Pipeline"
           contents:
            - "pipeline.qmd"
         - section: "Kubernettes"
