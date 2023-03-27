@@ -1,0 +1,76 @@
+---
+title: "Script to know the commit date"
+---
+
+# Requirement
+
+date of last commit
+
+# Design
+
+fill csv with repos 
+
+# code
+
+```bash
+
+INPUT=repos.csv
+OLDIFS=$IFS
+IFS=','
+[ ! -f $INPUT ] && { echo "$INPUT file not found"; exit 99; }
+while read OWNER REPO
+do
+
+url=https://api.github.com/repos/$OWNER/$REPO/commits
+
+echo $url
+datecommit=$(curl --silent --max-time 10 -Z "$url" | jq .'[0] | "\(.commit.author.date)"')
+
+echo "$OWNER $datecommit"	
+
+done < $INPUT
+IFS=$OLDIFS
+
+```
+## Control rules
+
+```bash
+d=$(TZ="UTC" date -j -f "%Y-%m-%dT%H:%M:%SZ" "$datecommit" "+%d")
+
+now=$(date "+DATE: %Y-%m-%d%n")
+
+if [`expr $d + 7`]
+then 
+    echo "many days $OWNER $datecommit" 
+else
+    echo "correct" 
+fi
+
+```
+
+
+
+
+## Result
+
+```
+https://api.github.com/repos/carla-velasco7e4/carla-velasco7e4.github.io/commits
+carla-velasco7e4 "2023-03-01T12:24:26Z"
+https://api.github.com/repos/aznale/aznale.github.io/commits
+aznale "2023-03-27T18:15:38Z"
+https://api.github.com/repos/DavidMaqueda/testtest3/commits
+DavidMaqueda "2023-03-07T12:31:02Z"
+https://api.github.com/repos/albertmbu/wiki/commits
+albertmbu "2023-03-15T12:30:34Z"
+https://api.github.com/repos/rudevops/miweb/commits
+rudevops "2023-01-27T11:58:55Z"
+https://api.github.com/repos/vallvicity/CursoDAW/commits
+vallvicity "2023-03-06T11:55:54Z"
+https://api.github.com/repos/vcalvache/mywebsite/commits
+vcalvache "2023-03-13T19:59:33Z"
+https://api.github.com/repos/leonpurple/combobackend/commits
+leonpurple "2023-02-13T00:24:29Z"
+https://api.github.com/repos/rarmero/appwebcifolavioleta/commits
+rarmero "2023-03-23T12:15:44Z"
+
+```

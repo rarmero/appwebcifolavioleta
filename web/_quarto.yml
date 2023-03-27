@@ -56,6 +56,7 @@ website:
         - section: "Linux"
           contents:
            - "createmd.qmd"
+           - "datecommit.qmd"
         - section: "PowerShell"
           contents:
            - "jobsps.qmd"
