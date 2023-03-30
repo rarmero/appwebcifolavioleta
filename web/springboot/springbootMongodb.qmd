@@ -2,7 +2,15 @@
 title: "springboot mongodb"
 ---
 
-
+## local installation on mac
 
 ![fig 1](../images/mongodblocal.png)
+
+
+## acces via Compass
+
+![fig 2](../images/mongodbcompass.png)
+
+
+
 
