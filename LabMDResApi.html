@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -279,7 +279,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </li>  
         <li>
     <a class="dropdown-item" href="./springboot/springbootRest.html">
- <span class="dropdown-text">springboot rest with mongodb</span></a>
+ <span class="dropdown-text">springboot rest</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Mongodb</li>
@@ -447,7 +447,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./springboot/springbootRest.html" class="sidebar-item-text sidebar-link">springboot rest with mongodb</a>
+  <a href="./springboot/springbootRest.html" class="sidebar-item-text sidebar-link">springboot rest</a>
   </div>
 </li>
       </ul>
@@ -582,7 +582,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="50" data-source-offset="-1"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 49;"><span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>holidaysContent <span class="op">=</span> <span class="cf">await</span> d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://date.nager.at/api/v2/publicholidays/2023/"</span> <span class="op">+</span>countrySelected)</span>
+<div class="sourceCode cell-code hidden" id="cb4" data-startfrom="50" data-source-offset="-2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 49;"><span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>holidaysContent <span class="op">=</span> <span class="cf">await</span> d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://date.nager.at/api/v2/publicholidays/2023/"</span> <span class="op">+</span>countrySelected)</span>
 <span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>holidays <span class="op">=</span> holidaysContent<span class="op">.</span><span class="fu">map</span>(holidaysContent <span class="kw">=&gt;</span> {</span>
 <span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> name <span class="op">=</span> holidaysContent<span class="op">.</span><span class="at">name</span><span class="op">;</span></span>
@@ -621,7 +621,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </main> <!-- /main -->
 
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"d3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});\n\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"contents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\n\nnames = contents.map(contents => {\nconst name = contents.name;\n\nconst url = contents.html_url;\nreturn {name,url}\n}\n)\n\nInputs.table(names, { sort: \"value\", reverse: true })\n\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"viewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\n\nholidays = holidaysContent.map(holidaysContent => {\nconst name = holidaysContent.name;\nconst date = holidaysContent.date;\nreturn {name,date}\n}\n)\n\nInputs.table(holidays, { sort: \"value\", reverse: true })\n\n"},{"methodName":"interpretQuiet","source":"shinyInput('countrySelected')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"d3 = require('d3')\r\n\r\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\r\n{\r\n    console.log(data);\r\n});\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"contents = await d3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\")\r\n\r\nnames = contents.map(contents => {\r\nconst name = contents.name;\r\n\r\nconst url = contents.html_url;\r\nreturn {name,url}\r\n}\r\n)\r\n\r\nInputs.table(names, { sort: \"value\", reverse: true })\r\n\r\n"},{"methodName":"interpret","cellName":"ojs-cell-3","inline":false,"source":"viewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\r\n"},{"methodName":"interpret","cellName":"ojs-cell-4","inline":false,"source":"\r\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\r\n\r\nholidays = holidaysContent.map(holidaysContent => {\r\nconst name = holidaysContent.name;\r\nconst date = holidaysContent.date;\r\nreturn {name,date}\r\n}\r\n)\r\n\r\nInputs.table(holidays, { sort: \"value\", reverse: true })\r\n\r\n"},{"methodName":"interpretQuiet","source":"shinyInput('countrySelected')"}]}
 </script>
 <script type="module">
 window._ojs.paths.runtimeToDoc = "../..";

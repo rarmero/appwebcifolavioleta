@@ -1,17 +1,444 @@
 [
   {
-    "objectID": "Task2.html",
-    "href": "Task2.html",
-    "title": "Quarto with docker",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About …..",
     "section": "",
-    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
+    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
   },
   {
-    "objectID": "Theory1.html",
-    "href": "Theory1.html",
-    "title": "Links",
+    "objectID": "createmd.html",
+    "href": "createmd.html",
+    "title": "Script to create md file",
     "section": "",
-    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
+    "text": "publish books for the course"
+  },
+  {
+    "objectID": "createmd.html#result",
+    "href": "createmd.html#result",
+    "title": "Script to create md file",
+    "section": "Result",
+    "text": "Result\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "datecommit.html",
+    "href": "datecommit.html",
+    "title": "Script to know the commit date",
+    "section": "",
+    "text": "date of last commit"
+  },
+  {
+    "objectID": "datecommit.html#control-rules",
+    "href": "datecommit.html#control-rules",
+    "title": "Script to know the commit date",
+    "section": "Control rules",
+    "text": "Control rules\nd=$(TZ=\"UTC\" date -j -f \"%Y-%m-%dT%H:%M:%SZ\" \"$datecommit\" \"+%d\")\n\nnow=$(date \"+DATE: %Y-%m-%d%n\")\n\nif [`expr $d + 7`]\nthen \n    echo \"many days $OWNER $datecommit\" \nelse\n    echo \"correct\" \nfi"
+  },
+  {
+    "objectID": "datecommit.html#result",
+    "href": "datecommit.html#result",
+    "title": "Script to know the commit date",
+    "section": "Result",
+    "text": "Result\nhttps://api.github.com/repos/carla-velasco7e4/carla-velasco7e4.github.io/commits\ncarla-velasco7e4 \"2023-03-01T12:24:26Z\"\nhttps://api.github.com/repos/aznale/aznale.github.io/commits\naznale \"2023-03-27T18:15:38Z\"\nhttps://api.github.com/repos/DavidMaqueda/testtest3/commits\nDavidMaqueda \"2023-03-07T12:31:02Z\"\nhttps://api.github.com/repos/albertmbu/wiki/commits\nalbertmbu \"2023-03-15T12:30:34Z\"\nhttps://api.github.com/repos/rudevops/miweb/commits\nrudevops \"2023-01-27T11:58:55Z\"\nhttps://api.github.com/repos/vallvicity/CursoDAW/commits\nvallvicity \"2023-03-06T11:55:54Z\"\nhttps://api.github.com/repos/vcalvache/mywebsite/commits\nvcalvache \"2023-03-13T19:59:33Z\"\nhttps://api.github.com/repos/leonpurple/combobackend/commits\nleonpurple \"2023-02-13T00:24:29Z\"\nhttps://api.github.com/repos/rarmero/appwebcifolavioleta/commits\nrarmero \"2023-03-23T12:15:44Z\""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Web App Cifo La Violeta",
+    "section": "",
+    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
+  },
+  {
+    "objectID": "javasonarqube.html",
+    "href": "javasonarqube.html",
+    "title": "Java code MOOC Helsinki",
+    "section": "",
+    "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "jobsps.html",
+    "href": "jobsps.html",
+    "title": "PowerShell Jobs",
+    "section": "",
+    "text": "PS D:\\srctest\\powershelltest> Start-Job -Scriptblock{Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers}\n\nId     Name            PSJobTypeName   State         HasMoreData     Location             Command\n--     ----            -------------   -----         -----------     --------             -------\n1      Job9            BackgroundJob   Running       True            localhost            Invoke-WebRequest -Uri \"…\n\nPS C:\\Users\\AdministradorCIFO> Receive-Job 1\n\ncovers     RunspaceId\n------     ----------\n{10308698} 0f626350-35fe-4576-aeb5-c21ef3610f70"
+  },
+  {
+    "objectID": "jobsps.html#code",
+    "href": "jobsps.html#code",
+    "title": "PowerShell Jobs",
+    "section": "Code",
+    "text": "Code\nType this code and save as job1.ps1\n$getBookJob = Start-Job –ScriptBlock {  \n    Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers\n}"
+  },
+  {
+    "objectID": "jobsps.html#run-job",
+    "href": "jobsps.html#run-job",
+    "title": "PowerShell Jobs",
+    "section": "Run job",
+    "text": "Run job\nD:\\srctest\\powershelltest\\job1.ps1"
+  },
+  {
+    "objectID": "jobsps.html#get-command--job",
+    "href": "jobsps.html#get-command--job",
+    "title": "PowerShell Jobs",
+    "section": "Get-Command *-Job",
+    "text": "Get-Command *-Job\nto manage the jobs\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "jobsps.html#wait-job-getbookjob",
+    "href": "jobsps.html#wait-job-getbookjob",
+    "title": "PowerShell Jobs",
+    "section": "Wait-Job $getBookJob",
+    "text": "Wait-Job $getBookJob\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "jobsps.html#receive-job-getbookjob",
+    "href": "jobsps.html#receive-job-getbookjob",
+    "title": "PowerShell Jobs",
+    "section": "Receive-Job $getBookJob",
+    "text": "Receive-Job $getBookJob\n\n\n\nfig 3"
+  },
+  {
+    "objectID": "LabMD01-1.html",
+    "href": "LabMD01-1.html",
+    "title": "Quarto publish",
+    "section": "",
+    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "LabMDObservable.html",
+    "href": "LabMDObservable.html",
+    "title": "Quarto Markdown, code & data",
+    "section": "",
+    "text": "Code : MF01-0492"
+  },
+  {
+    "objectID": "LabMDObservable.html#fileattachment",
+    "href": "LabMDObservable.html#fileattachment",
+    "title": "Quarto Markdown, code & data",
+    "section": "FileAttachment",
+    "text": "FileAttachment\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nExample to show specific field position in the array.\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\nExample to show specific position in the array.\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
+  },
+  {
+    "objectID": "LabMDObservable.html#list-of-all-content.",
+    "href": "LabMDObservable.html#list-of-all-content.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content.",
+    "text": "list of all content.\n\ndata"
+  },
+  {
+    "objectID": "LabMDObservable.html#list-of-all-content-with-map.",
+    "href": "LabMDObservable.html#list-of-all-content-with-map.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content with map.",
+    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
+    "href": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
+    "title": "Quarto Markdown, code & data",
+    "section": "CNCF Cloud Native Interactive Landscape",
+    "text": "CNCF Cloud Native Interactive Landscape\n\ninteractivecsv = await FileAttachment(\"interactive-landscape.csv\").csv({ typed: true })\ninteractive = interactivecsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(interactive, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "LabMDResApi.html",
+    "href": "LabMDResApi.html",
+    "title": "Rest Api",
+    "section": "",
+    "text": "Code : MF01-0492"
+  },
+  {
+    "objectID": "LabMDResApi.html#holidays",
+    "href": "LabMDResApi.html#holidays",
+    "title": "Rest Api",
+    "section": "Holidays",
+    "text": "Holidays\nSelect the country to know public holidays\n\nviewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\n\n\n\n\n\n\n\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\n\nholidays = holidaysContent.map(holidaysContent => {\nconst name = holidaysContent.name;\nconst date = holidaysContent.date;\nreturn {name,date}\n}\n)\n\nInputs.table(holidays, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "LabSE00-1.html",
+    "href": "LabSE00-1.html",
+    "title": "Lab SE 00-1",
+    "section": "",
+    "text": "10 CHARACTERISTICS OF A GOOD STUDENT"
+  },
+  {
+    "objectID": "LabSE00-1.html#code",
+    "href": "LabSE00-1.html#code",
+    "title": "Lab SE 00-1",
+    "section": "2 Code",
+    "text": "2 Code\n\n2.1 Java Code\n\n   int growthMindset;\n   int brave;\n   int organised;\n   int consistent;\n   int ableToDealWithFailure;\n   int setGoals;\n   int ableToConnectLearningToLife;\n   int howToLookAfterTheirMentalHealth;\n   int PartnersWithTeachers;\n   int valuesEducation;\n\n\n2.2 Rules\n\n2.2.1 A GOOD STUDENT HAS A GROWTH MINDSET\n\n\n\n2.3 Code repository\nGitHub Source"
+  },
+  {
+    "objectID": "LabSE01-1.html",
+    "href": "LabSE01-1.html",
+    "title": "Lab SE 01-1",
+    "section": "",
+    "text": "GitHub Source"
+  },
+  {
+    "objectID": "mongodb/mongodb.html",
+    "href": "mongodb/mongodb.html",
+    "title": "Mongodb Labs:mongodb-driver-sync",
+    "section": "",
+    "text": "<dependency>\n    <groupId>org.mongodb</groupId>\n    <artifactId>mongodb-driver-sync</artifactId>\n    <version>4.4.2</version>\n</dependency>\n\n\n\n final Properties myAppProperties = new Properties();\n myAppProperties.load(new FileInputStream(\"src/main/resources/application.properties\"));\n\n MongoClient mongoClient = MongoClients.create(myAppProperties.getProperty(\"app.uri\"))\n\n MongoDatabase database = mongoClient.getDatabase(myAppProperties.getProperty(\"app.database\"));\n\n\n\n  MongoCollection<Document> collection = database.getCollection(\"reserve\");\n\n//Retrieving the documents\nFindIterable<Document> iterDoc = collection.find();\nIterator it = iterDoc.iterator();\nwhile (it.hasNext()) {\nSystem.out.println(\"********************************\" + it.next());\n}\n\n\n\nDocument{{_id=63f3c23835bf045fc8c4eeba, idUser=123, idPointCharge=123, dateStart=Sun Jan 01 00:00:00 CET 2023, dateEnd=Sat Jan 01 00:00:00 CET 2022, accepted=0}}\nDocument{{_id=63f3ccfd35bf045fc8c4eebc, idUser=123, idPointCharge=124, dateStart=Mon Jan 01 00:00:00 CET 2024, dateEnd=Mon Jan 01 00:00:00 CET 2024, accepted=0}}"
+  },
+  {
+    "objectID": "mongodb/mongodb2.html",
+    "href": "mongodb/mongodb2.html",
+    "title": "Mongodb Labs:spring-boot-starter-data-mongodb",
+    "section": "",
+    "text": "<dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-mongodb</artifactId>\n</dependency>\n\n\n\napp.uri=mongodb+srv://<user>:<password>@cluster0.<namecluster>.mongodb.net/electrolinera\napp.database=electrolinera\n\n\n\n@Repository\npublic interface ReservationRepository extends MongoRepository<Reservation, String> {\n\n\n\nimport com.example.mongodb2.model.Reservation;\nimport com.example.mongodb2.repository.ReservationRepository;\nimport java.util.ArrayList;\nimport java.util.List;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.CrossOrigin;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RequestParam;\nimport org.springframework.web.bind.annotation.RestController;\n\n\n@CrossOrigin(origins = \"http://localhost:8081\")\n@RestController\n@RequestMapping(\"/api\")\npublic class ReservationController {\n        \n  @Autowired\n  ReservationRepository reservationRepository;\n  \n  \n  @GetMapping(\"/reservations\")\n  public ResponseEntity<List<Reservation>> getAllReservations(@RequestParam(required = false) Integer idUser) {\n    try {\n    List<Reservation> reservations = new ArrayList<Reservation>();\n\n    if (idUser == null)\n      reservationRepository.findAll().forEach(reservations::add);\n    else\n      reservationRepository.findByIdUser(idUser).forEach(reservations::add);\n\n    if (reservations.isEmpty()) {\n      return new ResponseEntity<>(HttpStatus.NO_CONTENT);\n    }\n\n    return new ResponseEntity<>(reservations, HttpStatus.OK);\n  } catch (Exception e) {\n        System.out.println(e.getMessage());\n    return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);\n  }\n  }\n  \n}\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "oil/content/celler1.html",
+    "href": "oil/content/celler1.html",
+    "title": "ARBEQUINA",
+    "section": "",
+    "text": "Categoria\nSKU\nPreu\n\n\n\n\nGinebra andalusa ZAYT\n30\n€19.50"
+  },
+  {
+    "objectID": "oil/content/celler1.html#descripció",
+    "href": "oil/content/celler1.html#descripció",
+    "title": "ARBEQUINA",
+    "section": "Descripció",
+    "text": "Descripció\nGinebra andalusa ZAYT d’Olives Mançanella, Gordal i Hojiblanca en diferents maduracions (Lucena-Córdoba)\n\nNotes de cata:\n\n\n1er en nariz, Zayt es caracteritza per ser una ginebra molt perfumada. En un primer plànol apareixen notes herbals a oliva i romaní, creant un perfum original i fresc.\n2º, en boca, Zayt, ens recorda a l’olivar mediterrani, deixant un sabor rodó i untuós. Notarem per fases puntes balsàmiques i fruiters, recordant a fruita blanca i espècies aromàtiques del sur.\nFinalment, amb les seves sis destil-lacions, deixa en boca una agradable barreja de sabors molt bé ensamblats i compensats."
+  },
+  {
+    "objectID": "oil/content/celler1.html#com-degustar-la",
+    "href": "oil/content/celler1.html#com-degustar-la",
+    "title": "ARBEQUINA",
+    "section": "Com degustar-la:",
+    "text": "Com degustar-la:\nGràcies al seu sabor rodó i suau, recomanem maridar Zayt amb un twist de cítrics i a elecció del consumidor, romaní o oliva. Sabor mediterrani, complex i olor a la nostra terra, Zayt segur que supera les seves espectatives.\nProba alguna cosa diferent i única!!\n\nlab delivery Code (UF03-1843)"
+  },
+  {
+    "objectID": "oil/content/oil1.html",
+    "href": "oil/content/oil1.html",
+    "title": "ARBEQUINA",
+    "section": "",
+    "text": "Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\n\n\nfig 1\n\n\n\nfitxa\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€34.00\n\n\n\n\n\n\n\nGarrafa 5L\nExtracció en fred\nCampanya 2022-2023\nSIURANA - SANTA OLIVA (TARRAGONA)\nOliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\n\n\n\n\nNota\n\n\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\n\n\n\n\nAtenció\n\n\n\n\n\ninformació important\n\n\n\n\nlab delivery Code (UF03-1843)"
+  },
+  {
+    "objectID": "oil/content/oil12.html",
+    "href": "oil/content/oil12.html",
+    "title": "ARBEQUINA",
+    "section": "",
+    "text": "Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\nfig 1\n\n\n\ndetails\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€17.00\n\n\n\n\nDetallsNota\n\n\nGarrafa 2L Extracció en fred Campanya 2022-2023 SIURANA - SANTA OLIVA (TARRAGONA) Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\nlab delivery Code (UF03-1843)"
+  },
+  {
+    "objectID": "oil/content/oil3.html",
+    "href": "oil/content/oil3.html",
+    "title": "Estoig Lo Castell",
+    "section": "",
+    "text": "Categoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n67\n€27.15\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "oil/content/oil3.html#descripció",
+    "href": "oil/content/oil3.html#descripció",
+    "title": "Estoig Lo Castell",
+    "section": "Descripció",
+    "text": "Descripció\nMAS DELS CASTELLANS estoig Lo Castell\n\n1 ampolla vidre 0,50L Oli d’Oliva EMPELTRE Collita Temprana Verge Extra\n1 ampolla vidre 0,50L Oli d’Oliva EMPELTRE Verge Extra\n\n1 tarro vidre 250gr Olives verdes SEVILLENQUES d’Aragó\n\nExtraccions en fred\n\nCampanya 2022-2023 | |\n\n\nMATARRAÑA - CALACEITE (TERUEL)\n\n\nlab delivery Code (UF03-1843)"
+  },
+  {
+    "objectID": "oil/fileAttachment.html",
+    "href": "oil/fileAttachment.html",
+    "title": "File Attachment",
+    "section": "",
+    "text": "data = await FileAttachment(\"content/oildata.csv\").csv()"
+  },
+  {
+    "objectID": "oil/fileAttachment.html#list-of-all-content-with-map.",
+    "href": "oil/fileAttachment.html#list-of-all-content-with-map.",
+    "title": "File Attachment",
+    "section": "list of all content with map.",
+    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"content/oildata.csv\").csv({ typed: true })\noils = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(oils, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "oil/fileAttachment.html#list-of-some-fields-with-map.",
+    "href": "oil/fileAttachment.html#list-of-some-fields-with-map.",
+    "title": "File Attachment",
+    "section": "list of some fields with map.",
+    "text": "list of some fields with map.\n\ndataoil = datacsv.map(function(element){\n    return element.author +  \", \" + element.title;\n})\n\ndataoil[2]"
+  },
+  {
+    "objectID": "oil/ListOils.html",
+    "href": "oil/ListOils.html",
+    "title": "Listings default",
+    "section": "",
+    "text": "ARBEQUINA\n\n\nAmpolla\n\n\n\n\nCeller\n\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 5L\n\n\n\n\nVerges Extra\n\n\n\n\nCampanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 2L\n\n\n\n\nVerges Extra\n\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nEstoig Lo Castell\n\n\nEstoig\n\n\n\n\nGourmet\n\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "oil/ListOilsCustom.html",
+    "href": "oil/ListOilsCustom.html",
+    "title": "Listings Custom",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Origen\n        \n         \n          Preu\n        \n         \n          Producto\n        \n         \n          Capacitat\n        \n         \n          web\n        \n     \n  \n    \n      \n      \n    \n\n\n\n  \n \n  Producto\n  Origen Preu\n  Capacitat web\n \n  \n\n  \n    \n       mas dels castellans \n      \n      AOlis d'Oliva Verges Extra\n    \n  \n     €34.00  \n  \n     2L \n  \n     mas dels castellans\n   \n  \n    \n       mas dels castellans \n      \n      Olis d'Oliva Verges Extra\n    \n  \n     €24.00  \n  \n     5L \n  \n     mas dels castellans\n   \n  \n    \n       LOS CERROS DE ÚBEDA \n      \n      Olis d'Oliva Verges Extra\n    \n  \n     €34.50s  \n  \n     5L \n  \n     LOS CERROS DE ÚBEDA\n   \n\n\nNo matching items\n\n  \n      it does not matter how slowly you go so long as you do not stop (Confucios)"
+  },
+  {
+    "objectID": "oil/ListOilsGrid.html",
+    "href": "oil/ListOilsGrid.html",
+    "title": "Listings grid",
+    "section": "",
+    "text": "ARBEQUINA\n\n\n\nCeller\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nCampanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstoig Lo Castell\n\n\n\nGourmet\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "oil/ListOilsTable.html",
+    "href": "oil/ListOilsTable.html",
+    "title": "Listings table",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Producto\n        \n         \n          Origen\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProducto\n\n\nOrigen\n\n\nCategoria\n\n\nCapacitat\n\n\nDesc\n\n\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nCeller\n\n\nAmpolla\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 5L\n\n\nCampanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 2L\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\nEstoig Lo Castell\n\n\n\n\nGourmet\n\n\nEstoig\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "PatternCommand.html",
+    "href": "PatternCommand.html",
+    "title": "Command",
+    "section": "",
+    "text": "We have a laboratory to develop a software to manage a library. View details\nYou can see more details about the pattern, here\nWe need a menu system."
+  },
+  {
+    "objectID": "PatternCommand.html#github-code",
+    "href": "PatternCommand.html#github-code",
+    "title": "Command",
+    "section": "GitHub code",
+    "text": "GitHub code\nBelow I build a menu frame to develop concrete actions of the lab\n\nview code"
+  },
+  {
+    "objectID": "patterns1.html",
+    "href": "patterns1.html",
+    "title": "Design Patterns",
+    "section": "",
+    "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
+  },
+  {
+    "objectID": "pipeline.html",
+    "href": "pipeline.html",
+    "title": "Pipeline sonarqube",
+    "section": "",
+    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+  },
+  {
+    "objectID": "Project1.html",
+    "href": "Project1.html",
+    "title": "Chrome OS applications",
+    "section": "",
+    "text": "Installed on Acer Spin513 qualcomm snpadragon\nOS Debian linux 11 (bullseye)"
+  },
+  {
+    "objectID": "Project1.html#references",
+    "href": "Project1.html#references",
+    "title": "Chrome OS applications",
+    "section": "References:",
+    "text": "References:\n\nvisual Code\ndocker"
+  },
+  {
+    "objectID": "Project1.html#linux-terminal",
+    "href": "Project1.html#linux-terminal",
+    "title": "Chrome OS applications",
+    "section": "Linux terminal",
+    "text": "Linux terminal\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "Project1.html#applications-installed",
+    "href": "Project1.html#applications-installed",
+    "title": "Chrome OS applications",
+    "section": "Applications installed:",
+    "text": "Applications installed:\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 3\n\n\n\n\n\n\n\n\n\n\n\nDocker\n\n\n\n\n\n\n\n\nfig 4"
+  },
+  {
+    "objectID": "Project1b.html",
+    "href": "Project1b.html",
+    "title": "Others ways to mobility",
+    "section": "",
+    "text": "Never install\nAir Table\nZapier"
+  },
+  {
+    "objectID": "Project2.html",
+    "href": "Project2.html",
+    "title": "SonarQube",
+    "section": "",
+    "text": "SonarQube like SAST\nSonarQube"
+  },
+  {
+    "objectID": "Project2.html#motivation",
+    "href": "Project2.html#motivation",
+    "title": "SonarQube",
+    "section": "Motivation",
+    "text": "Motivation\n\nopen source\ngood comments"
+  },
+  {
+    "objectID": "Project2.html#how-to-use-sonarqube",
+    "href": "Project2.html#how-to-use-sonarqube",
+    "title": "SonarQube",
+    "section": "How to use SonarQube",
+    "text": "How to use SonarQube\n\n1. Generating token\nInstructions\n\n\n2. comand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\n3. Reference how to use SonarQube\nInstructions\n\n\n4. Jenkins\nInstructions\n\n\n\n\n\n\npipeline with jenkins\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "Project2.html#links-references",
+    "href": "Project2.html#links-references",
+    "title": "SonarQube",
+    "section": "Links references",
+    "text": "Links references\n\n\nList of tools"
+  },
+  {
+    "objectID": "Project2Management.html",
+    "href": "Project2Management.html",
+    "title": "SonarQube Management",
+    "section": "",
+    "text": "Software\n\n\n\n\nJira\n\n\nGithub"
+  },
+  {
+    "objectID": "Project2Management.html#jira",
+    "href": "Project2Management.html#jira",
+    "title": "SonarQube Management",
+    "section": "Jira",
+    "text": "Jira\n\n\n\n\n\n\nPanel jira\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "Project2Management.html#github",
+    "href": "Project2Management.html#github",
+    "title": "SonarQube Management",
+    "section": "Github",
+    "text": "Github\n\n\n\nfig 2\n\n\nProject on Github"
+  },
+  {
+    "objectID": "Project3.html",
+    "href": "Project3.html",
+    "title": "Software Tools",
+    "section": "",
+    "text": "Tools to consider\nMore Free DAST"
+  },
+  {
+    "objectID": "Project3.html#owasp",
+    "href": "Project3.html#owasp",
+    "title": "Software Tools",
+    "section": "OWASP",
+    "text": "OWASP\n\nowasp\ntesting guide\nDocumentation\ntesting guide(dpf)"
+  },
+  {
+    "objectID": "Project3.html#nikto",
+    "href": "Project3.html#nikto",
+    "title": "Software Tools",
+    "section": "Nikto",
+    "text": "Nikto\n\nNikto web"
+  },
+  {
+    "objectID": "Project3.html#zap",
+    "href": "Project3.html#zap",
+    "title": "Software Tools",
+    "section": "ZAP",
+    "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
+  },
+  {
+    "objectID": "springboot/springbootMongodb.html",
+    "href": "springboot/springbootMongodb.html",
+    "title": "springboot mongodb",
+    "section": "",
+    "text": "fig 1"
+  },
+  {
+    "objectID": "springboot/springbootMongodb.html#acces-via-compass",
+    "href": "springboot/springbootMongodb.html#acces-via-compass",
+    "title": "springboot mongodb",
+    "section": "acces via Compass",
+    "text": "acces via Compass\n\n\n\nfig 2"
   },
   {
     "objectID": "springboot/springbootmvc.html",
@@ -77,18 +504,18 @@
     "text": "content of example on github\nsource"
   },
   {
-    "objectID": "springboot/springbootMongodb.html",
-    "href": "springboot/springbootMongodb.html",
-    "title": "springboot mongodb",
+    "objectID": "springboot/springbootRest.html",
+    "href": "springboot/springbootRest.html",
+    "title": "springboot rest",
     "section": "",
-    "text": "fig 1"
+    "text": "Source"
   },
   {
-    "objectID": "springboot/springbootMongodb.html#acces-via-compass",
-    "href": "springboot/springbootMongodb.html#acces-via-compass",
-    "title": "springboot mongodb",
-    "section": "acces via Compass",
-    "text": "acces via Compass\n\n\n\nfig 2"
+    "objectID": "springboot/springbootRest.html#model-data-with-mongodb",
+    "href": "springboot/springbootRest.html#model-data-with-mongodb",
+    "title": "springboot rest",
+    "section": "model data with Mongodb",
+    "text": "model data with Mongodb"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html",
@@ -140,6 +567,13 @@
     "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
   },
   {
+    "objectID": "Task2.html",
+    "href": "Task2.html",
+    "title": "Quarto with docker",
+    "section": "",
+    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
+  },
+  {
     "objectID": "testing.html",
     "href": "testing.html",
     "title": "Testing",
@@ -147,430 +581,10 @@
     "text": "Unit\nIntegration\nFunctional"
   },
   {
-    "objectID": "javasonarqube.html",
-    "href": "javasonarqube.html",
-    "title": "Java code MOOC Helsinki",
+    "objectID": "Theory1.html",
+    "href": "Theory1.html",
+    "title": "Links",
     "section": "",
-    "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "Project1.html",
-    "href": "Project1.html",
-    "title": "Chrome OS applications",
-    "section": "",
-    "text": "Installed on Acer Spin513 qualcomm snpadragon\nOS Debian linux 11 (bullseye)"
-  },
-  {
-    "objectID": "Project1.html#references",
-    "href": "Project1.html#references",
-    "title": "Chrome OS applications",
-    "section": "References:",
-    "text": "References:\n\nvisual Code\ndocker"
-  },
-  {
-    "objectID": "Project1.html#linux-terminal",
-    "href": "Project1.html#linux-terminal",
-    "title": "Chrome OS applications",
-    "section": "Linux terminal",
-    "text": "Linux terminal\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "Project1.html#applications-installed",
-    "href": "Project1.html#applications-installed",
-    "title": "Chrome OS applications",
-    "section": "Applications installed:",
-    "text": "Applications installed:\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 3\n\n\n\n\n\n\n\n\n\n\n\nDocker\n\n\n\n\n\n\n\n\nfig 4"
-  },
-  {
-    "objectID": "jobsps.html",
-    "href": "jobsps.html",
-    "title": "PowerShell Jobs",
-    "section": "",
-    "text": "PS D:\\srctest\\powershelltest> Start-Job -Scriptblock{Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers}\n\nId     Name            PSJobTypeName   State         HasMoreData     Location             Command\n--     ----            -------------   -----         -----------     --------             -------\n1      Job9            BackgroundJob   Running       True            localhost            Invoke-WebRequest -Uri \"…\n\nPS C:\\Users\\AdministradorCIFO> Receive-Job 1\n\ncovers     RunspaceId\n------     ----------\n{10308698} 0f626350-35fe-4576-aeb5-c21ef3610f70"
-  },
-  {
-    "objectID": "jobsps.html#code",
-    "href": "jobsps.html#code",
-    "title": "PowerShell Jobs",
-    "section": "Code",
-    "text": "Code\nType this code and save as job1.ps1\n$getBookJob = Start-Job –ScriptBlock {  \n    Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers\n}"
-  },
-  {
-    "objectID": "jobsps.html#run-job",
-    "href": "jobsps.html#run-job",
-    "title": "PowerShell Jobs",
-    "section": "Run job",
-    "text": "Run job\nD:\\srctest\\powershelltest\\job1.ps1"
-  },
-  {
-    "objectID": "jobsps.html#get-command--job",
-    "href": "jobsps.html#get-command--job",
-    "title": "PowerShell Jobs",
-    "section": "Get-Command *-Job",
-    "text": "Get-Command *-Job\nto manage the jobs\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "jobsps.html#wait-job-getbookjob",
-    "href": "jobsps.html#wait-job-getbookjob",
-    "title": "PowerShell Jobs",
-    "section": "Wait-Job $getBookJob",
-    "text": "Wait-Job $getBookJob\n\n\n\nfig 2"
-  },
-  {
-    "objectID": "jobsps.html#receive-job-getbookjob",
-    "href": "jobsps.html#receive-job-getbookjob",
-    "title": "PowerShell Jobs",
-    "section": "Receive-Job $getBookJob",
-    "text": "Receive-Job $getBookJob\n\n\n\nfig 3"
-  },
-  {
-    "objectID": "Project2.html",
-    "href": "Project2.html",
-    "title": "SonarQube",
-    "section": "",
-    "text": "SonarQube like SAST\nSonarQube"
-  },
-  {
-    "objectID": "Project2.html#motivation",
-    "href": "Project2.html#motivation",
-    "title": "SonarQube",
-    "section": "Motivation",
-    "text": "Motivation\n\nopen source\ngood comments"
-  },
-  {
-    "objectID": "Project2.html#how-to-use-sonarqube",
-    "href": "Project2.html#how-to-use-sonarqube",
-    "title": "SonarQube",
-    "section": "How to use SonarQube",
-    "text": "How to use SonarQube\n\n1. Generating token\nInstructions\n\n\n2. comand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\n3. Reference how to use SonarQube\nInstructions\n\n\n4. Jenkins\nInstructions\n\n\n\n\n\n\npipeline with jenkins\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "Project2.html#links-references",
-    "href": "Project2.html#links-references",
-    "title": "SonarQube",
-    "section": "Links references",
-    "text": "Links references\n\n\nList of tools"
-  },
-  {
-    "objectID": "LabMDObservable.html",
-    "href": "LabMDObservable.html",
-    "title": "Quarto Markdown, code & data",
-    "section": "",
-    "text": "Code : MF01-0492"
-  },
-  {
-    "objectID": "LabMDObservable.html#fileattachment",
-    "href": "LabMDObservable.html#fileattachment",
-    "title": "Quarto Markdown, code & data",
-    "section": "FileAttachment",
-    "text": "FileAttachment\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nExample to show specific field position in the array.\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\nExample to show specific position in the array.\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
-  },
-  {
-    "objectID": "LabMDObservable.html#list-of-all-content.",
-    "href": "LabMDObservable.html#list-of-all-content.",
-    "title": "Quarto Markdown, code & data",
-    "section": "list of all content.",
-    "text": "list of all content.\n\ndata"
-  },
-  {
-    "objectID": "LabMDObservable.html#list-of-all-content-with-map.",
-    "href": "LabMDObservable.html#list-of-all-content-with-map.",
-    "title": "Quarto Markdown, code & data",
-    "section": "list of all content with map.",
-    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
-    "href": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
-    "title": "Quarto Markdown, code & data",
-    "section": "CNCF Cloud Native Interactive Landscape",
-    "text": "CNCF Cloud Native Interactive Landscape\n\ninteractivecsv = await FileAttachment(\"interactive-landscape.csv\").csv({ typed: true })\ninteractive = interactivecsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(interactive, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Web App Cifo La Violeta",
-    "section": "",
-    "text": "Delivery of exercesises (Labs)\nPersonal projects\nDevops\nTheory"
-  },
-  {
-    "objectID": "mongodb/mongodb2.html",
-    "href": "mongodb/mongodb2.html",
-    "title": "Mongodb Labs:spring-boot-starter-data-mongodb",
-    "section": "",
-    "text": "<dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-mongodb</artifactId>\n</dependency>\n\n\n\napp.uri=mongodb+srv://<user>:<password>@cluster0.<namecluster>.mongodb.net/electrolinera\napp.database=electrolinera\n\n\n\n@Repository\npublic interface ReservationRepository extends MongoRepository<Reservation, String> {\n\n\n\nimport com.example.mongodb2.model.Reservation;\nimport com.example.mongodb2.repository.ReservationRepository;\nimport java.util.ArrayList;\nimport java.util.List;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.CrossOrigin;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RequestParam;\nimport org.springframework.web.bind.annotation.RestController;\n\n\n@CrossOrigin(origins = \"http://localhost:8081\")\n@RestController\n@RequestMapping(\"/api\")\npublic class ReservationController {\n        \n  @Autowired\n  ReservationRepository reservationRepository;\n  \n  \n  @GetMapping(\"/reservations\")\n  public ResponseEntity<List<Reservation>> getAllReservations(@RequestParam(required = false) Integer idUser) {\n    try {\n    List<Reservation> reservations = new ArrayList<Reservation>();\n\n    if (idUser == null)\n      reservationRepository.findAll().forEach(reservations::add);\n    else\n      reservationRepository.findByIdUser(idUser).forEach(reservations::add);\n\n    if (reservations.isEmpty()) {\n      return new ResponseEntity<>(HttpStatus.NO_CONTENT);\n    }\n\n    return new ResponseEntity<>(reservations, HttpStatus.OK);\n  } catch (Exception e) {\n        System.out.println(e.getMessage());\n    return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);\n  }\n  }\n  \n}\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "mongodb/mongodb.html",
-    "href": "mongodb/mongodb.html",
-    "title": "Mongodb Labs:mongodb-driver-sync",
-    "section": "",
-    "text": "<dependency>\n    <groupId>org.mongodb</groupId>\n    <artifactId>mongodb-driver-sync</artifactId>\n    <version>4.4.2</version>\n</dependency>\n\n\n\n final Properties myAppProperties = new Properties();\n myAppProperties.load(new FileInputStream(\"src/main/resources/application.properties\"));\n\n MongoClient mongoClient = MongoClients.create(myAppProperties.getProperty(\"app.uri\"))\n\n MongoDatabase database = mongoClient.getDatabase(myAppProperties.getProperty(\"app.database\"));\n\n\n\n  MongoCollection<Document> collection = database.getCollection(\"reserve\");\n\n//Retrieving the documents\nFindIterable<Document> iterDoc = collection.find();\nIterator it = iterDoc.iterator();\nwhile (it.hasNext()) {\nSystem.out.println(\"********************************\" + it.next());\n}\n\n\n\nDocument{{_id=63f3c23835bf045fc8c4eeba, idUser=123, idPointCharge=123, dateStart=Sun Jan 01 00:00:00 CET 2023, dateEnd=Sat Jan 01 00:00:00 CET 2022, accepted=0}}\nDocument{{_id=63f3ccfd35bf045fc8c4eebc, idUser=123, idPointCharge=124, dateStart=Mon Jan 01 00:00:00 CET 2024, dateEnd=Mon Jan 01 00:00:00 CET 2024, accepted=0}}"
-  },
-  {
-    "objectID": "Project3.html",
-    "href": "Project3.html",
-    "title": "Software Tools",
-    "section": "",
-    "text": "Tools to consider\nMore Free DAST"
-  },
-  {
-    "objectID": "Project3.html#owasp",
-    "href": "Project3.html#owasp",
-    "title": "Software Tools",
-    "section": "OWASP",
-    "text": "OWASP\n\nowasp\ntesting guide\nDocumentation\ntesting guide(dpf)"
-  },
-  {
-    "objectID": "Project3.html#nikto",
-    "href": "Project3.html#nikto",
-    "title": "Software Tools",
-    "section": "Nikto",
-    "text": "Nikto\n\nNikto web"
-  },
-  {
-    "objectID": "Project3.html#zap",
-    "href": "Project3.html#zap",
-    "title": "Software Tools",
-    "section": "ZAP",
-    "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
-  },
-  {
-    "objectID": "patterns1.html",
-    "href": "patterns1.html",
-    "title": "Design Patterns",
-    "section": "",
-    "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
-  },
-  {
-    "objectID": "LabMD01-1.html",
-    "href": "LabMD01-1.html",
-    "title": "Quarto publish",
-    "section": "",
-    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About …..",
-    "section": "",
-    "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
-  },
-  {
-    "objectID": "LabSE01-1.html",
-    "href": "LabSE01-1.html",
-    "title": "Lab SE 01-1",
-    "section": "",
-    "text": "GitHub Source"
-  },
-  {
-    "objectID": "PatternCommand.html",
-    "href": "PatternCommand.html",
-    "title": "Command",
-    "section": "",
-    "text": "We have a laboratory to develop a software to manage a library. View details\nYou can see more details about the pattern, here\nWe need a menu system."
-  },
-  {
-    "objectID": "PatternCommand.html#github-code",
-    "href": "PatternCommand.html#github-code",
-    "title": "Command",
-    "section": "GitHub code",
-    "text": "GitHub code\nBelow I build a menu frame to develop concrete actions of the lab\n\nview code"
-  },
-  {
-    "objectID": "datecommit.html",
-    "href": "datecommit.html",
-    "title": "Script to know the commit date",
-    "section": "",
-    "text": "date of last commit"
-  },
-  {
-    "objectID": "datecommit.html#control-rules",
-    "href": "datecommit.html#control-rules",
-    "title": "Script to know the commit date",
-    "section": "Control rules",
-    "text": "Control rules\nd=$(TZ=\"UTC\" date -j -f \"%Y-%m-%dT%H:%M:%SZ\" \"$datecommit\" \"+%d\")\n\nnow=$(date \"+DATE: %Y-%m-%d%n\")\n\nif [`expr $d + 7`]\nthen \n    echo \"many days $OWNER $datecommit\" \nelse\n    echo \"correct\" \nfi"
-  },
-  {
-    "objectID": "datecommit.html#result",
-    "href": "datecommit.html#result",
-    "title": "Script to know the commit date",
-    "section": "Result",
-    "text": "Result\nhttps://api.github.com/repos/carla-velasco7e4/carla-velasco7e4.github.io/commits\ncarla-velasco7e4 \"2023-03-01T12:24:26Z\"\nhttps://api.github.com/repos/aznale/aznale.github.io/commits\naznale \"2023-03-27T18:15:38Z\"\nhttps://api.github.com/repos/DavidMaqueda/testtest3/commits\nDavidMaqueda \"2023-03-07T12:31:02Z\"\nhttps://api.github.com/repos/albertmbu/wiki/commits\nalbertmbu \"2023-03-15T12:30:34Z\"\nhttps://api.github.com/repos/rudevops/miweb/commits\nrudevops \"2023-01-27T11:58:55Z\"\nhttps://api.github.com/repos/vallvicity/CursoDAW/commits\nvallvicity \"2023-03-06T11:55:54Z\"\nhttps://api.github.com/repos/vcalvache/mywebsite/commits\nvcalvache \"2023-03-13T19:59:33Z\"\nhttps://api.github.com/repos/leonpurple/combobackend/commits\nleonpurple \"2023-02-13T00:24:29Z\"\nhttps://api.github.com/repos/rarmero/appwebcifolavioleta/commits\nrarmero \"2023-03-23T12:15:44Z\""
-  },
-  {
-    "objectID": "LabMDResApi.html",
-    "href": "LabMDResApi.html",
-    "title": "Rest Api",
-    "section": "",
-    "text": "Code : MF01-0492"
-  },
-  {
-    "objectID": "LabMDResApi.html#holidays",
-    "href": "LabMDResApi.html#holidays",
-    "title": "Rest Api",
-    "section": "Holidays",
-    "text": "Holidays\nSelect the country to know public holidays\n\nviewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\n\n\n\n\n\n\n\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\n\nholidays = holidaysContent.map(holidaysContent => {\nconst name = holidaysContent.name;\nconst date = holidaysContent.date;\nreturn {name,date}\n}\n)\n\nInputs.table(holidays, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "Project2Management.html",
-    "href": "Project2Management.html",
-    "title": "SonarQube Management",
-    "section": "",
-    "text": "Software\n\n\n\n\nJira\n\n\nGithub"
-  },
-  {
-    "objectID": "Project2Management.html#jira",
-    "href": "Project2Management.html#jira",
-    "title": "SonarQube Management",
-    "section": "Jira",
-    "text": "Jira\n\n\n\n\n\n\nPanel jira\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "Project2Management.html#github",
-    "href": "Project2Management.html#github",
-    "title": "SonarQube Management",
-    "section": "Github",
-    "text": "Github\n\n\n\nfig 2\n\n\nProject on Github"
-  },
-  {
-    "objectID": "createmd.html",
-    "href": "createmd.html",
-    "title": "Script to create md file",
-    "section": "",
-    "text": "publish books for the course"
-  },
-  {
-    "objectID": "createmd.html#result",
-    "href": "createmd.html#result",
-    "title": "Script to create md file",
-    "section": "Result",
-    "text": "Result\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "LabSE00-1.html",
-    "href": "LabSE00-1.html",
-    "title": "Lab SE 00-1",
-    "section": "",
-    "text": "10 CHARACTERISTICS OF A GOOD STUDENT"
-  },
-  {
-    "objectID": "LabSE00-1.html#code",
-    "href": "LabSE00-1.html#code",
-    "title": "Lab SE 00-1",
-    "section": "2 Code",
-    "text": "2 Code\n\n2.1 Java Code\n\n   int growthMindset;\n   int brave;\n   int organised;\n   int consistent;\n   int ableToDealWithFailure;\n   int setGoals;\n   int ableToConnectLearningToLife;\n   int howToLookAfterTheirMentalHealth;\n   int PartnersWithTeachers;\n   int valuesEducation;\n\n\n2.2 Rules\n\n2.2.1 A GOOD STUDENT HAS A GROWTH MINDSET\n\n\n\n2.3 Code repository\nGitHub Source"
-  },
-  {
-    "objectID": "pipeline.html",
-    "href": "pipeline.html",
-    "title": "Pipeline sonarqube",
-    "section": "",
-    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
-  },
-  {
-    "objectID": "Project1b.html",
-    "href": "Project1b.html",
-    "title": "Others ways to mobility",
-    "section": "",
-    "text": "Never install\nAir Table\nZapier"
-  },
-  {
-    "objectID": "oil/ListOilsTable.html",
-    "href": "oil/ListOilsTable.html",
-    "title": "Listings table",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Producto\n        \n         \n          Origen\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProducto\n\n\nOrigen\n\n\nCategoria\n\n\nCapacitat\n\n\nDesc\n\n\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nCeller\n\n\nAmpolla\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 5L\n\n\nCampanya 2022-2023\n\n\n\n\nARBEQUINA\n\n\nFINCA MAS PERDUT\n\n\nVerges Extra\n\n\nGarrafa 2L\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\nEstoig Lo Castell\n\n\n\n\nGourmet\n\n\nEstoig\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "oil/ListOilsGrid.html",
-    "href": "oil/ListOilsGrid.html",
-    "title": "Listings grid",
-    "section": "",
-    "text": "ARBEQUINA\n\n\n\nCeller\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nCampanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nARBEQUINA\n\n\n\nVerges Extra\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEstoig Lo Castell\n\n\n\nGourmet\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "oil/content/celler1.html",
-    "href": "oil/content/celler1.html",
-    "title": "ARBEQUINA",
-    "section": "",
-    "text": "Categoria\nSKU\nPreu\n\n\n\n\nGinebra andalusa ZAYT\n30\n€19.50"
-  },
-  {
-    "objectID": "oil/content/celler1.html#descripció",
-    "href": "oil/content/celler1.html#descripció",
-    "title": "ARBEQUINA",
-    "section": "Descripció",
-    "text": "Descripció\nGinebra andalusa ZAYT d’Olives Mançanella, Gordal i Hojiblanca en diferents maduracions (Lucena-Córdoba)\n\nNotes de cata:\n\n\n1er en nariz, Zayt es caracteritza per ser una ginebra molt perfumada. En un primer plànol apareixen notes herbals a oliva i romaní, creant un perfum original i fresc.\n2º, en boca, Zayt, ens recorda a l’olivar mediterrani, deixant un sabor rodó i untuós. Notarem per fases puntes balsàmiques i fruiters, recordant a fruita blanca i espècies aromàtiques del sur.\nFinalment, amb les seves sis destil-lacions, deixa en boca una agradable barreja de sabors molt bé ensamblats i compensats."
-  },
-  {
-    "objectID": "oil/content/celler1.html#com-degustar-la",
-    "href": "oil/content/celler1.html#com-degustar-la",
-    "title": "ARBEQUINA",
-    "section": "Com degustar-la:",
-    "text": "Com degustar-la:\nGràcies al seu sabor rodó i suau, recomanem maridar Zayt amb un twist de cítrics i a elecció del consumidor, romaní o oliva. Sabor mediterrani, complex i olor a la nostra terra, Zayt segur que supera les seves espectatives.\nProba alguna cosa diferent i única!!\n\nlab delivery Code (UF03-1843)"
-  },
-  {
-    "objectID": "oil/content/oil12.html",
-    "href": "oil/content/oil12.html",
-    "title": "ARBEQUINA",
-    "section": "",
-    "text": "Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\nfig 1\n\n\n\ndetails\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€17.00\n\n\n\n\nDetallsNota\n\n\nGarrafa 2L Extracció en fred Campanya 2022-2023 SIURANA - SANTA OLIVA (TARRAGONA) Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\nlab delivery Code (UF03-1843)"
-  },
-  {
-    "objectID": "oil/content/oil3.html",
-    "href": "oil/content/oil3.html",
-    "title": "Estoig Lo Castell",
-    "section": "",
-    "text": "Categoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n67\n€27.15\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "oil/content/oil3.html#descripció",
-    "href": "oil/content/oil3.html#descripció",
-    "title": "Estoig Lo Castell",
-    "section": "Descripció",
-    "text": "Descripció\nMAS DELS CASTELLANS estoig Lo Castell\n\n1 ampolla vidre 0,50L Oli d’Oliva EMPELTRE Collita Temprana Verge Extra\n1 ampolla vidre 0,50L Oli d’Oliva EMPELTRE Verge Extra\n\n1 tarro vidre 250gr Olives verdes SEVILLENQUES d’Aragó\n\nExtraccions en fred\n\nCampanya 2022-2023 | |\n\n\nMATARRAÑA - CALACEITE (TERUEL)\n\n\nlab delivery Code (UF03-1843)"
-  },
-  {
-    "objectID": "oil/content/oil1.html",
-    "href": "oil/content/oil1.html",
-    "title": "ARBEQUINA",
-    "section": "",
-    "text": "Oli d’Oliva ARBEQUINA Verge Extra\n\n\n\n\n\nfig 1\n\n\n\nfitxa\n\n\nCategoria\nSKU\nPreu\n\n\n\n\nOlis d’Oliva Verges Extra\n10\n€34.00\n\n\n\n\n\n\n\nGarrafa 5L\nExtracció en fred\nCampanya 2022-2023\nSIURANA - SANTA OLIVA (TARRAGONA)\nOliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.\n\n\n\n\n\n\n\nNota\n\n\n\n\n\nBaix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.\nLema: respectar l’entorn, cuidar les olives i mimar l’olivera.\nArbequines de categoria superior d’extracció en fred.\nOli delicat, suau i molt aromàtic.\n\n\n\n\n\n\n\n\n\nAtenció\n\n\n\n\n\ninformació important\n\n\n\n\nlab delivery Code (UF03-1843)"
-  },
-  {
-    "objectID": "oil/fileAttachment.html",
-    "href": "oil/fileAttachment.html",
-    "title": "File Attachment",
-    "section": "",
-    "text": "data = await FileAttachment(\"content/oildata.csv\").csv()"
-  },
-  {
-    "objectID": "oil/fileAttachment.html#list-of-all-content-with-map.",
-    "href": "oil/fileAttachment.html#list-of-all-content-with-map.",
-    "title": "File Attachment",
-    "section": "list of all content with map.",
-    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"content/oildata.csv\").csv({ typed: true })\noils = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(oils, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "oil/fileAttachment.html#list-of-some-fields-with-map.",
-    "href": "oil/fileAttachment.html#list-of-some-fields-with-map.",
-    "title": "File Attachment",
-    "section": "list of some fields with map.",
-    "text": "list of some fields with map.\n\ndataoil = datacsv.map(function(element){\n    return element.author +  \", \" + element.title;\n})\n\ndataoil[2]"
-  },
-  {
-    "objectID": "oil/ListOils.html",
-    "href": "oil/ListOils.html",
-    "title": "Listings default",
-    "section": "",
-    "text": "ARBEQUINA\n\n\nAmpolla\n\n\n\n\nCeller\n\n\n\n\nPreu €19.50; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 5L\n\n\n\n\nVerges Extra\n\n\n\n\nCampanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nARBEQUINA\n\n\nGarrafa 2L\n\n\n\n\nVerges Extra\n\n\n\n\nPreu €17.00; Campanya 2022-2023\n\n\n\n\n\n\nFINCA MAS PERDUT\n\n\n\n\n\n\n  \n\n\n\n\nEstoig Lo Castell\n\n\nEstoig\n\n\n\n\nGourmet\n\n\n\n\nPreu €27.15; Campanya 2022-2023\n\n\n\n\n \n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "oil/ListOilsCustom.html",
-    "href": "oil/ListOilsCustom.html",
-    "title": "Listings Custom",
-    "section": "",
-    "text": "Order By\n       Default\n         \n          Origen\n        \n         \n          Preu\n        \n         \n          Producto\n        \n         \n          Capacitat\n        \n         \n          web\n        \n     \n  \n    \n      \n      \n    \n\n\n\n  \n \n  Producto\n  Origen Preu\n  Capacitat web\n \n  \n\n  \n    \n       mas dels castellans \n      \n      AOlis d'Oliva Verges Extra\n    \n  \n     €34.00  \n  \n     2L \n  \n     mas dels castellans\n   \n  \n    \n       mas dels castellans \n      \n      Olis d'Oliva Verges Extra\n    \n  \n     €24.00  \n  \n     5L \n  \n     mas dels castellans\n   \n  \n    \n       LOS CERROS DE ÚBEDA \n      \n      Olis d'Oliva Verges Extra\n    \n  \n     €34.50s  \n  \n     5L \n  \n     LOS CERROS DE ÚBEDA\n   \n\n\nNo matching items\n\n  \n      it does not matter how slowly you go so long as you do not stop (Confucios)"
+    "text": "Cloud Native Interactive Landscape\nOWASP\nDifferences SAST-DAST"
   }
 ]
