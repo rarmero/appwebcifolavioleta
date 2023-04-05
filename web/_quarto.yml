@@ -45,6 +45,7 @@ website:
            - "springboot/springbootThymeleaf.qmd"
            - "springboot/springbootmvc.qmd"
            - "springboot/springbootRest.qmd"
+           - "springboot/springbootRestH2.qmd"
         - section: "Mongodb"
           contents: 
            - "mongodb/mongodb.qmd"

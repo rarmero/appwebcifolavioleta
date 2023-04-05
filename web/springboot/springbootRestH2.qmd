@@ -1,0 +1,39 @@
+---
+title: "SpringBoot with H2"
+subtitle: "Lab SB00-5"
+---
+
+# Arquitecture
+
+
+```{mermaid}
+flowchart LR
+  A[H2 docker] --> B[SpringBoot Rest Api]  
+```
+
+H2(docker) and SpringBoot Rest Api
+
+
+## Docker
+
+![fig 1](../images/h2/H2Docker.PNG)
+
+## H2
+
+[H2 Documentation](https://www.h2database.com/html/main.html)
+
+![fig 2](../images/h2/h2DB.PNG)
+
+
+![fig 3](../images/h2/h2console.PNG)
+
+## Springboot Rest Api
+
+some examples:
+
+![fig 4](../images/h2/H2RestGet.PNG)
+
+![fig 5](../images/h2/H2RestPut.PNG)
+
+
+[GitHub Source](https://github.com/rarmero/labscifolavioleta/tree/main/src/demoH2){.external} 
