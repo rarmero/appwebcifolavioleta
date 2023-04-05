@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - Chrome OS applications</title>
+<title>App with web tecnologies - SpringBoot with H2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -58,19 +58,23 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed">
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">App with web tecnologies</span>
     </a>
   </div>
@@ -80,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -90,35 +94,35 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-devops">    
         <li class="dropdown-header">Linux</li>
         <li>
-    <a class="dropdown-item" href="./createmd.html">
+    <a class="dropdown-item" href="../createmd.html">
  <span class="dropdown-text">Script to create md file</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./datecommit.html">
+    <a class="dropdown-item" href="../datecommit.html">
  <span class="dropdown-text">Script to know the commit date</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">PowerShell</li>
         <li>
-    <a class="dropdown-item" href="./jobsps.html">
+    <a class="dropdown-item" href="../jobsps.html">
  <span class="dropdown-text">PowerShell Jobs</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Pipeline</li>
         <li>
-    <a class="dropdown-item" href="./pipeline.html">
+    <a class="dropdown-item" href="../pipeline.html">
  <span class="dropdown-text">Pipeline sonarqube</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Kubernettes</li>
         <li>
-    <a class="dropdown-item" href="./Task1.html">
+    <a class="dropdown-item" href="../Task1.html">
  <span class="dropdown-text">Kubernettes</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Quarto docker</li>
         <li>
-    <a class="dropdown-item" href="./Task2.html">
+    <a class="dropdown-item" href="../Task2.html">
  <span class="dropdown-text">Quarto with docker</span></a>
   </li>  
     </ul>
@@ -130,37 +134,37 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-projects">    
         <li class="dropdown-header">Mobility</li>
         <li>
-    <a class="dropdown-item" href="./Project1.html">
+    <a class="dropdown-item" href="../Project1.html">
  <span class="dropdown-text">Chrome OS applications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Project1b.html">
+    <a class="dropdown-item" href="../Project1b.html">
  <span class="dropdown-text">Others ways to mobility</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Static application security testing</li>
         <li>
-    <a class="dropdown-item" href="./Project2.html">
+    <a class="dropdown-item" href="../Project2.html">
  <span class="dropdown-text">SonarQube</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./Project2Management.html">
+    <a class="dropdown-item" href="../Project2Management.html">
  <span class="dropdown-text">SonarQube Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./javasonarqube.html">
+    <a class="dropdown-item" href="../javasonarqube.html">
  <span class="dropdown-text">Java code MOOC Helsinki</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Dynamic application security testing</li>
         <li>
-    <a class="dropdown-item" href="./Project3.html">
+    <a class="dropdown-item" href="../Project3.html">
  <span class="dropdown-text">Software Tools</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Project4</li>
         <li>
-    <a class="dropdown-item" href="./testing.html">
+    <a class="dropdown-item" href="../testing.html">
  <span class="dropdown-text">Testing</span></a>
   </li>  
     </ul>
@@ -172,61 +176,61 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-labs">    
         <li class="dropdown-header">MarkUp Languages</li>
         <li>
-    <a class="dropdown-item" href="./LabMD01-1.html">
+    <a class="dropdown-item" href="../LabMD01-1.html">
  <span class="dropdown-text">Quarto publish</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./oil/ListOils.html">
+    <a class="dropdown-item" href="../oil/ListOils.html">
  <span class="dropdown-text">List</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabMDObservable.html">
+    <a class="dropdown-item" href="../LabMDObservable.html">
  <span class="dropdown-text">Quarto Markdown, code &amp; data</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabMDResApi.html">
+    <a class="dropdown-item" href="../LabMDResApi.html">
  <span class="dropdown-text">Rest Api</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Java SEE Labs</li>
         <li>
-    <a class="dropdown-item" href="./LabSE00-1.html">
+    <a class="dropdown-item" href="../LabSE00-1.html">
  <span class="dropdown-text">Lab SE 00-1</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./LabSE01-1.html">
+    <a class="dropdown-item" href="../LabSE01-1.html">
  <span class="dropdown-text">Lab SE 01-1</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Springboot Labs</li>
         <li>
-    <a class="dropdown-item" href="./springboot/springbootMongodb.html">
+    <a class="dropdown-item" href="../springboot/springbootMongodb.html">
  <span class="dropdown-text">springboot mongodb</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./springboot/springbootThymeleaf.html">
+    <a class="dropdown-item" href="../springboot/springbootThymeleaf.html">
  <span class="dropdown-text">springboot with thymeleaf</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./springboot/springbootmvc.html">
+    <a class="dropdown-item" href="../springboot/springbootmvc.html">
  <span class="dropdown-text">springboot MVC</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./springboot/springbootRest.html">
+    <a class="dropdown-item" href="../springboot/springbootRest.html">
  <span class="dropdown-text">springboot rest</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./springboot/springbootRestH2.html">
+    <a class="dropdown-item" href="../springboot/springbootRestH2.html">
  <span class="dropdown-text">SpringBoot with H2</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Mongodb</li>
         <li>
-    <a class="dropdown-item" href="./mongodb/mongodb.html">
+    <a class="dropdown-item" href="../mongodb/mongodb.html">
  <span class="dropdown-text">Mongodb Labs:mongodb-driver-sync</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./mongodb/mongodb2.html">
+    <a class="dropdown-item" href="../mongodb/mongodb2.html">
  <span class="dropdown-text">Mongodb Labs:spring-boot-starter-data-mongodb</span></a>
   </li>  
     </ul>
@@ -238,23 +242,23 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-theory">    
         <li class="dropdown-header">Documentation</li>
         <li>
-    <a class="dropdown-item" href="./Theory1.html">
+    <a class="dropdown-item" href="../Theory1.html">
  <span class="dropdown-text">Links</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Patterns</li>
         <li>
-    <a class="dropdown-item" href="./patterns1.html">
+    <a class="dropdown-item" href="../patterns1.html">
  <span class="dropdown-text">Design Patterns</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./PatternCommand.html">
+    <a class="dropdown-item" href="../PatternCommand.html">
  <span class="dropdown-text">Command</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html">
+    <a class="nav-link" href="../about.html">
  <span class="menu-text">About …..</span></a>
   </li>  
 </ul>
@@ -264,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Chrome OS applications</h1>
+      <h1 class="quarto-secondary-nav-title">SpringBoot with H2</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -278,57 +282,71 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
-  Projects
+  Labs
   </li>
-        <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Mobility</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">MarkUp Languages</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Project1.html" class="sidebar-item-text sidebar-link active">Chrome OS applications</a>
+  <a href="../LabMD01-1.html" class="sidebar-item-text sidebar-link">Quarto publish</a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./Project1b.html" class="sidebar-item-text sidebar-link">Others ways to mobility</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Static application security testing</a>
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">List</a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Project2.html" class="sidebar-item-text sidebar-link">SonarQube</a>
+  <a href="../oil/ListOils.html" class="sidebar-item-text sidebar-link">Listings default</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Project2Management.html" class="sidebar-item-text sidebar-link">SonarQube Management</a>
+  <a href="../oil/ListOilsGrid.html" class="sidebar-item-text sidebar-link">Listings grid</a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./javasonarqube.html" class="sidebar-item-text sidebar-link">Java code MOOC Helsinki</a>
+  <a href="../oil/ListOilsTable.html" class="sidebar-item-text sidebar-link">Listings table</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsCustom.html" class="sidebar-item-text sidebar-link">Listings Custom</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/fileAttachment.html" class="sidebar-item-text sidebar-link">File Attachment</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMDResApi.html" class="sidebar-item-text sidebar-link">Rest Api</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Dynamic application security testing</a>
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Java SEE Labs</a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -336,22 +354,67 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Project3.html" class="sidebar-item-text sidebar-link">Software Tools</a>
+  <a href="../LabSE00-1.html" class="sidebar-item-text sidebar-link">Lab SE 00-1</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabSE01-1.html" class="sidebar-item-text sidebar-link">Lab SE 01-1</a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Project4</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Springboot Labs</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./testing.html" class="sidebar-item-text sidebar-link">Testing</a>
+  <a href="../springboot/springbootMongodb.html" class="sidebar-item-text sidebar-link">springboot mongodb</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link">springboot with thymeleaf</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootmvc.html" class="sidebar-item-text sidebar-link">springboot MVC</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootRest.html" class="sidebar-item-text sidebar-link">springboot rest</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootRestH2.html" class="sidebar-item-text sidebar-link active">SpringBoot with H2</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Mongodb</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">Mongodb Labs:mongodb-driver-sync</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb2.html" class="sidebar-item-text sidebar-link">Mongodb Labs:spring-boot-starter-data-mongodb</a>
   </div>
 </li>
       </ul>
@@ -365,10 +428,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#specificacions" id="toc-specificacions" class="nav-link active" data-scroll-target="#specificacions">Specificacions</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References:</a></li>
-  <li><a href="#linux-terminal" id="toc-linux-terminal" class="nav-link" data-scroll-target="#linux-terminal">Linux terminal</a></li>
-  <li><a href="#applications-installed" id="toc-applications-installed" class="nav-link" data-scroll-target="#applications-installed">Applications installed:</a></li>
+  <li><a href="#arquitecture" id="toc-arquitecture" class="nav-link active" data-scroll-target="#arquitecture">Arquitecture</a>
+  <ul class="collapse">
+  <li><a href="#docker" id="toc-docker" class="nav-link" data-scroll-target="#docker">Docker</a></li>
+  <li><a href="#h2" id="toc-h2" class="nav-link" data-scroll-target="#h2">H2</a></li>
+  <li><a href="#springboot-rest-api" id="toc-springboot-rest-api" class="nav-link" data-scroll-target="#springboot-rest-api">Springboot Rest Api</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -377,7 +442,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Chrome OS applications</h1>
+<h1 class="title d-none d-lg-block">SpringBoot with H2</h1>
+<p class="subtitle lead">Lab SB00-5</p>
 </div>
 
 
@@ -392,96 +458,67 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="specificacions" class="level2">
-<h2 class="anchored" data-anchor-id="specificacions">Specificacions</h2>
-<ul>
-<li>Installed on Acer Spin513 qualcomm snpadragon</li>
-<li>OS Debian linux 11 (bullseye)</li>
-</ul>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References:</h2>
-<ul>
-<li><a href="https://code.visualstudio.com/blogs/2020/12/03/chromebook-get-started" class="external">visual Code</a></li>
-<li><a href="https://docs.docker.com/engine/install/debian/" class="external">docker</a></li>
-</ul>
-</section>
-<section id="linux-terminal" class="level2">
-<h2 class="anchored" data-anchor-id="linux-terminal">Linux terminal</h2>
+<section id="arquitecture" class="level1">
+<h1>Arquitecture</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A[H2 docker] --&gt; B[SpringBoot Rest Api]  
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>H2(docker) and SpringBoot Rest Api</p>
+<section id="docker" class="level2">
+<h2 class="anchored" data-anchor-id="docker">Docker</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/linuxterminal.png" class="img-fluid figure-img"></p>
+<p><img src="../images/h2/H2Docker.PNG" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">fig 1</figcaption><p></p>
 </figure>
 </div>
 </section>
-<section id="applications-installed" class="level2">
-<h2 class="anchored" data-anchor-id="applications-installed">Applications installed:</h2>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Visual code
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
+<section id="h2" class="level2">
+<h2 class="anchored" data-anchor-id="h2">H2</h2>
+<p><a href="https://www.h2database.com/html/main.html">H2 Documentation</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/chromebookVisualCode.PNG" class="img-fluid figure-img"></p>
+<p><img src="../images/h2/h2DB.PNG" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">fig 2</figcaption><p></p>
 </figure>
 </div>
-</div>
-</div>
-</div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-NetBeans - Java
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/netbeans.PNG" class="img-fluid figure-img"></p>
+<p><img src="../images/h2/h2console.PNG" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">fig 3</figcaption><p></p>
 </figure>
 </div>
-</div>
-</div>
-</div>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Docker
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
+</section>
+<section id="springboot-rest-api" class="level2">
+<h2 class="anchored" data-anchor-id="springboot-rest-api">Springboot Rest Api</h2>
+<p>some examples:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/docker_running_on_chromeos.png" class="img-fluid figure-img"></p>
+<p><img src="../images/h2/H2RestGet.PNG" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">fig 4</figcaption><p></p>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/h2/H2RestPut.PNG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 5</figcaption><p></p>
+</figure>
 </div>
-</div>
-</div>
+<p><a href="https://github.com/rarmero/labscifolavioleta/tree/main/src/demoH2" class="external">GitHub Source</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
