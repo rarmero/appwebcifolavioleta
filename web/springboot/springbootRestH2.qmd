@@ -1,6 +1,6 @@
 ---
 title: "SpringBoot with H2"
-subtitle: "Lab SB00-5"
+subtitle: "Lab SB00-5;UF02-1845"
 ---
 
 # Arquitecture
