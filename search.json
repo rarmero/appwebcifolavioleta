@@ -189,6 +189,27 @@
     "text": "<dependency>\n            <groupId>org.springframework.boot</groupId>\n            <artifactId>spring-boot-starter-data-mongodb</artifactId>\n</dependency>\n\n\n\napp.uri=mongodb+srv://<user>:<password>@cluster0.<namecluster>.mongodb.net/electrolinera\napp.database=electrolinera\n\n\n\n@Repository\npublic interface ReservationRepository extends MongoRepository<Reservation, String> {\n\n\n\nimport com.example.mongodb2.model.Reservation;\nimport com.example.mongodb2.repository.ReservationRepository;\nimport java.util.ArrayList;\nimport java.util.List;\nimport org.springframework.beans.factory.annotation.Autowired;\nimport org.springframework.http.HttpStatus;\nimport org.springframework.http.ResponseEntity;\nimport org.springframework.web.bind.annotation.CrossOrigin;\nimport org.springframework.web.bind.annotation.GetMapping;\nimport org.springframework.web.bind.annotation.RequestMapping;\nimport org.springframework.web.bind.annotation.RequestParam;\nimport org.springframework.web.bind.annotation.RestController;\n\n\n@CrossOrigin(origins = \"http://localhost:8081\")\n@RestController\n@RequestMapping(\"/api\")\npublic class ReservationController {\n        \n  @Autowired\n  ReservationRepository reservationRepository;\n  \n  \n  @GetMapping(\"/reservations\")\n  public ResponseEntity<List<Reservation>> getAllReservations(@RequestParam(required = false) Integer idUser) {\n    try {\n    List<Reservation> reservations = new ArrayList<Reservation>();\n\n    if (idUser == null)\n      reservationRepository.findAll().forEach(reservations::add);\n    else\n      reservationRepository.findByIdUser(idUser).forEach(reservations::add);\n\n    if (reservations.isEmpty()) {\n      return new ResponseEntity<>(HttpStatus.NO_CONTENT);\n    }\n\n    return new ResponseEntity<>(reservations, HttpStatus.OK);\n  } catch (Exception e) {\n        System.out.println(e.getMessage());\n    return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);\n  }\n  }\n  \n}\n\n\n\n\n\n\nfig 1"
   },
   {
+    "objectID": "mongodb/mongodb_install.html",
+    "href": "mongodb/mongodb_install.html",
+    "title": "installation mongodb",
+    "section": "",
+    "text": "fig 1"
+  },
+  {
+    "objectID": "mongodb/mongodb_install.html#mongodb-docker",
+    "href": "mongodb/mongodb_install.html#mongodb-docker",
+    "title": "installation mongodb",
+    "section": "mongodb docker",
+    "text": "mongodb docker\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "mongodb/mongodb_install.html#acces-via-compass",
+    "href": "mongodb/mongodb_install.html#acces-via-compass",
+    "title": "installation mongodb",
+    "section": "acces via Compass",
+    "text": "acces via Compass\n\n\n\nfig 3"
+  },
+  {
     "objectID": "oil/content/celler1.html",
     "href": "oil/content/celler1.html",
     "title": "ARBEQUINA",
@@ -425,20 +446,6 @@
     "title": "Software Tools",
     "section": "ZAP",
     "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
-  },
-  {
-    "objectID": "springboot/springbootMongodb.html",
-    "href": "springboot/springbootMongodb.html",
-    "title": "springboot mongodb",
-    "section": "",
-    "text": "fig 1"
-  },
-  {
-    "objectID": "springboot/springbootMongodb.html#acces-via-compass",
-    "href": "springboot/springbootMongodb.html#acces-via-compass",
-    "title": "springboot mongodb",
-    "section": "acces via Compass",
-    "text": "acces via Compass\n\n\n\nfig 2"
   },
   {
     "objectID": "springboot/springbootmvc.html",
