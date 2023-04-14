@@ -1,5 +1,5 @@
 ---
-title: "springboot mongodb"
+title: " installation mongodb"
 ---
 
 ## local installation on mac
@@ -7,9 +7,14 @@ title: "springboot mongodb"
 ![fig 1](../images/mongodblocal.png)
 
 
+## mongodb docker
+
+![fig 2](../images/docker_mongodb.PNG)
+
+
 ## acces via Compass
 
-![fig 2](../images/mongodbcompass.png)
+![fig 3](../images/mongodbcompass.png)
 
 
 
