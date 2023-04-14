@@ -41,13 +41,13 @@ website:
            - "LabSE01-1.qmd"
         - section: "Springboot Labs"
           contents: 
-           - "springboot/springbootMongodb.qmd"
            - "springboot/springbootThymeleaf.qmd"
            - "springboot/springbootmvc.qmd"
            - "springboot/springbootRest.qmd"
            - "springboot/springbootRestH2.qmd"
         - section: "Mongodb"
           contents: 
+           - "mongodb/mongodb_install.qmd"
            - "mongodb/mongodb.qmd"
            - "mongodb/mongodb2.qmd"
     - id: "tasks" 
