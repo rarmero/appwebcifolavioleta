@@ -3,6 +3,27 @@ title: "springboot rest"
 subtitle: "Lab SB00-4;UF01-1844"
 ---
 
+
+# Arquitecture
+
+```{mermaid}
+flowchart LR
+  A[Mongodb docker] --> B[SpringBoot Rest Api - Docker]  
+```
+
+Mongodb(docker) and SpringBoot Rest Api (docker)
+
+## MongoDB
+
+![fig 1](../images/mongodb_docker.PNG)
+
+
+## Rest Api
+
+![fig 2](../images/docker_electrolinerareservation.PNG)
+
+
+
 ## model data with ArrayList
 
 - [Source](https://github.com/rarmero/labscifolavioleta/tree/main/src/springbootRestApi){.external} 
