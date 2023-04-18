@@ -515,14 +515,7 @@
     "href": "springboot/springbootRest.html",
     "title": "springboot rest",
     "section": "",
-    "text": "Source"
-  },
-  {
-    "objectID": "springboot/springbootRest.html#model-data-with-mongodb",
-    "href": "springboot/springbootRest.html#model-data-with-mongodb",
-    "title": "springboot rest",
-    "section": "model data with Mongodb",
-    "text": "model data with Mongodb\n\nSource"
+    "text": "flowchart LR\n  A[Mongodb docker] --> B[SpringBoot Rest Api - Docker]  \n\n\n\n\n\n\n\n\nMongodb(docker) and SpringBoot Rest Api (docker)\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\nSource\n\n\n\n\n\nSource"
   },
   {
     "objectID": "springboot/springbootRestH2.html",

@@ -58,6 +58,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -425,8 +428,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#model-data-with-arraylist" id="toc-model-data-with-arraylist" class="nav-link active" data-scroll-target="#model-data-with-arraylist">model data with ArrayList</a></li>
+  <li><a href="#arquitecture" id="toc-arquitecture" class="nav-link active" data-scroll-target="#arquitecture">Arquitecture</a>
+  <ul class="collapse">
+  <li><a href="#mongodb" id="toc-mongodb" class="nav-link" data-scroll-target="#mongodb">MongoDB</a></li>
+  <li><a href="#rest-api" id="toc-rest-api" class="nav-link" data-scroll-target="#rest-api">Rest Api</a></li>
+  <li><a href="#model-data-with-arraylist" id="toc-model-data-with-arraylist" class="nav-link" data-scroll-target="#model-data-with-arraylist">model data with ArrayList</a></li>
   <li><a href="#model-data-with-mongodb" id="toc-model-data-with-mongodb" class="nav-link" data-scroll-target="#model-data-with-mongodb">model data with Mongodb</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -451,6 +459,41 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="arquitecture" class="level1">
+<h1>Arquitecture</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A[Mongodb docker] --&gt; B[SpringBoot Rest Api - Docker]  
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>Mongodb(docker) and SpringBoot Rest Api (docker)</p>
+<section id="mongodb" class="level2">
+<h2 class="anchored" data-anchor-id="mongodb">MongoDB</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/mongodb_docker.PNG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 1</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="rest-api" class="level2">
+<h2 class="anchored" data-anchor-id="rest-api">Rest Api</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/docker_electrolinerareservation.PNG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 2</figcaption><p></p>
+</figure>
+</div>
+</section>
 <section id="model-data-with-arraylist" class="level2">
 <h2 class="anchored" data-anchor-id="model-data-with-arraylist">model data with ArrayList</h2>
 <ul>
@@ -464,6 +507,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
