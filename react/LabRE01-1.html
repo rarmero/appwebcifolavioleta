@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - Mongodb Labs:mongodb-driver-sync</title>
+<title>App with web tecnologies - Lab#RE01-1: API Rest Axios</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,8 +126,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
-
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -328,191 +327,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Mongodb Labs:mongodb-driver-sync</h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  Labs
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">MarkUp Languages</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LabMD01-1.html" class="sidebar-item-text sidebar-link">Quarto publish</a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">List</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../oil/ListOils.html" class="sidebar-item-text sidebar-link">Listings default</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../oil/ListOilsGrid.html" class="sidebar-item-text sidebar-link">Listings grid</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../oil/ListOilsTable.html" class="sidebar-item-text sidebar-link">Listings table</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../oil/ListOilsCustom.html" class="sidebar-item-text sidebar-link">Listings Custom</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../oil/fileAttachment.html" class="sidebar-item-text sidebar-link">File Attachment</a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LabMDResApi.html" class="sidebar-item-text sidebar-link">Rest Api</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Java SEE Labs</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LabSE00-1.html" class="sidebar-item-text sidebar-link">Lab SE 00-1</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../LabSE01-1.html" class="sidebar-item-text sidebar-link">Lab SE 01-1</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Springboot Labs</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link">springboot with thymeleaf</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootmvc.html" class="sidebar-item-text sidebar-link">springboot MVC</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootRest.html" class="sidebar-item-text sidebar-link">springboot rest</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../springboot/springbootRestH2.html" class="sidebar-item-text sidebar-link">SpringBoot with H2</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Mongodb</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb_install.html" class="sidebar-item-text sidebar-link">installation mongodb</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link active">Mongodb Labs:mongodb-driver-sync</a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../mongodb/mongodb2.html" class="sidebar-item-text sidebar-link">Mongodb Labs:spring-boot-starter-data-mongodb</a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">React</a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  react/LabRE02-1.qmd
-  </li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#connect-to-atlas-mongodb" id="toc-connect-to-atlas-mongodb" class="nav-link active" data-scroll-target="#connect-to-atlas-mongodb">Connect to Atlas Mongodb</a>
+  <li><a href="#rest-api" id="toc-rest-api" class="nav-link active" data-scroll-target="#rest-api">REST API</a></li>
+  <li><a href="#acces-open-library" id="toc-acces-open-library" class="nav-link" data-scroll-target="#acces-open-library">Acces open library</a>
   <ul class="collapse">
-  <li><a href="#first-attempt-with-mongodb-driver-sync" id="toc-first-attempt-with-mongodb-driver-sync" class="nav-link" data-scroll-target="#first-attempt-with-mongodb-driver-sync">first attempt with mongodb-driver-sync</a>
-  <ul class="collapse">
-  <li><a href="#dependency" id="toc-dependency" class="nav-link" data-scroll-target="#dependency">Dependency</a></li>
-  <li><a href="#accessing-to-properties" id="toc-accessing-to-properties" class="nav-link" data-scroll-target="#accessing-to-properties">Accessing to properties</a></li>
-  <li><a href="#get-data" id="toc-get-data" class="nav-link" data-scroll-target="#get-data">Get data</a></li>
-  <li><a href="#result" id="toc-result" class="nav-link" data-scroll-target="#result">Result</a></li>
+  <li><a href="#access-a-plublicapis.org" id="toc-access-a-plublicapis.org" class="nav-link" data-scroll-target="#access-a-plublicapis.org">access a plublicapis.org</a></li>
   </ul></li>
-  </ul></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code">Source code</a></li>
   </ul>
 </nav>
     </div>
@@ -521,7 +351,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Mongodb Labs:mongodb-driver-sync</h1>
+<h1 class="title">Lab#RE01-1: API Rest Axios</h1>
 </div>
 
 
@@ -536,46 +366,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="connect-to-atlas-mongodb" class="level1">
-<h1>Connect to Atlas Mongodb</h1>
-<section id="first-attempt-with-mongodb-driver-sync" class="level2">
-<h2 class="anchored" data-anchor-id="first-attempt-with-mongodb-driver-sync">first attempt with mongodb-driver-sync</h2>
-<section id="dependency" class="level3">
-<h3 class="anchored" data-anchor-id="dependency">Dependency</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>dependency<span class="op">&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>groupId<span class="op">&gt;</span>org<span class="op">.</span><span class="fu">mongodb</span><span class="op">&lt;/</span>groupId<span class="op">&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>artifactId<span class="op">&gt;</span>mongodb<span class="op">-</span>driver<span class="op">-</span>sync<span class="op">&lt;/</span>artifactId<span class="op">&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>version<span class="op">&gt;</span><span class="fl">4.4.2</span><span class="op">&lt;/</span>version<span class="op">&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;/</span>dependency<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="rest-api" class="level2">
+<h2 class="anchored" data-anchor-id="rest-api">REST API</h2>
 </section>
-<section id="accessing-to-properties" class="level3">
-<h3 class="anchored" data-anchor-id="accessing-to-properties">Accessing to properties</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a> <span class="dt">final</span> <span class="bu">Properties</span> myAppProperties <span class="op">=</span> <span class="kw">new</span> <span class="bu">Properties</span><span class="op">();</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a> myAppProperties<span class="op">.</span><span class="fu">load</span><span class="op">(</span><span class="kw">new</span> <span class="bu">FileInputStream</span><span class="op">(</span><span class="st">"src/main/resources/application.properties"</span><span class="op">));</span></span>
+<section id="acces-open-library" class="level1">
+<h1>Acces open library</h1>
+<p>According with the course example, link below, the way to obtaing un element.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    {books[<span class="dv">0</span>]<span class="op">.</span><span class="at">title</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><a href="https://albertprofe.dev/reactjs/rjslab1.html">link</a></p>
+<section id="access-a-plublicapis.org" class="level2">
+<h2 class="anchored" data-anchor-id="access-a-plublicapis.org">access a plublicapis.org</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> React<span class="op">,</span> { useState<span class="op">,</span> useEffect } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> axios <span class="im">from</span> <span class="st">'axios'</span><span class="op">;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a> MongoClient mongoClient <span class="op">=</span> MongoClients<span class="op">.</span><span class="fu">create</span><span class="op">(</span>myAppProperties<span class="op">.</span><span class="fu">getProperty</span><span class="op">(</span><span class="st">"app.uri"</span><span class="op">))</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a> MongoDatabase database <span class="op">=</span> mongoClient<span class="op">.</span><span class="fu">getDatabase</span><span class="op">(</span>myAppProperties<span class="op">.</span><span class="fu">getProperty</span><span class="op">(</span><span class="st">"app.database"</span><span class="op">));</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> RestApiEx1 <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [posts<span class="op">,</span> setPosts] <span class="op">=</span> <span class="fu">useState</span>([])<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [isLoading<span class="op">,</span> setIsLoading] <span class="op">=</span> <span class="fu">useState</span>(<span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchData <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> axios<span class="op">.</span><span class="fu">get</span>(</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>            <span class="st">'https://api.publicapis.org/entries'</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>          )<span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>          <span class="kw">const</span> booksData <span class="op">=</span> response<span class="op">.</span><span class="at">data</span><span class="op">.</span><span class="at">entries</span><span class="op">;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>          <span class="fu">setPosts</span>(booksData)<span class="op">;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>          <span class="fu">setIsLoading</span>(<span class="kw">false</span>)<span class="op">;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchData</span>()<span class="op">;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a> <span class="kw">&lt;&gt;</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;h1&gt;</span>Entries<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="va">{</span>isLoading <span class="op">?</span> (</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;p&gt;</span>Loading...<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    ) <span class="op">:</span> (</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;ul&gt;</span>      </span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>        <span class="va">{</span>posts<span class="op">.</span><span class="fu">map</span>((entrie) <span class="kw">=&gt;</span> (</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>          <span class="kw">&lt;li</span> <span class="kw">&gt;</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>API:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">API</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>Description:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">Description</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>Auth:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">Auth</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>HTTPS:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">HTTPS</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>Cors:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">Cors</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>Link:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">Link</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;strong&gt;</span>Category:<span class="kw">&lt;/strong&gt;</span> <span class="va">{</span>entrie<span class="op">.</span><span class="at">Category</span><span class="va">}</span> <span class="kw">&lt;br</span> <span class="kw">/&gt;</span>            </span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>            <span class="kw">&lt;/li&gt;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        ))<span class="va">}</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;/ul&gt;</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    )<span class="va">}</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a> <span class="kw">&lt;/&gt;</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> RestApiEx1<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="get-data" class="level3">
-<h3 class="anchored" data-anchor-id="get-data">Get data</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode java code-with-copy"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  MongoCollection<span class="op">&lt;</span><span class="bu">Document</span><span class="op">&gt;</span> collection <span class="op">=</span> database<span class="op">.</span><span class="fu">getCollection</span><span class="op">(</span><span class="st">"reserve"</span><span class="op">);</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">//Retrieving the documents</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>FindIterable<span class="op">&lt;</span><span class="bu">Document</span><span class="op">&gt;</span> iterDoc <span class="op">=</span> collection<span class="op">.</span><span class="fu">find</span><span class="op">();</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">Iterator</span> it <span class="op">=</span> iterDoc<span class="op">.</span><span class="fu">iterator</span><span class="op">();</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="op">(</span>it<span class="op">.</span><span class="fu">hasNext</span><span class="op">())</span> <span class="op">{</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span><span class="st">"********************************"</span> <span class="op">+</span> it<span class="op">.</span><span class="fu">next</span><span class="op">());</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="result" class="level3">
-<h3 class="anchored" data-anchor-id="result">Result</h3>
-<pre><code>Document{{_id=63f3c23835bf045fc8c4eeba, idUser=123, idPointCharge=123, dateStart=Sun Jan 01 00:00:00 CET 2023, dateEnd=Sat Jan 01 00:00:00 CET 2022, accepted=0}}
-Document{{_id=63f3ccfd35bf045fc8c4eebc, idUser=123, idPointCharge=124, dateStart=Mon Jan 01 00:00:00 CET 2024, dateEnd=Mon Jan 01 00:00:00 CET 2024, accepted=0}}</code></pre>
+<section id="source-code" class="level1">
+<h1><a href="https://github.com/rarmero/labscifolavioleta/tree/main/src/reactLab1">Source code</a></h1>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

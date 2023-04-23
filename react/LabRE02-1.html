@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>App with web tecnologies - Oils</title>
+<title>App with web tecnologies - Lab#RE01-1: API Rest Axios</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,7 +63,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,10 +89,26 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Devops</span>
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-devops">    
+        <li class="dropdown-header">Linux</li>
+        <li>
+    <a class="dropdown-item" href="../createmd.html">
+ <span class="dropdown-text">Script to create md file</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../datecommit.html">
+ <span class="dropdown-text">Script to know the commit date</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">PowerShell</li>
+        <li>
+    <a class="dropdown-item" href="../jobsps.html">
+ <span class="dropdown-text">PowerShell Jobs</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Pipeline</li>
         <li>
     <a class="dropdown-item" href="../pipeline.html">
- <span class="dropdown-text">Pipeline</span></a>
+ <span class="dropdown-text">Pipeline sonarqube</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
         <li class="dropdown-header">Kubernettes</li>
@@ -161,7 +178,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../oil/ListOils.html">
- <span class="dropdown-text">Listing of oils</span></a>
+ <span class="dropdown-text">List</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../LabMDObservable.html">
@@ -172,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Rest Api</span></a>
   </li>  
         <li><hr class="dropdown-divider"></li>
-        <li class="dropdown-header">Java Labs</li>
+        <li class="dropdown-header">Java SEE Labs</li>
         <li>
     <a class="dropdown-item" href="../LabSE00-1.html">
  <span class="dropdown-text">Lab SE 00-1</span></a>
@@ -180,6 +197,44 @@ ul.task-list li input[type="checkbox"] {
         <li>
     <a class="dropdown-item" href="../LabSE01-1.html">
  <span class="dropdown-text">Lab SE 01-1</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Springboot Labs</li>
+        <li>
+    <a class="dropdown-item" href="../springboot/springbootThymeleaf.html">
+ <span class="dropdown-text">springboot with thymeleaf</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/springbootmvc.html">
+ <span class="dropdown-text">springboot MVC</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/springbootRest.html">
+ <span class="dropdown-text">springboot rest</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/springbootRestH2.html">
+ <span class="dropdown-text">SpringBoot with H2</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Mongodb</li>
+        <li>
+    <a class="dropdown-item" href="../mongodb/mongodb_install.html">
+ <span class="dropdown-text">installation mongodb</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../mongodb/mongodb.html">
+ <span class="dropdown-text">Mongodb Labs:mongodb-driver-sync</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../mongodb/mongodb2.html">
+ <span class="dropdown-text">Mongodb Labs:spring-boot-starter-data-mongodb</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">React</li>
+        <li>
+    <a class="dropdown-item" href="../react/LabRE02-1.html">
+ <span class="dropdown-text">Lab#RE01-1: API Rest Axios</span></a>
   </li>  
     </ul>
   </li>
@@ -214,10 +269,177 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Lab#RE01-1: API Rest Axios</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  Labs
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">MarkUp Languages</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMD01-1.html" class="sidebar-item-text sidebar-link">Quarto publish</a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">List</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOils.html" class="sidebar-item-text sidebar-link">Listings default</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsGrid.html" class="sidebar-item-text sidebar-link">Listings grid</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsTable.html" class="sidebar-item-text sidebar-link">Listings table</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/ListOilsCustom.html" class="sidebar-item-text sidebar-link">Listings Custom</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../oil/fileAttachment.html" class="sidebar-item-text sidebar-link">File Attachment</a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMDObservable.html" class="sidebar-item-text sidebar-link">Quarto Markdown, code &amp; data</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabMDResApi.html" class="sidebar-item-text sidebar-link">Rest Api</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Java SEE Labs</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabSE00-1.html" class="sidebar-item-text sidebar-link">Lab SE 00-1</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../LabSE01-1.html" class="sidebar-item-text sidebar-link">Lab SE 01-1</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">Springboot Labs</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootThymeleaf.html" class="sidebar-item-text sidebar-link">springboot with thymeleaf</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootmvc.html" class="sidebar-item-text sidebar-link">springboot MVC</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootRest.html" class="sidebar-item-text sidebar-link">springboot rest</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../springboot/springbootRestH2.html" class="sidebar-item-text sidebar-link">SpringBoot with H2</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">Mongodb</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb_install.html" class="sidebar-item-text sidebar-link">installation mongodb</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb.html" class="sidebar-item-text sidebar-link">Mongodb Labs:mongodb-driver-sync</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../mongodb/mongodb2.html" class="sidebar-item-text sidebar-link">Mongodb Labs:spring-boot-starter-data-mongodb</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">React</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../react/LabRE02-1.html" class="sidebar-item-text sidebar-link active">Lab#RE01-1: API Rest Axios</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
@@ -227,7 +449,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Oils</h1>
+<h1 class="title d-none d-lg-block">Lab#RE01-1: API Rest Axios</h1>
 </div>
 
 
@@ -242,51 +464,6 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>FINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="imagesoil/fincas_mas_perdut_arbequina_2L.jpeg" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">fig 1</figcaption><p></p>
-</figure>
-</div>
-<table class="table">
-<caption>details</caption>
-<thead>
-<tr class="header">
-<th>Categoria</th>
-<th style="text-align: right;">SKU</th>
-<th style="text-align: right;">Preu</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Olis d’Oliva Verges Extra</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">€17.00</td>
-</tr>
-</tbody>
-</table>
-<p>FINCA MAS PERDUT Oli d’Oliva ARBEQUINA Verge Extra</p>
-<p>Garrafa 2L Extracció en fred Campanya 2022-2023 SIURANA - SANTA OLIVA (TARRAGONA) Oliveres velles (centenàries) pròpies al cor de la comarca del Baix Penedès, a Santa Oliva. La més jove te 80 anys i més antiga al voltant dels 200 anys.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
-<div class="callout-body-container callout-body">
-<p>Baix rendiment per olivera, olives amb màxima expressió i concentració, símbol d’identitat.</p>
-<p>Lema: respectar l’entorn, cuidar les olives i mimar l’olivera.</p>
-<p>Arbequines de categoria superior d’extracció en fred.</p>
-<p>Oli delicat, suau i molt aromàtic.</p>
-</div>
-</div>
-</div>
 
 
 
