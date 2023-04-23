@@ -485,7 +485,7 @@
   {
     "objectID": "react/LabRE01-1.html#access-a-plublicapis.org",
     "href": "react/LabRE01-1.html#access-a-plublicapis.org",
-    "title": "Lab#RE01-1: API Rest Axios",
+    "title": "Lab#RE01-1: API Rest",
     "section": "access a plublicapis.org",
     "text": "access a plublicapis.org\nimport React, { useState, useEffect } from 'react';\nimport axios from 'axios';\n\nconst RestApiEx1 = () => {\n  const [posts, setPosts] = useState([]);\n  const [isLoading, setIsLoading] = useState(true);\n\n  useEffect(() => {\n    const fetchData = async () => {\n      \n        const response = await axios.get(\n            'https://api.publicapis.org/entries'\n          );\n          const booksData = response.data.entries;\n          setPosts(booksData);\n          setIsLoading(false);\n    \n    };\n    fetchData();\n  }, []);\n\n  return (\n <>\n    <h1>Entries</h1>\n    {isLoading ? (\n      <p>Loading...</p>\n    ) : (\n\n      <ul>      \n        {posts.map((entrie) => (\n          <li >\n            \n            <strong>API:</strong> {entrie.API} <br />\n            <strong>Description:</strong> {entrie.Description} <br />\n            <strong>Auth:</strong> {entrie.Auth} <br />\n            <strong>HTTPS:</strong> {entrie.HTTPS} <br />\n            <strong>Cors:</strong> {entrie.Cors} <br />\n            <strong>Link:</strong> {entrie.Link} <br />\n            <strong>Category:</strong> {entrie.Category} <br />            \n            </li>\n        ))}\n      </ul>\n    )}\n </>\n  );\n};\n\nexport default RestApiEx1;"
   },
