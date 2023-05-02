@@ -291,7 +291,7 @@
     "href": "index.html",
     "title": "Web App",
     "section": "",
-    "text": "Journey in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\n\n\n\n\nNote\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Result exit]\n  E --> G[Result fault]\n\n\n\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory"
+    "text": "Journey in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\n\n\n\n\nNote\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Rigth result]\n  E --> G[wrong result]\n\n\n\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory"
   },
   {
     "objectID": "mongodb/mongodb2.html",
