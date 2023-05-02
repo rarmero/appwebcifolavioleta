@@ -21,8 +21,8 @@ flowchart LR
   B(Mind Management) --> E
   C(Getting things done) --> E{Decision Making}
   D(Metrics) --> E{Decision Making}
-  E --> F[Rigth result]
-  E --> G[wrong result]
+  E --> F[Right result]
+  E --> G[Wrong result]
 ```
 
 [![Laboratories](images/programmer-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/LabMD01-1.html)
