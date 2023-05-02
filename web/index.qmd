@@ -15,8 +15,6 @@ key-words: mind-set, programming, devops, scrum, arquitecture.
 :::
 
 
-
-
 ```{mermaid}
 flowchart LR
   A(Scrum) --> E{Decision Making}
@@ -27,15 +25,15 @@ flowchart LR
   E --> G[wrong result]
 ```
 
-[![Laboratories](images/programmer-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/Project1.html)
+[![Laboratories](images/programmer-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/LabMD01-1.html)
 
 
 
 [![Personal projects](images/92aYr-brain-clipart.svg){width=300}](https://rarmero.github.io/appwebcifolavioleta/Project1.html)
 
 
-[![Devops](images/devops-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/Project1.html)
+[![Devops](images/devops-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/createmd.html)
 
 
-[![Theory](images/books.svg){width=300}](https://rarmero.github.io/appwebcifolavioleta/Project1.html)
+[![Theory](images/books.svg){width=300}](https://rarmero.github.io/appwebcifolavioleta/Theory1.html)
 
