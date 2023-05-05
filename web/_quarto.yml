@@ -53,6 +53,7 @@ website:
         - section: "React"
           contents: 
            - "react/LabRE01-1.qmd"
+           - "react/LabRE02-1.qmd"
     - id: "tasks" 
       title: "Devops"
       contents:
