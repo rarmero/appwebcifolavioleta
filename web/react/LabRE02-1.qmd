@@ -1,0 +1,19 @@
+---
+title: "Lab#RE02-1; Hook useReducer"
+---
+
+# Hook useReducer & Material
+
+
+```JSX
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';
+import { useReducer } from "react";
+```
+
+
+![fig 1](../images/usereducer.PNG)
+
+
+
+# [Source code](https://github.com/rarmero/labscifolavioleta/tree/main/src/reactlab2)
