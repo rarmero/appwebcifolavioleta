@@ -99,7 +99,9 @@ website:
         - section: "Project4"
           contents:
            - "testing.qmd" 
-
+        - section: "Cifo"
+          contents:
+           - "projects/cifometrics.qmd" 
     - id: "theory" 
       title: "Theory"
       contents:

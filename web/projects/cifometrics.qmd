@@ -1,0 +1,24 @@
+---
+title: "Cifo metrics"
+---
+
+# Labs
+
+[Lab01](https://albertprofe.dev/javase/selab0-1.html){.external}
+
+# Backlog projects 
+
+knowing the commit update
+
+[code source](https://rarmero.github.io/appwebcifolavioleta/datecommit.html){.external}
+
+[backlog projects](https://albertprofe.dev/ifcd0210/ifcd0210backlog-projects.html){.external}
+
+
+# Books
+
+![fig 1](../images/metricsbooks.PNG)
+
+
+[book list](https://albertprofe.dev/learning/learning-listing-table-books.html){.external}
+
