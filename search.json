@@ -448,6 +448,13 @@
     "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
   },
   {
+    "objectID": "projects/cifometrics.html",
+    "href": "projects/cifometrics.html",
+    "title": "Cifo metrics",
+    "section": "",
+    "text": "Labs\nLab01\n\n\nBacklog projects\nknowing the commit update\ncode source\nbacklog projects\n\n\nBooks\n\n\n\nfig 1\n\n\nbook list"
+  },
+  {
     "objectID": "react/LabRE01-1.html#access-a-plublicapis.org",
     "href": "react/LabRE01-1.html#access-a-plublicapis.org",
     "title": "Lab#RE01-1: API Rest",
@@ -597,7 +604,7 @@
   {
     "objectID": "testing.html",
     "href": "testing.html",
-    "title": "Testing",
+    "title": "Theory",
     "section": "",
     "text": "Unit\nIntegration\nFunctional"
   },
