@@ -49,13 +49,6 @@
     "text": "Journey in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\n\n\n\n\nNote\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Right result]\n  E --> G[Wrong result]\n\n\n\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory"
   },
   {
-    "objectID": "javasonarqube.html",
-    "href": "javasonarqube.html",
-    "title": "Java code MOOC Helsinki",
-    "section": "",
-    "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
-  },
-  {
     "objectID": "jobsps.html",
     "href": "jobsps.html",
     "title": "PowerShell Jobs",
@@ -336,123 +329,137 @@
     "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
   },
   {
-    "objectID": "Project1.html",
-    "href": "Project1.html",
+    "objectID": "projects/cifometrics.html",
+    "href": "projects/cifometrics.html",
+    "title": "Cifo metrics",
+    "section": "",
+    "text": "Labs\n\n\n\nlabsxx\nDelivered\nrevised\n\n\n\n\nuser1\n\n\n\n\n…\n\n\n\n\nuserN\n\n\n\n\n\nLab01\n\n\nBacklog projects\nknowing the commit update\ncode source\nbacklog projects\n\n\nBooks\n\n\n\nfig 1\n\n\nbook list"
+  },
+  {
+    "objectID": "projects/javasonarqube.html",
+    "href": "projects/javasonarqube.html",
+    "title": "Java code MOOC Helsinki",
+    "section": "",
+    "text": "Versions about Part07_07.RecipeSearch from Mooc java 1 helsinki leaded by SonarQube\nPart07_07.RecipeSearch\n\n\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "projects/Project1.html",
+    "href": "projects/Project1.html",
     "title": "Chrome OS applications",
     "section": "",
     "text": "Installed on Acer Spin513 qualcomm snpadragon\nOS Debian linux 11 (bullseye)"
   },
   {
-    "objectID": "Project1.html#references",
-    "href": "Project1.html#references",
+    "objectID": "projects/Project1.html#references",
+    "href": "projects/Project1.html#references",
     "title": "Chrome OS applications",
     "section": "References:",
     "text": "References:\n\nvisual Code\ndocker"
   },
   {
-    "objectID": "Project1.html#linux-terminal",
-    "href": "Project1.html#linux-terminal",
+    "objectID": "projects/Project1.html#linux-terminal",
+    "href": "projects/Project1.html#linux-terminal",
     "title": "Chrome OS applications",
     "section": "Linux terminal",
     "text": "Linux terminal\n\n\n\nfig 1"
   },
   {
-    "objectID": "Project1.html#applications-installed",
-    "href": "Project1.html#applications-installed",
+    "objectID": "projects/Project1.html#applications-installed",
+    "href": "projects/Project1.html#applications-installed",
     "title": "Chrome OS applications",
     "section": "Applications installed:",
     "text": "Applications installed:\n\n\n\n\n\n\nVisual code\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\n\n\n\n\n\nNetBeans - Java\n\n\n\n\n\n\n\n\nfig 3\n\n\n\n\n\n\n\n\n\n\n\nDocker\n\n\n\n\n\n\n\n\nfig 4"
   },
   {
-    "objectID": "Project1b.html",
-    "href": "Project1b.html",
+    "objectID": "projects/Project1b.html",
+    "href": "projects/Project1b.html",
     "title": "Others ways to mobility",
     "section": "",
     "text": "Never install\nAir Table\nZapier"
   },
   {
-    "objectID": "Project2.html",
-    "href": "Project2.html",
+    "objectID": "projects/Project2.html",
+    "href": "projects/Project2.html",
     "title": "SonarQube",
     "section": "",
     "text": "SonarQube like SAST\nSonarQube"
   },
   {
-    "objectID": "Project2.html#motivation",
-    "href": "Project2.html#motivation",
+    "objectID": "projects/Project2.html#motivation",
+    "href": "projects/Project2.html#motivation",
     "title": "SonarQube",
     "section": "Motivation",
     "text": "Motivation\n\nopen source\ngood comments"
   },
   {
-    "objectID": "Project2.html#how-to-use-sonarqube",
-    "href": "Project2.html#how-to-use-sonarqube",
+    "objectID": "projects/Project2.html#how-to-use-sonarqube",
+    "href": "projects/Project2.html#how-to-use-sonarqube",
     "title": "SonarQube",
     "section": "How to use SonarQube",
     "text": "How to use SonarQube\n\n1. Generating token\nInstructions\n\n\n2. comand line\nmvn clean verify sonar:sonar \\\n  -Dsonar.projectKey=<nombproject> \\\n  -Dsonar.host.url=<ip> \\\n  -Dsonar.login=<token>\n\n\n3. Reference how to use SonarQube\nInstructions\n\n\n4. Jenkins\nInstructions\n\n\n\n\n\n\npipeline with jenkins\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
-    "objectID": "Project2.html#links-references",
-    "href": "Project2.html#links-references",
+    "objectID": "projects/Project2.html#links-references",
+    "href": "projects/Project2.html#links-references",
     "title": "SonarQube",
     "section": "Links references",
     "text": "Links references\n\n\nList of tools"
   },
   {
-    "objectID": "Project2Management.html",
-    "href": "Project2Management.html",
+    "objectID": "projects/Project2Management.html",
+    "href": "projects/Project2Management.html",
     "title": "SonarQube Management",
     "section": "",
     "text": "Software\n\n\n\n\nJira\n\n\nGithub"
   },
   {
-    "objectID": "Project2Management.html#jira",
-    "href": "Project2Management.html#jira",
+    "objectID": "projects/Project2Management.html#jira",
+    "href": "projects/Project2Management.html#jira",
     "title": "SonarQube Management",
     "section": "Jira",
     "text": "Jira\n\n\n\n\n\n\nPanel jira\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
-    "objectID": "Project2Management.html#github",
-    "href": "Project2Management.html#github",
+    "objectID": "projects/Project2Management.html#github",
+    "href": "projects/Project2Management.html#github",
     "title": "SonarQube Management",
     "section": "Github",
     "text": "Github\n\n\n\nfig 2\n\n\nProject on Github"
   },
   {
-    "objectID": "Project3.html",
-    "href": "Project3.html",
+    "objectID": "projects/Project3.html",
+    "href": "projects/Project3.html",
     "title": "Software Tools",
     "section": "",
     "text": "Tools to consider\nMore Free DAST"
   },
   {
-    "objectID": "Project3.html#owasp",
-    "href": "Project3.html#owasp",
+    "objectID": "projects/Project3.html#owasp",
+    "href": "projects/Project3.html#owasp",
     "title": "Software Tools",
     "section": "OWASP",
     "text": "OWASP\n\nowasp\ntesting guide\nDocumentation\ntesting guide(dpf)"
   },
   {
-    "objectID": "Project3.html#nikto",
-    "href": "Project3.html#nikto",
+    "objectID": "projects/Project3.html#nikto",
+    "href": "projects/Project3.html#nikto",
     "title": "Software Tools",
     "section": "Nikto",
     "text": "Nikto\n\nNikto web"
   },
   {
-    "objectID": "Project3.html#zap",
-    "href": "Project3.html#zap",
+    "objectID": "projects/Project3.html#zap",
+    "href": "projects/Project3.html#zap",
     "title": "Software Tools",
     "section": "ZAP",
     "text": "ZAP\n\nZAP\n\n\nInteresting thing, use zap via web.\n\n\nWebswing Usage\nWebswing\n\n\nalternatives\n\narachni\nskipfish\nwapiti"
   },
   {
-    "objectID": "projects/cifometrics.html",
-    "href": "projects/cifometrics.html",
-    "title": "Cifo metrics",
+    "objectID": "projects/testing.html",
+    "href": "projects/testing.html",
+    "title": "Theory",
     "section": "",
-    "text": "Labs\nLab01\n\n\nBacklog projects\nknowing the commit update\ncode source\nbacklog projects\n\n\nBooks\n\n\n\nfig 1\n\n\nbook list"
+    "text": "Unit\nIntegration\nFunctional"
   },
   {
     "objectID": "react/LabRE01-1.html#access-a-plublicapis.org",
@@ -600,13 +607,6 @@
     "title": "Quarto with docker",
     "section": "",
     "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "testing.html",
-    "href": "testing.html",
-    "title": "Theory",
-    "section": "",
-    "text": "Unit\nIntegration\nFunctional"
   },
   {
     "objectID": "Theory1.html",
