@@ -86,22 +86,23 @@ website:
         - text: "---"  
         - section: "Mobility"
           contents:
-           - "Project1.qmd"
-           - "Project1b.qmd"
+           - "projects/Project1.qmd"
+           - "projects/Project1b.qmd"
         - section: "Static application security testing"
           contents:
-           - "Project2.qmd"
-           - "Project2Management.qmd"
-           - "javasonarqube.qmd"
+           - "projects/Project2.qmd"
+           - "projects/Project2Management.qmd"
+           - "projects/javasonarqube.qmd"
         - section: "Dynamic application security testing"
           contents:
-           - "Project3.qmd"
+           - "projects/Project3.qmd"
         - section: "Testing"
           contents:
-           - "testing.qmd" 
+           - "projects/testing.qmd" 
         - section: "Cifo"
           contents:
-           - "projects/cifometrics.qmd" 
+           - "projects/cifometrics.qmd"
+           - "projects/quiz.qmd" 
     - id: "theory" 
       title: "Theory"
       contents:

@@ -4,6 +4,14 @@ title: "Cifo metrics"
 
 # Labs
 
+
+|labsxx | Delivered | revised |
+|-------|-----------|---------|
+|user1  |           |         |
+|...    |           |         |
+|userN  |           |         |
+
+
 [Lab01](https://albertprofe.dev/javase/selab0-1.html){.external}
 
 # Backlog projects 
