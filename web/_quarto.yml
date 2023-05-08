@@ -96,7 +96,7 @@ website:
         - section: "Dynamic application security testing"
           contents:
            - "Project3.qmd"
-        - section: "Project4"
+        - section: "Testing"
           contents:
            - "testing.qmd" 
         - section: "Cifo"
