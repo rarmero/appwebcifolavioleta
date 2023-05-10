@@ -476,6 +476,13 @@
     "text": "Hook useReducer & Material\nimport Box from '@mui/material/Box';\nimport Slider from '@mui/material/Slider';\nimport { useReducer } from \"react\";\n\n\n\nfig 1\n\n\n\n\nSource code"
   },
   {
+    "objectID": "react/ReactDelivery.html",
+    "href": "react/ReactDelivery.html",
+    "title": "React - SpringBoot - Mongodb",
+    "section": "",
+    "text": "Architecture\n\n\n\nfig 1\n\n\n\n\nCode\nimport React, { useState, useEffect } from 'react';\nimport axios from 'axios';\n\nconst RestApiEx1 = () => {\n  const [posts, setPosts] = useState([]);\n  const [isLoading, setIsLoading] = useState(true);\n\n  useEffect(() => {\n    const fetchData = async () => {\n      \n        const response = await axios.get(\n            'http://localhost:8090/api/reservations',{timeout:6000}\n          );\n          const booksData = response.data;\n          setPosts(booksData);\n          setIsLoading(false);\n    \n    };\n    fetchData();\n  }, []);\n\n  return (\n <>\n    <h1>Entries</h1>\n    {isLoading ? (\n      <p>Loading...</p>\n    ) : (\n\n      <ul>      \n        {posts.map((entrie) => (\n          <li >            \n          \n          \n            <strong>Date Start:</strong> {entrie.dateStart} <br />          \n            <strong>Date End:</strong> {entrie.dateEnd} <br />          \n          \n            </li>\n        ))}\n      </ul>\n    )}\n </>\n  );\n};\ngithub\n\n\nResult\n\n\n\nfig 2"
+  },
+  {
     "objectID": "springboot/springbootmvc.html",
     "href": "springboot/springbootmvc.html",
     "title": "springboot MVC",
