@@ -1,5 +1,6 @@
 ---
 title: "Lab#RE02-1: Hook useReducer"
+subtitle: UF03-1846
 ---
 
 # Hook useReducer & Material
@@ -17,3 +18,7 @@ import { useReducer } from "react";
 
 
 # [Source code](https://github.com/rarmero/labscifolavioleta/tree/main/src/reactlab2)
+
+>
+lab delivery
+ `Code (UF03-1846)`
