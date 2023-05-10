@@ -25,7 +25,7 @@ website:
         - text: "Labs"
         - section: "MarkUp Languages"
           contents:
-           - "LabMD01-1.qmd"
+           - "quartopages/LabMD01-1.qmd"
            - section: List
              contents: 
               - "oil/ListOils.qmd"
@@ -33,8 +33,8 @@ website:
               - "oil/ListOilsTable.qmd"
               - "oil/ListOilsCustom.qmd"
               - "oil/fileAttachment.qmd"
-           - "LabMDObservable.qmd"
-           - "LabMDResApi.qmd"
+           - "quartopages/LabMDObservable.qmd"
+           - "quartopages/LabMDResApi.qmd"
         - section: "Java SEE Labs"
           contents: 
            - "LabSE00-1.qmd"

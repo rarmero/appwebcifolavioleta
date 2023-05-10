@@ -10,5 +10,9 @@ title: "Quarto publish"
 
 ## Publish
 
-![fig 1](images/quartopublish1.png)
+![fig 1](../images/quartopublish1.png)
 :::
+
+>
+lab delivery
+ `Code (UF01-1841)`

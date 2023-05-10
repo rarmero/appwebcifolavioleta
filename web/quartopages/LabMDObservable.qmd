@@ -4,9 +4,6 @@ execute:
   echo: false
 ---
 
-Code : `MF01-0492`
-
-
 ## FileAttachment
 
 ```{ojs}
@@ -76,3 +73,6 @@ Inputs.table(interactive, { sort: "value", reverse: true })
 
 ```
 
+>
+lab delivery
+ `Code (MF01-0491)`

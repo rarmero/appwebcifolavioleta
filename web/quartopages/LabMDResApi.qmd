@@ -4,10 +4,6 @@ execute:
   echo: false
 ---
 
-Code : `MF01-0492`
-
-
-
 ### First approach
 
 ```{ojs}
@@ -59,3 +55,8 @@ return {name,date}
 Inputs.table(holidays, { sort: "value", reverse: true })
 
 ```
+
+
+>
+lab delivery
+ `Code (MF01-0491)`
