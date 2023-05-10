@@ -473,14 +473,14 @@
     "href": "react/LabRE02-1.html",
     "title": "Lab#RE02-1: Hook useReducer",
     "section": "",
-    "text": "Hook useReducer & Material\nimport Box from '@mui/material/Box';\nimport Slider from '@mui/material/Slider';\nimport { useReducer } from \"react\";\n\n\n\nfig 1\n\n\n\n\nSource code"
+    "text": "Hook useReducer & Material\nimport Box from '@mui/material/Box';\nimport Slider from '@mui/material/Slider';\nimport { useReducer } from \"react\";\n\n\n\nfig 1\n\n\n\n\nSource code\n\nlab delivery Code (UF03-1846)"
   },
   {
     "objectID": "react/ReactDelivery.html",
     "href": "react/ReactDelivery.html",
     "title": "React - SpringBoot - Mongodb",
     "section": "",
-    "text": "Architecture\n\n\n\nfig 1\n\n\n\n\nCode\nimport React, { useState, useEffect } from 'react';\nimport axios from 'axios';\n\nconst RestApiEx1 = () => {\n  const [posts, setPosts] = useState([]);\n  const [isLoading, setIsLoading] = useState(true);\n\n  useEffect(() => {\n    const fetchData = async () => {\n      \n        const response = await axios.get(\n            'http://localhost:8090/api/reservations',{timeout:6000}\n          );\n          const booksData = response.data;\n          setPosts(booksData);\n          setIsLoading(false);\n    \n    };\n    fetchData();\n  }, []);\n\n  return (\n <>\n    <h1>Entries</h1>\n    {isLoading ? (\n      <p>Loading...</p>\n    ) : (\n\n      <ul>      \n        {posts.map((entrie) => (\n          <li >            \n          \n          \n            <strong>Date Start:</strong> {entrie.dateStart} <br />          \n            <strong>Date End:</strong> {entrie.dateEnd} <br />          \n          \n            </li>\n        ))}\n      </ul>\n    )}\n </>\n  );\n};\ngithub\n\n\nResult\n\n\n\nfig 2"
+    "text": "Architecture\n\n\n\nfig 1\n\n\n\n\nCode\nimport React, { useState, useEffect } from 'react';\nimport axios from 'axios';\n\nconst RestApiEx1 = () => {\n  const [posts, setPosts] = useState([]);\n  const [isLoading, setIsLoading] = useState(true);\n\n  useEffect(() => {\n    const fetchData = async () => {\n      \n        const response = await axios.get(\n            'http://localhost:8090/api/reservations',{timeout:6000}\n          );\n          const booksData = response.data;\n          setPosts(booksData);\n          setIsLoading(false);\n    \n    };\n    fetchData();\n  }, []);\n\n  return (\n <>\n    <h1>Entries</h1>\n    {isLoading ? (\n      <p>Loading...</p>\n    ) : (\n\n      <ul>      \n        {posts.map((entrie) => (\n          <li >            \n          \n          \n            <strong>Date Start:</strong> {entrie.dateStart} <br />          \n            <strong>Date End:</strong> {entrie.dateEnd} <br />          \n          \n            </li>\n        ))}\n      </ul>\n    )}\n </>\n  );\n};\ngithub\n\n\nResult\n\n\n\nfig 2\n\n\n\nlab delivery Code (MF02-0492)"
   },
   {
     "objectID": "springboot/springbootmvc.html",
@@ -543,21 +543,21 @@
     "href": "springboot/springbootmvc.html#content-of-example-on-github",
     "title": "springboot MVC",
     "section": "content of example on github",
-    "text": "content of example on github\nsource"
+    "text": "content of example on github\nsource\n\nlab delivery Code (UF01-1844)"
   },
   {
     "objectID": "springboot/springbootRest.html",
     "href": "springboot/springbootRest.html",
     "title": "springboot rest",
     "section": "",
-    "text": "flowchart LR\n  A[Mongodb docker] --> B[SpringBoot Rest Api - Docker]  \n\n\n\n\n\n\n\n\nMongodb(docker) and SpringBoot Rest Api (docker)\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\nSource\n\n\n\n\n\nSource"
+    "text": "flowchart LR\n  A[Mongodb docker] --> B[SpringBoot Rest Api - Docker]  \n\n\n\n\n\n\n\n\nMongodb(docker) and SpringBoot Rest Api (docker)\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\nfig 2\n\n\n\n\n\n\nSource\n\n\n\n\n\nSource\n\n\nlab delivery Code (Lab SB00-4;UF01-1844)"
   },
   {
     "objectID": "springboot/springbootRestH2.html",
     "href": "springboot/springbootRestH2.html",
     "title": "SpringBoot with H2",
     "section": "",
-    "text": "flowchart LR\n  A[H2 docker] --> B[SpringBoot Rest Api]  \n\n\n\n\n\n\n\n\nH2(docker) and SpringBoot Rest Api\n\n\n\n\n\nfig 1\n\n\n\n\n\nH2 Documentation\n\n\n\nfig 2\n\n\n\n\n\nfig 3\n\n\n\n\n\nsome examples:\n\n\n\nfig 4\n\n\n\n\n\nfig 5\n\n\nGitHub Source"
+    "text": "flowchart LR\n  A[H2 docker] --> B[SpringBoot Rest Api]  \n\n\n\n\n\n\n\n\nH2(docker) and SpringBoot Rest Api\n\n\n\n\n\nfig 1\n\n\n\n\n\nH2 Documentation\n\n\n\nfig 2\n\n\n\n\n\nfig 3\n\n\n\n\n\nsome examples:\n\n\n\nfig 4\n\n\n\n\n\nfig 5\n\n\nGitHub Source\n\nlab delivery Code (Lab SB00-5;UF02-1845)"
   },
   {
     "objectID": "springboot/springbootThymeleaf.html",
@@ -599,7 +599,7 @@
     "href": "springboot/springbootThymeleaf.html#result",
     "title": "springboot with thymeleaf",
     "section": "Result",
-    "text": "Result\n\n\n\nfig 4"
+    "text": "Result\n\n\n\nfig 4\n\n\n\nlab delivery Code (UF01-1844)"
   },
   {
     "objectID": "Task1.html",
