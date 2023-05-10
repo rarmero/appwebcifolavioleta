@@ -471,7 +471,7 @@
   {
     "objectID": "react/LabRE02-1.html",
     "href": "react/LabRE02-1.html",
-    "title": "Lab#RE02-1; Hook useReducer",
+    "title": "Lab#RE02-1: Hook useReducer",
     "section": "",
     "text": "Hook useReducer & Material\nimport Box from '@mui/material/Box';\nimport Slider from '@mui/material/Slider';\nimport { useReducer } from \"react\";\n\n\n\nfig 1\n\n\n\n\nSource code"
   },
