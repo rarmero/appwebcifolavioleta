@@ -1,15 +1,19 @@
 ---
 title: "Web App"
-subtitle : Barcelona, Cifo - La Violeta 12-2022/07-2023"
+subtitle : "Barcelona, Cifo - La Violeta 12-2022/07-2023"
 ---
 
+# Introduction
 
->Journey in the knowledge of the high techniques to develop modern software with the guidance of [Albert's web](https://albertprofe.dev/)
+>Journey in the knowledge of the high techniques to develop modern software with the guidance of [Albert's web](https://albertprofe.dev/){.external}
 
-:::{.callout-note}
+# Keywords
+
+:::{.callout-tip title="Keywords"}
 key-words: mind-set, programming, devops, scrum, arquitecture.
 :::
 
+# Diagram idea
 
 ```{mermaid}
 flowchart LR
@@ -21,15 +25,19 @@ flowchart LR
   E --> G[Wrong result]
 ```
 
-[![Laboratories](images/programmer-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/LabMD01-1.html)
+# Web content
+
+::: {.callout-note title="Links"}
+
+::: {layout-nrow=2}
+
+[![Laboratories](images/programmer-icon.png){width=100}](https://rarmero.github.io/appwebcifolavioleta/LabMD01-1.html)
+
+[![Personal projects](images/92aYr-brain-clipart.svg){width=100}](https://rarmero.github.io/appwebcifolavioleta/Project1.html)
 
 
+[![Devops](images/devops-icon.png){width=100}](https://rarmero.github.io/appwebcifolavioleta/createmd.html)
 
-[![Personal projects](images/92aYr-brain-clipart.svg){width=300}](https://rarmero.github.io/appwebcifolavioleta/Project1.html)
-
-
-[![Devops](images/devops-icon.png){width=300}](https://rarmero.github.io/appwebcifolavioleta/createmd.html)
-
-
-[![Theory](images/books.svg){width=300}](https://rarmero.github.io/appwebcifolavioleta/Theory1.html)
-
+[![Theory](images/books.svg){width=100}](https://rarmero.github.io/appwebcifolavioleta/Theory1.html)
+:::
+:::

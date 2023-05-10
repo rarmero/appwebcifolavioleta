@@ -62,20 +62,20 @@ website:
         - text: "---"  
         - section: "Linux"
           contents:
-           - "createmd.qmd"
-           - "datecommit.qmd"
+           - "devops/createmd.qmd"
+           - "devops/datecommit.qmd"
         - section: "PowerShell"
           contents:
-           - "jobsps.qmd"
+           - "devops/jobsps.qmd"
         - section: "Pipeline"
           contents:
-           - "pipeline.qmd"
+           - "devops/pipeline.qmd"
         - section: "Kubernettes"
           contents:
-           - "Task1.qmd"
+           - "devops/Task1.qmd"
         - section: "Quarto docker"
           contents:
-           - "Task2.qmd"
+           - "devops/Task2.qmd"
 
     - id: "projects" 
       title: "Projects"
