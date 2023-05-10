@@ -56,4 +56,4 @@ echo "operation finished"
 
 ## Result
 
-![fig 1](images/filesmd.PNG)
+![fig 1](../images/filesmd.PNG)

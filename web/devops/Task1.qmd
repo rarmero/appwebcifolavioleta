@@ -8,12 +8,12 @@ title: "Kubernettes"
 
 ## Pods
 
-![fig 1](images/k8sPods.PNG)
+![fig 1](../images/k8sPods.PNG)
 :::
 
 :::{.callout-note  collapse="false" }
 
 ## Desployments
 
-![fig 2](images/k8sdeployments.PNG)
+![fig 2](../images/k8sdeployments.PNG)
 :::

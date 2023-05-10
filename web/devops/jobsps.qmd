@@ -41,15 +41,15 @@ D:\srctest\powershelltest\job1.ps1
 
 to manage the jobs
 
-![fig 1](images/jobspowershell.PNG)
+![fig 1](../images/jobspowershell.PNG)
 
 
 ## Wait-Job $getBookJob
 
 
-![fig 2](images/waitjobpowershell.PNG)
+![fig 2](../images/waitjobpowershell.PNG)
 
 
 ## Receive-Job $getBookJob  
 
-![fig 3](images/resultjob.PNG)
+![fig 3](../images/resultjob.PNG)

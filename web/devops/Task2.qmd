@@ -10,5 +10,5 @@ title: "Quarto with docker"
 
 ## Docker image
 
-![fig 1](images/dockerimagequarto.PNG)
+![fig 1](../images/dockerimagequarto.PNG)
 :::
