@@ -109,63 +109,7 @@
     "href": "index.html",
     "title": "Web App",
     "section": "",
-    "text": "Introduction\n\nJourney in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\nKeywords\n\n\n\n\n\n\nTip\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\nDiagram idea\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Right result]\n  E --> G[Wrong result]\n\n\n\n\n\n\n\n\n\n\nWeb content\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory"
-  },
-  {
-    "objectID": "LabMD01-1.html",
-    "href": "LabMD01-1.html",
-    "title": "Quarto publish",
-    "section": "",
-    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "LabMDObservable.html",
-    "href": "LabMDObservable.html",
-    "title": "Quarto Markdown, code & data",
-    "section": "",
-    "text": "Code : MF01-0492"
-  },
-  {
-    "objectID": "LabMDObservable.html#fileattachment",
-    "href": "LabMDObservable.html#fileattachment",
-    "title": "Quarto Markdown, code & data",
-    "section": "FileAttachment",
-    "text": "FileAttachment\n\ndata = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\nExample to show specific field position in the array.\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\nExample to show specific position in the array.\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
-  },
-  {
-    "objectID": "LabMDObservable.html#list-of-all-content.",
-    "href": "LabMDObservable.html#list-of-all-content.",
-    "title": "Quarto Markdown, code & data",
-    "section": "list of all content.",
-    "text": "list of all content.\n\ndata"
-  },
-  {
-    "objectID": "LabMDObservable.html#list-of-all-content-with-map.",
-    "href": "LabMDObservable.html#list-of-all-content-with-map.",
-    "title": "Quarto Markdown, code & data",
-    "section": "list of all content with map.",
-    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
-    "href": "LabMDObservable.html#cncf-cloud-native-interactive-landscape",
-    "title": "Quarto Markdown, code & data",
-    "section": "CNCF Cloud Native Interactive Landscape",
-    "text": "CNCF Cloud Native Interactive Landscape\n\ninteractivecsv = await FileAttachment(\"interactive-landscape.csv\").csv({ typed: true })\ninteractive = interactivecsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(interactive, { sort: \"value\", reverse: true })"
-  },
-  {
-    "objectID": "LabMDResApi.html",
-    "href": "LabMDResApi.html",
-    "title": "Rest Api",
-    "section": "",
-    "text": "Code : MF01-0492"
-  },
-  {
-    "objectID": "LabMDResApi.html#holidays",
-    "href": "LabMDResApi.html#holidays",
-    "title": "Rest Api",
-    "section": "Holidays",
-    "text": "Holidays\nSelect the country to know public holidays\n\nviewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\n\n\n\n\n\n\n\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\n\nholidays = holidaysContent.map(holidaysContent => {\nconst name = holidaysContent.name;\nconst date = holidaysContent.date;\nreturn {name,date}\n}\n)\n\nInputs.table(holidays, { sort: \"value\", reverse: true })"
+    "text": "Introduction\n\nJourney in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\nKeywords\n\n\n\n\n\n\nTip\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\nDiagram idea\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Right result]\n  E --> G[Wrong result]\n\n\n\n\n\n\n\n\n\n\nWeb content\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory\n\n\n\n\n\n\n\nlab delivery Code (UF02-1842)"
   },
   {
     "objectID": "LabSE00-1.html",
@@ -474,6 +418,55 @@
     "title": "Theory",
     "section": "",
     "text": "Unit\nIntegration\nFunctional"
+  },
+  {
+    "objectID": "quartopages/LabMD01-1.html",
+    "href": "quartopages/LabMD01-1.html",
+    "title": "Quarto publish",
+    "section": "",
+    "text": "Instructions\n\n\n\n\n\n\n\nPublish\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\nlab delivery Code (UF01-1841)"
+  },
+  {
+    "objectID": "quartopages/LabMDObservable.html",
+    "href": "quartopages/LabMDObservable.html",
+    "title": "Quarto Markdown, code & data",
+    "section": "",
+    "text": "data = await FileAttachment(\"books.csv\").csv({ typed: true })\n\n\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[0][\"title\"]\n\n\n\n\n\n\n\n\n\ndata[1]\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\ndata[1]"
+  },
+  {
+    "objectID": "quartopages/LabMDObservable.html#list-of-all-content.",
+    "href": "quartopages/LabMDObservable.html#list-of-all-content.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content.",
+    "text": "list of all content.\n\ndata"
+  },
+  {
+    "objectID": "quartopages/LabMDObservable.html#list-of-all-content-with-map.",
+    "href": "quartopages/LabMDObservable.html#list-of-all-content-with-map.",
+    "title": "Quarto Markdown, code & data",
+    "section": "list of all content with map.",
+    "text": "list of all content with map.\n\ndatacsv = await FileAttachment(\"books.csv\").csv({ typed: true })\nbooks = datacsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(books, { sort: \"value\", reverse: true })"
+  },
+  {
+    "objectID": "quartopages/LabMDObservable.html#cncf-cloud-native-interactive-landscape",
+    "href": "quartopages/LabMDObservable.html#cncf-cloud-native-interactive-landscape",
+    "title": "Quarto Markdown, code & data",
+    "section": "CNCF Cloud Native Interactive Landscape",
+    "text": "CNCF Cloud Native Interactive Landscape\n\ninteractivecsv = await FileAttachment(\"interactive-landscape.csv\").csv({ typed: true })\ninteractive = interactivecsv.map(function(element){\n    return element;\n}\n)\n\nInputs.table(interactive, { sort: \"value\", reverse: true })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlab delivery Code (MF01-0491)"
+  },
+  {
+    "objectID": "quartopages/LabMDResApi.html",
+    "href": "quartopages/LabMDResApi.html",
+    "title": "Rest Api",
+    "section": "",
+    "text": "d3 = require('d3')\n\nd3.json(\"https://api.github.com/repos/rarmero/appwebcifolavioleta/contents\", function(data)\n{\n    console.log(data);\n});"
+  },
+  {
+    "objectID": "quartopages/LabMDResApi.html#holidays",
+    "href": "quartopages/LabMDResApi.html#holidays",
+    "title": "Rest Api",
+    "section": "Holidays",
+    "text": "Holidays\nSelect the country to know public holidays\n\nviewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\n\n\n\n\n\n\n\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\n\nholidays = holidaysContent.map(holidaysContent => {\nconst name = holidaysContent.name;\nconst date = holidaysContent.date;\nreturn {name,date}\n}\n)\n\nInputs.table(holidays, { sort: \"value\", reverse: true })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlab delivery Code (MF01-0491)"
   },
   {
     "objectID": "react/LabRE01-1.html#access-a-plublicapis.org",
