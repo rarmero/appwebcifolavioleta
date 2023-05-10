@@ -7,88 +7,109 @@
     "text": "25 years of experiences in:\n\nSoftware developing.\nSystems, OS, servers, infraestructure, networking, helpdesk.\nManagement.\nBudgets.\nTraining."
   },
   {
-    "objectID": "createmd.html",
-    "href": "createmd.html",
+    "objectID": "devops/createmd.html",
+    "href": "devops/createmd.html",
     "title": "Script to create md file",
     "section": "",
     "text": "publish books for the course"
   },
   {
-    "objectID": "createmd.html#result",
-    "href": "createmd.html#result",
+    "objectID": "devops/createmd.html#result",
+    "href": "devops/createmd.html#result",
     "title": "Script to create md file",
     "section": "Result",
     "text": "Result\n\n\n\nfig 1"
   },
   {
-    "objectID": "datecommit.html",
-    "href": "datecommit.html",
+    "objectID": "devops/datecommit.html",
+    "href": "devops/datecommit.html",
     "title": "Script to know the commit date",
     "section": "",
     "text": "date of last commit"
   },
   {
-    "objectID": "datecommit.html#control-rules",
-    "href": "datecommit.html#control-rules",
+    "objectID": "devops/datecommit.html#control-rules",
+    "href": "devops/datecommit.html#control-rules",
     "title": "Script to know the commit date",
     "section": "Control rules",
     "text": "Control rules\nd=$(TZ=\"UTC\" date -j -f \"%Y-%m-%dT%H:%M:%SZ\" \"$datecommit\" \"+%d\")\n\nnow=$(date \"+DATE: %Y-%m-%d%n\")\n\nif [`expr $d + 7`]\nthen \n    echo \"many days $OWNER $datecommit\" \nelse\n    echo \"correct\" \nfi"
   },
   {
-    "objectID": "datecommit.html#result",
-    "href": "datecommit.html#result",
+    "objectID": "devops/datecommit.html#result",
+    "href": "devops/datecommit.html#result",
     "title": "Script to know the commit date",
     "section": "Result",
     "text": "Result\nhttps://api.github.com/repos/carla-velasco7e4/carla-velasco7e4.github.io/commits\ncarla-velasco7e4 \"2023-03-01T12:24:26Z\"\nhttps://api.github.com/repos/aznale/aznale.github.io/commits\naznale \"2023-03-27T18:15:38Z\"\nhttps://api.github.com/repos/DavidMaqueda/testtest3/commits\nDavidMaqueda \"2023-03-07T12:31:02Z\"\nhttps://api.github.com/repos/albertmbu/wiki/commits\nalbertmbu \"2023-03-15T12:30:34Z\"\nhttps://api.github.com/repos/rudevops/miweb/commits\nrudevops \"2023-01-27T11:58:55Z\"\nhttps://api.github.com/repos/vallvicity/CursoDAW/commits\nvallvicity \"2023-03-06T11:55:54Z\"\nhttps://api.github.com/repos/vcalvache/mywebsite/commits\nvcalvache \"2023-03-13T19:59:33Z\"\nhttps://api.github.com/repos/leonpurple/combobackend/commits\nleonpurple \"2023-02-13T00:24:29Z\"\nhttps://api.github.com/repos/rarmero/appwebcifolavioleta/commits\nrarmero \"2023-03-23T12:15:44Z\""
+  },
+  {
+    "objectID": "devops/jobsps.html",
+    "href": "devops/jobsps.html",
+    "title": "PowerShell Jobs",
+    "section": "",
+    "text": "PS D:\\srctest\\powershelltest> Start-Job -Scriptblock{Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers}\n\nId     Name            PSJobTypeName   State         HasMoreData     Location             Command\n--     ----            -------------   -----         -----------     --------             -------\n1      Job9            BackgroundJob   Running       True            localhost            Invoke-WebRequest -Uri \"…\n\nPS C:\\Users\\AdministradorCIFO> Receive-Job 1\n\ncovers     RunspaceId\n------     ----------\n{10308698} 0f626350-35fe-4576-aeb5-c21ef3610f70"
+  },
+  {
+    "objectID": "devops/jobsps.html#code",
+    "href": "devops/jobsps.html#code",
+    "title": "PowerShell Jobs",
+    "section": "Code",
+    "text": "Code\nType this code and save as job1.ps1\n$getBookJob = Start-Job –ScriptBlock {  \n    Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers\n}"
+  },
+  {
+    "objectID": "devops/jobsps.html#run-job",
+    "href": "devops/jobsps.html#run-job",
+    "title": "PowerShell Jobs",
+    "section": "Run job",
+    "text": "Run job\nD:\\srctest\\powershelltest\\job1.ps1"
+  },
+  {
+    "objectID": "devops/jobsps.html#get-command--job",
+    "href": "devops/jobsps.html#get-command--job",
+    "title": "PowerShell Jobs",
+    "section": "Get-Command *-Job",
+    "text": "Get-Command *-Job\nto manage the jobs\n\n\n\nfig 1"
+  },
+  {
+    "objectID": "devops/jobsps.html#wait-job-getbookjob",
+    "href": "devops/jobsps.html#wait-job-getbookjob",
+    "title": "PowerShell Jobs",
+    "section": "Wait-Job $getBookJob",
+    "text": "Wait-Job $getBookJob\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "devops/jobsps.html#receive-job-getbookjob",
+    "href": "devops/jobsps.html#receive-job-getbookjob",
+    "title": "PowerShell Jobs",
+    "section": "Receive-Job $getBookJob",
+    "text": "Receive-Job $getBookJob\n\n\n\nfig 3"
+  },
+  {
+    "objectID": "devops/pipeline.html",
+    "href": "devops/pipeline.html",
+    "title": "Pipeline sonarqube",
+    "section": "",
+    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
+  },
+  {
+    "objectID": "devops/Task1.html",
+    "href": "devops/Task1.html",
+    "title": "Kubernettes",
+    "section": "",
+    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
+  },
+  {
+    "objectID": "devops/Task2.html",
+    "href": "devops/Task2.html",
+    "title": "Quarto with docker",
+    "section": "",
+    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Web App",
     "section": "",
-    "text": "Journey in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\n\n\n\n\nNote\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Right result]\n  E --> G[Wrong result]\n\n\n\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory"
-  },
-  {
-    "objectID": "jobsps.html",
-    "href": "jobsps.html",
-    "title": "PowerShell Jobs",
-    "section": "",
-    "text": "PS D:\\srctest\\powershelltest> Start-Job -Scriptblock{Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers}\n\nId     Name            PSJobTypeName   State         HasMoreData     Location             Command\n--     ----            -------------   -----         -----------     --------             -------\n1      Job9            BackgroundJob   Running       True            localhost            Invoke-WebRequest -Uri \"…\n\nPS C:\\Users\\AdministradorCIFO> Receive-Job 1\n\ncovers     RunspaceId\n------     ----------\n{10308698} 0f626350-35fe-4576-aeb5-c21ef3610f70"
-  },
-  {
-    "objectID": "jobsps.html#code",
-    "href": "jobsps.html#code",
-    "title": "PowerShell Jobs",
-    "section": "Code",
-    "text": "Code\nType this code and save as job1.ps1\n$getBookJob = Start-Job –ScriptBlock {  \n    Invoke-WebRequest -Uri \"https://openlibrary.org/works/OL20941090W.json\" | ConvertFrom-Json | Select covers\n}"
-  },
-  {
-    "objectID": "jobsps.html#run-job",
-    "href": "jobsps.html#run-job",
-    "title": "PowerShell Jobs",
-    "section": "Run job",
-    "text": "Run job\nD:\\srctest\\powershelltest\\job1.ps1"
-  },
-  {
-    "objectID": "jobsps.html#get-command--job",
-    "href": "jobsps.html#get-command--job",
-    "title": "PowerShell Jobs",
-    "section": "Get-Command *-Job",
-    "text": "Get-Command *-Job\nto manage the jobs\n\n\n\nfig 1"
-  },
-  {
-    "objectID": "jobsps.html#wait-job-getbookjob",
-    "href": "jobsps.html#wait-job-getbookjob",
-    "title": "PowerShell Jobs",
-    "section": "Wait-Job $getBookJob",
-    "text": "Wait-Job $getBookJob\n\n\n\nfig 2"
-  },
-  {
-    "objectID": "jobsps.html#receive-job-getbookjob",
-    "href": "jobsps.html#receive-job-getbookjob",
-    "title": "PowerShell Jobs",
-    "section": "Receive-Job $getBookJob",
-    "text": "Receive-Job $getBookJob\n\n\n\nfig 3"
+    "text": "Introduction\n\nJourney in the knowledge of the high techniques to develop modern software with the guidance of Albert’s web\n\n\n\nKeywords\n\n\n\n\n\n\nTip\n\n\n\nkey-words: mind-set, programming, devops, scrum, arquitecture.\n\n\n\n\nDiagram idea\n\n\n\n\nflowchart LR\n  A(Scrum) --> E{Decision Making}\n  B(Mind Management) --> E\n  C(Getting things done) --> E{Decision Making}\n  D(Metrics) --> E{Decision Making}\n  E --> F[Right result]\n  E --> G[Wrong result]\n\n\n\n\n\n\n\n\n\n\nWeb content\n\n\n\n\n\n\nNote\n\n\n\n\n\n\n\n\nLaboratories\n\n\n\n\n\nPersonal projects\n\n\n\n\n\n\n\nDevops\n\n\n\n\n\nTheory"
   },
   {
     "objectID": "LabMD01-1.html",
@@ -320,13 +341,6 @@
     "title": "Design Patterns",
     "section": "",
     "text": "Links\n\nUML by Takaaki Teshima\nPatterns catalog"
-  },
-  {
-    "objectID": "pipeline.html",
-    "href": "pipeline.html",
-    "title": "Pipeline sonarqube",
-    "section": "",
-    "text": "flowchart LR\n  A[SonarQube] --> B[Test]\n  B --> C[Build]\n  C --> D[Publish]"
   },
   {
     "objectID": "projects/cifometrics.html",
@@ -600,20 +614,6 @@
     "title": "springboot with thymeleaf",
     "section": "Result",
     "text": "Result\n\n\n\nfig 4\n\n\n\nlab delivery Code (UF01-1844)"
-  },
-  {
-    "objectID": "Task1.html",
-    "href": "Task1.html",
-    "title": "Kubernettes",
-    "section": "",
-    "text": "Pods\n\n\n\n\n\n\n\n\nfig 1\n\n\n\n\n\n\n\n\n\n\n\nDesployments\n\n\n\n\n\n\n\n\nfig 2"
-  },
-  {
-    "objectID": "Task2.html",
-    "href": "Task2.html",
-    "title": "Quarto with docker",
-    "section": "",
-    "text": "Instructions docker quarto\n\n\n\n\n\n\nDocker image\n\n\n\n\n\n\n\n\nfig 1"
   },
   {
     "objectID": "Theory1.html",
