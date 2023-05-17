@@ -2,7 +2,25 @@
 title: "Cifo metrics"
 ---
 
-# Labs
+# Control items
+
+```{mermaid}
+flowchart LR
+  A(profeWeb) --> B
+  A(profeWeb) --> C
+  A(profeWeb) --> D
+  A(profeWeb) --> E
+  A(profeWeb) --> F
+  B(Labs) --> G{Control}
+  C(Project) --> G{Control}
+  D(Reading Resources) --> G{Control}
+  E(Reading books) --> G{Control}
+  F(Vocabulary) --> G{Control}
+  G --> H[Metrics]
+```
+
+
+## Labs
 
 
 |labsxx | Delivered | revised |
@@ -14,19 +32,25 @@ title: "Cifo metrics"
 
 [Lab01](https://albertprofe.dev/javase/selab0-1.html){.external}
 
-# Backlog projects 
+## Backlog projects 
 
-knowing the commit update
+Knowing the date commit update
+
+![fig 1](../images/graphiccommits.PNG)
+
 
 [code source](https://rarmero.github.io/appwebcifolavioleta/datecommit.html){.external}
 
 [backlog projects](https://albertprofe.dev/ifcd0210/ifcd0210backlog-projects.html){.external}
 
 
-# Books
+## Books
 
-![fig 1](../images/metricsbooks.PNG)
+![fig 2](../images/metricsbooks.PNG)
 
 
 [book list](https://albertprofe.dev/learning/learning-listing-table-books.html){.external}
 
+
+
+# Metrics
