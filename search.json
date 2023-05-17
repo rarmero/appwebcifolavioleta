@@ -469,6 +469,13 @@
     "text": "Holidays\nSelect the country to know public holidays\n\nviewof countrySelected = Inputs.select([\"US\", \"ES\"], {value: \"ES\"})\n\n\n\n\n\n\n\nholidaysContent = await d3.json(\"https://date.nager.at/api/v2/publicholidays/2023/\" +countrySelected)\n\nholidays = holidaysContent.map(holidaysContent => {\nconst name = holidaysContent.name;\nconst date = holidaysContent.date;\nreturn {name,date}\n}\n)\n\nInputs.table(holidays, { sort: \"value\", reverse: true })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nlab delivery Code (MF01-0491)"
   },
   {
+    "objectID": "react/canvas.html",
+    "href": "react/canvas.html",
+    "title": "Canvas - Drawing",
+    "section": "",
+    "text": "const drawEllipse = (context) => {\n  // Draw the ellipse\n  context.beginPath();\n  context.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);\n  context.stroke();\n\n  // Draw the ellipse's line of reflection\n  context.beginPath();\n  context.setLineDash([5, 5]);\n  context.moveTo(0, 200);\n  context.lineTo(200, 0);\n  context.stroke();\n};\n\n\n\nfig 1\n\n\nsource"
+  },
+  {
     "objectID": "react/LabRE01-1.html#access-a-plublicapis.org",
     "href": "react/LabRE01-1.html#access-a-plublicapis.org",
     "title": "Lab#RE01-1: API Rest",
