@@ -291,7 +291,7 @@
     "href": "projects/cifometrics.html",
     "title": "Cifo metrics",
     "section": "",
-    "text": "Labs\n\n\n\nlabsxx\nDelivered\nrevised\n\n\n\n\nuser1\n\n\n\n\n…\n\n\n\n\nuserN\n\n\n\n\n\nLab01\n\n\nBacklog projects\nknowing the commit update\ncode source\nbacklog projects\n\n\nBooks\n\n\n\nfig 1\n\n\nbook list"
+    "text": "flowchart LR\n  A(profeWeb) --> B\n  A(profeWeb) --> C\n  A(profeWeb) --> D\n  A(profeWeb) --> E\n  A(profeWeb) --> F\n  B(Labs) --> G{Control}\n  C(Project) --> G{Control}\n  D(Reading Resources) --> G{Control}\n  E(Reading books) --> G{Control}\n  F(Vocabulary) --> G{Control}\n  G --> H[Metrics]\n\n\n\n\n\n\n\n\n\n\n\n\n\nlabsxx\nDelivered\nrevised\n\n\n\n\nuser1\n\n\n\n\n…\n\n\n\n\nuserN\n\n\n\n\n\nLab01\n\n\n\nKnowing the date commit update\n\n\n\nfig 1\n\n\ncode source\nbacklog projects\n\n\n\n\n\n\nfig 2\n\n\nbook list"
   },
   {
     "objectID": "projects/javasonarqube.html",

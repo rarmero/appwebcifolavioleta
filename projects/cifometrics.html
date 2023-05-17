@@ -58,6 +58,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -413,9 +416,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#labs" id="toc-labs" class="nav-link active" data-scroll-target="#labs">Labs</a></li>
+  <li><a href="#control-items" id="toc-control-items" class="nav-link active" data-scroll-target="#control-items">Control items</a>
+  <ul class="collapse">
+  <li><a href="#labs" id="toc-labs" class="nav-link" data-scroll-target="#labs">Labs</a></li>
   <li><a href="#backlog-projects" id="toc-backlog-projects" class="nav-link" data-scroll-target="#backlog-projects">Backlog projects</a></li>
   <li><a href="#books" id="toc-books" class="nav-link" data-scroll-target="#books">Books</a></li>
+  </ul></li>
+  <li><a href="#metrics" id="toc-metrics" class="nav-link" data-scroll-target="#metrics">Metrics</a></li>
   </ul>
 </nav>
     </div>
@@ -439,8 +446,34 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="labs" class="level1">
-<h1>Labs</h1>
+<section id="control-items" class="level1">
+<h1>Control items</h1>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A(profeWeb) --&gt; B
+  A(profeWeb) --&gt; C
+  A(profeWeb) --&gt; D
+  A(profeWeb) --&gt; E
+  A(profeWeb) --&gt; F
+  B(Labs) --&gt; G{Control}
+  C(Project) --&gt; G{Control}
+  D(Reading Resources) --&gt; G{Control}
+  E(Reading books) --&gt; G{Control}
+  F(Vocabulary) --&gt; G{Control}
+  G --&gt; H[Metrics]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<section id="labs" class="level2">
+<h2 class="anchored" data-anchor-id="labs">Labs</h2>
 <table class="table">
 <thead>
 <tr class="header">
@@ -469,21 +502,31 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p><a href="https://albertprofe.dev/javase/selab0-1.html" class="external">Lab01</a></p>
 </section>
-<section id="backlog-projects" class="level1">
-<h1>Backlog projects</h1>
-<p>knowing the commit update</p>
-<p><a href="https://rarmero.github.io/appwebcifolavioleta/datecommit.html" class="external">code source</a></p>
-<p><a href="https://albertprofe.dev/ifcd0210/ifcd0210backlog-projects.html" class="external">backlog projects</a></p>
-</section>
-<section id="books" class="level1">
-<h1>Books</h1>
+<section id="backlog-projects" class="level2">
+<h2 class="anchored" data-anchor-id="backlog-projects">Backlog projects</h2>
+<p>Knowing the date commit update</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/metricsbooks.PNG" class="img-fluid figure-img"></p>
+<p><img src="../images/graphiccommits.PNG" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">fig 1</figcaption><p></p>
 </figure>
 </div>
+<p><a href="https://rarmero.github.io/appwebcifolavioleta/datecommit.html" class="external">code source</a></p>
+<p><a href="https://albertprofe.dev/ifcd0210/ifcd0210backlog-projects.html" class="external">backlog projects</a></p>
+</section>
+<section id="books" class="level2">
+<h2 class="anchored" data-anchor-id="books">Books</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/metricsbooks.PNG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 2</figcaption><p></p>
+</figure>
+</div>
 <p><a href="https://albertprofe.dev/learning/learning-listing-table-books.html" class="external">book list</a></p>
+</section>
+</section>
+<section id="metrics" class="level1">
+<h1>Metrics</h1>
 
 
 </section>
