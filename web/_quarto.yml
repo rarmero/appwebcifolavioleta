@@ -55,6 +55,7 @@ website:
            - "react/LabRE01-1.qmd"
            - "react/LabRE02-1.qmd"
            - "react/ReactDelivery.qmd"
+           - "react/LabRE04-2.qmd"
            - "react/canvas.qmd"
     - id: "tasks" 
       title: "Devops"
