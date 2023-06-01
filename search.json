@@ -490,6 +490,13 @@
     "text": "Hook useReducer & Material\nimport Box from '@mui/material/Box';\nimport Slider from '@mui/material/Slider';\nimport { useReducer } from \"react\";\n\n\n\nfig 1\n\n\n\n\nSource code\n\nlab delivery Code (UF03-1846)"
   },
   {
+    "objectID": "react/LabRE03-1.html",
+    "href": "react/LabRE03-1.html",
+    "title": "Lab#RE03-1: to-do app",
+    "section": "",
+    "text": "fig 1\n\n\n\n\nGithub Code\nCode Sandbox\n\n\n\nfig 2"
+  },
+  {
     "objectID": "react/LabRE04-2.html",
     "href": "react/LabRE04-2.html",
     "title": "Lab#RE04-2: Spring Boot & ReactJS",
