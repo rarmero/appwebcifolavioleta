@@ -54,6 +54,7 @@ website:
           contents: 
            - "react/LabRE01-1.qmd"
            - "react/LabRE02-1.qmd"
+           - "react/LabRE03-1.qmd"
            - "react/ReactDelivery.qmd"
            - "react/LabRE04-2.qmd"
            - "react/canvas.qmd"
