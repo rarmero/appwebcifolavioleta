@@ -2,6 +2,40 @@
 title: "Lab#RE04-2: Spring Boot & ReactJS"
 ---
 
+# React
+
+![fig 1](../images/LabRe04a.PNG)
+
+# React call end point
+
+![fig 2](../images/LabRe04d.PNG)
+
+# Check endpoint
+
+![fig 3](../images/LabRe04b.PNG)
+
+# spring Boot
+
+![fig 4](../images/LabRe04c.PNG)
+
+
 
 # [Source code](https://github.com/rarmero/labscifolavioleta/tree/main/src/bookingthings)
 
+
+# Example Queries in spring data MongoDB
+
+
+```Java
+public interface ReservationRepository extends MongoRepository<Reservation,String>{
+  @Query("{ 'idUser' : ?0 }")
+  List<Reservation> findByIdUser(Integer idUser);
+  @Query("{ 'accepted' : ?0 }")
+  List<Reservation> findByAccepted(boolean accepted);
+  @Query("{'dateStart' :{'$gte':?0, '$lt':?1}}")
+  List<Reservation> getAllReservationsByDate(Date dateFrom,Date dateTo);
+
+}
+
+
+````
