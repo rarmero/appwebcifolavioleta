@@ -501,7 +501,7 @@
     "href": "react/LabRE04-2.html",
     "title": "Lab#RE04-2: Spring Boot & ReactJS",
     "section": "",
-    "text": "Source code"
+    "text": "React\n\n\n\nfig 1\n\n\n\n\nReact call end point\n\n\n\nfig 2\n\n\n\n\nCheck endpoint\n\n\n\nfig 3\n\n\n\n\nspring Boot\n\n\n\nfig 4\n\n\n\n\nSource code\n\n\nExample Queries in spring data MongoDB\npublic interface ReservationRepository extends MongoRepository<Reservation,String>{\n  @Query(\"{ 'idUser' : ?0 }\")\n  List<Reservation> findByIdUser(Integer idUser);\n  @Query(\"{ 'accepted' : ?0 }\")\n  List<Reservation> findByAccepted(boolean accepted);\n  @Query(\"{'dateStart' :{'$gte':?0, '$lt':?1}}\")\n  List<Reservation> getAllReservationsByDate(Date dateFrom,Date dateTo);\n\n}"
   },
   {
     "objectID": "react/ReactDelivery.html",
