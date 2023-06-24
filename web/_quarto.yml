@@ -107,6 +107,9 @@ website:
           contents:
            - "projects/cifometrics.qmd"
            - "projects/quiz.qmd" 
+        - section: "Internships"
+          contents: 
+            - "internship.qmd"
     - id: "theory" 
       title: "Theory"
       contents:
