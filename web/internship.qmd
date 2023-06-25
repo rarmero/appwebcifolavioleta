@@ -5,18 +5,17 @@ subtitle : "Company relative to develop a software platform to manage fleets by 
 
 # Onboarding
 
-::: {.border}
-Objetive:
 
-a junior or sernior software developer would be read the document, explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.
-
-:::
+> Objetive:
+>
+> A junior or sernior software developer would be read the document,
+> explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.
 
 ## Tools: 
 
-- IDE 
+- IDE Visual Studio with c#
 - GIT
-- Management Studio
+- SQL Management Studio
 - Postman
 - Azure Devops: boards, repository, Pipelines, 
 - Workspace Google
@@ -33,6 +32,7 @@ TODO: explain how
 
 ## Arquitecture
 
+- RestFul API
 - Microservices
 - Multilayer
 - Entity Framework
@@ -53,7 +53,7 @@ TODO: explain how
 ## Procedures
 
 - Git: creating branches by US
-- 
+
 
 TODO: explain how
 
@@ -92,18 +92,18 @@ class Vehicle
 class Order
 class Operator
 
-CompanyMaster *-- Base: Composition
-CompanyMaster *-- Product: Composition
-CompanyMaster *-- Company: Composition
-Company *-- Customer: Composition
-Company *-- Employee: Composition
-Company *-- Fleet: Composition
-Customer *-- Insurance: Composition
-Fleet *-- Vehicle: Composition
-Order *-- Company: Composition
-Order *-- Fleet: Composition
-Order *-- Operator: Composition
-Operator -- Employee
+CompanyMaster <|-- Base: Aggregation
+CompanyMaster <|-- Product: Aggregation
+CompanyMaster <|-- Company: Aggregation
+Company <|-- Customer: Aggregation
+Company <|-- Employee: Aggregation
+Company <|-- Fleet: Aggregation
+Customer <|-- Insurance: Aggregation
+Fleet <|-- Vehicle: Aggregation
+Order <|-- Company: Aggregation
+Order <|-- Operator: Aggregation
+Operator <|-- Employee
+Order <|-- Fleet: Aggregation
 ```
 </div>
 
@@ -114,23 +114,40 @@ company, clients, providers, orders, employees, schedule control, job signing
 Definition of the terms according the point of view.
 
 
-## Deepen the subject
-
-
-
 ## Apliying Business model to develop sotware
 
 - List microservices
+- Uses Cases.
 - Query logic.
 
+[soporte](https://investeltechnologies.com/soporte/){.external}
 
-# To do
 
-::: {.border}
+# Vocabulary
 
-> every day take a word and:
-- define it
-- relate it
-- answer some quiestions : why, when, 
+- flotas
+- pedido
+- servicio
+- facturación
+- cobro
+- orden
+- supervisor
+- empleado
+- recorrido
+- distancias
+- tarifas
 
-:::
+
+[Manual](https://investeltechnologies.com/soporte/investel-flota/manual-de-usuario/){.external}
+
+# functions
+
+- Localizar flota.
+- Asignar choferes a ordenes de trabajo.
+- Fichajes.
+- Facturación.
+- Informes de la actividad de la fota.
+- Informes de la facturación a los clientes.
+- Comisiones y liquidaciones.
+- Seguimiento del pedido.
+- Integración API.
