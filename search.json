@@ -368,7 +368,7 @@
     "href": "internship.html",
     "title": "Internships",
     "section": "",
-    "text": "Objetive:\na junior or sernior software developer would be read the document, explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.\n\n\n\n\nIDE\nGIT\nManagement Studio\nPostman\nAzure Devops: boards, repository, Pipelines,\nWorkspace Google\n\n\n\n\n\naccess to network\ngit user\nconnection string to database\nip’s servers.\n\nTODO: explain how\n\n\n\n\nMicroservices\nMultilayer\nEntity Framework\nPatterns : DI, Mediator, Repository\n\n\n\n\n\nSOLID\nLINQ\nCQRS with MediatR\nMapping with Dapper\nEvent bus with RabbitMQ\n\n\n\n\nMicroservices\n\n\n\n\nGit: creating branches by US\n\n\nTODO: explain how"
+    "text": "Objetive:\nA junior or sernior software developer would be read the document, explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.\n\n\n\n\nIDE Visual Studio with c#\nGIT\nSQL Management Studio\nPostman\nAzure Devops: boards, repository, Pipelines,\nWorkspace Google\n\n\n\n\n\naccess to network\ngit user\nconnection string to database\nip’s servers.\n\nTODO: explain how\n\n\n\n\nRestFul API\nMicroservices\nMultilayer\nEntity Framework\nPatterns : DI, Mediator, Repository\n\n\n\n\n\nSOLID\nLINQ\nCQRS with MediatR\nMapping with Dapper\nEvent bus with RabbitMQ\n\n\n\n\nMicroservices\n\n\n\n\nGit: creating branches by US\n\nTODO: explain how"
   },
   {
     "objectID": "internship.html#features",
@@ -378,18 +378,11 @@
     "text": "Features\ncompany, clients, providers, orders, employees, schedule control, job signing\nDefinition of the terms according the point of view."
   },
   {
-    "objectID": "internship.html#deepen-the-subject",
-    "href": "internship.html#deepen-the-subject",
-    "title": "Internships",
-    "section": "Deepen the subject",
-    "text": "Deepen the subject"
-  },
-  {
     "objectID": "internship.html#apliying-business-model-to-develop-sotware",
     "href": "internship.html#apliying-business-model-to-develop-sotware",
     "title": "Internships",
     "section": "Apliying Business model to develop sotware",
-    "text": "Apliying Business model to develop sotware\n\nList microservices\nQuery logic."
+    "text": "Apliying Business model to develop sotware\n\nList microservices\nUses Cases.\nQuery logic.\n\nsoporte"
   },
   {
     "objectID": "mongodb/mongodb2.html",

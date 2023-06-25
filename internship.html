@@ -457,10 +457,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#bussines-model" id="toc-bussines-model" class="nav-link" data-scroll-target="#bussines-model">Bussines model</a>
   <ul class="collapse">
   <li><a href="#features" id="toc-features" class="nav-link" data-scroll-target="#features">Features</a></li>
-  <li><a href="#deepen-the-subject" id="toc-deepen-the-subject" class="nav-link" data-scroll-target="#deepen-the-subject">Deepen the subject</a></li>
   <li><a href="#apliying-business-model-to-develop-sotware" id="toc-apliying-business-model-to-develop-sotware" class="nav-link" data-scroll-target="#apliying-business-model-to-develop-sotware">Apliying Business model to develop sotware</a></li>
   </ul></li>
-  <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do">To do</a></li>
+  <li><a href="#vocabulary" id="toc-vocabulary" class="nav-link" data-scroll-target="#vocabulary">Vocabulary</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">functions</a></li>
   </ul>
 </nav>
     </div>
@@ -487,16 +487,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="onboarding" class="level1">
 <h1>Onboarding</h1>
-<div class="border">
+<blockquote class="blockquote">
 <p>Objetive:</p>
-<p>a junior or sernior software developer would be read the document, explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.</p>
-</div>
+<p>A junior or sernior software developer would be read the document, explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.</p>
+</blockquote>
 <section id="tools" class="level2">
 <h2 class="anchored" data-anchor-id="tools">Tools:</h2>
 <ul>
-<li>IDE</li>
+<li>IDE Visual Studio with c#</li>
 <li>GIT</li>
-<li>Management Studio</li>
+<li>SQL Management Studio</li>
 <li>Postman</li>
 <li>Azure Devops: boards, repository, Pipelines,</li>
 <li>Workspace Google</li>
@@ -515,6 +515,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="arquitecture" class="level2">
 <h2 class="anchored" data-anchor-id="arquitecture">Arquitecture</h2>
 <ul>
+<li>RestFul API</li>
 <li>Microservices</li>
 <li>Multilayer</li>
 <li>Entity Framework</li>
@@ -539,7 +540,6 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="procedures">Procedures</h2>
 <ul>
 <li>Git: creating branches by US</li>
-<li></li>
 </ul>
 <p>TODO: explain how</p>
 </section>
@@ -583,18 +583,18 @@ class Vehicle
 class Order
 class Operator
 
-CompanyMaster *-- Base: Composition
-CompanyMaster *-- Product: Composition
-CompanyMaster *-- Company: Composition
-Company *-- Customer: Composition
-Company *-- Employee: Composition
-Company *-- Fleet: Composition
-Customer *-- Insurance: Composition
-Fleet *-- Vehicle: Composition
-Order *-- Company: Composition
-Order *-- Fleet: Composition
-Order *-- Operator: Composition
-Operator -- Employee
+CompanyMaster &lt;|-- Base: Aggregation
+CompanyMaster &lt;|-- Product: Aggregation
+CompanyMaster &lt;|-- Company: Aggregation
+Company &lt;|-- Customer: Aggregation
+Company &lt;|-- Employee: Aggregation
+Company &lt;|-- Fleet: Aggregation
+Customer &lt;|-- Insurance: Aggregation
+Fleet &lt;|-- Vehicle: Aggregation
+Order &lt;|-- Company: Aggregation
+Order &lt;|-- Operator: Aggregation
+Operator &lt;|-- Employee
+Order &lt;|-- Fleet: Aggregation
 </pre>
 <div id="mermaid-tooltip-1" class="mermaidTooltip">
 
@@ -609,24 +609,46 @@ Operator -- Employee
 <p>company, clients, providers, orders, employees, schedule control, job signing</p>
 <p>Definition of the terms according the point of view.</p>
 </section>
-<section id="deepen-the-subject" class="level2">
-<h2 class="anchored" data-anchor-id="deepen-the-subject">Deepen the subject</h2>
-</section>
 <section id="apliying-business-model-to-develop-sotware" class="level2">
 <h2 class="anchored" data-anchor-id="apliying-business-model-to-develop-sotware">Apliying Business model to develop sotware</h2>
 <ul>
 <li>List microservices</li>
+<li>Uses Cases.</li>
 <li>Query logic.</li>
 </ul>
+<p><a href="https://investeltechnologies.com/soporte/" class="external">soporte</a></p>
 </section>
 </section>
-<section id="to-do" class="level1">
-<h1>To do</h1>
-<div class="border">
-<blockquote class="blockquote">
-<p>every day take a word and: - define it - relate it - answer some quiestions : why, when,</p>
-</blockquote>
-</div>
+<section id="vocabulary" class="level1">
+<h1>Vocabulary</h1>
+<ul>
+<li>flotas</li>
+<li>pedido</li>
+<li>servicio</li>
+<li>facturación</li>
+<li>cobro</li>
+<li>orden</li>
+<li>supervisor</li>
+<li>empleado</li>
+<li>recorrido</li>
+<li>distancias</li>
+<li>tarifas</li>
+</ul>
+<p><a href="https://investeltechnologies.com/soporte/investel-flota/manual-de-usuario/" class="external">Manual</a></p>
+</section>
+<section id="functions" class="level1">
+<h1>functions</h1>
+<ul>
+<li>Localizar flota.</li>
+<li>Asignar choferes a ordenes de trabajo.</li>
+<li>Fichajes.</li>
+<li>Facturación.</li>
+<li>Informes de la actividad de la fota.</li>
+<li>Informes de la facturación a los clientes.</li>
+<li>Comisiones y liquidaciones.</li>
+<li>Seguimiento del pedido.</li>
+<li>Integración API.</li>
+</ul>
 
 
 </section>
