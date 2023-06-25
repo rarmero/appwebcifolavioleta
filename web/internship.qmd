@@ -120,9 +120,6 @@ Definition of the terms according the point of view.
 - Uses Cases.
 - Query logic.
 
-[soporte](https://investeltechnologies.com/soporte/){.external}
-
-
 # Vocabulary
 
 - flotas
@@ -136,9 +133,6 @@ Definition of the terms according the point of view.
 - recorrido
 - distancias
 - tarifas
-
-
-[Manual](https://investeltechnologies.com/soporte/investel-flota/manual-de-usuario/){.external}
 
 # functions
 
