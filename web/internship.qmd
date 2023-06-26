@@ -8,12 +8,15 @@ subtitle : "Company relative to develop a software platform to manage fleets by 
 
 > Objetive:
 >
-> A junior or sernior software developer would be read the document,
-> explained below and undestarnd the bussiness model, kwnow the practices on the company and develop software.
+> A junior or sernior software developer would be read the document, explained below, and understarnd:
 
-## Tools: 
+- the business model.
+- kwnow the practices on the company.
+- develop software.
 
-- IDE Visual Studio with c#
+## Tools 
+
+- IDE Visual Studio with c# for server and client side.
 - GIT
 - SQL Management Studio
 - Postman
@@ -30,8 +33,9 @@ subtitle : "Company relative to develop a software platform to manage fleets by 
 
 TODO: explain how
 
-## Arquitecture
+## Arquitecture and framework
 
+- Angular
 - RestFul API
 - Microservices
 - Multilayer
@@ -134,7 +138,7 @@ Definition of the terms according the point of view.
 - distancias
 - tarifas
 
-# functions
+# Functions
 
 - Localizar flota.
 - Asignar choferes a ordenes de trabajo.
