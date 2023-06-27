@@ -366,23 +366,30 @@
   {
     "objectID": "internship.html",
     "href": "internship.html",
-    "title": "Internships",
+    "title": "Internship",
     "section": "",
-    "text": "Objetive:\nA junior or sernior software developer would be read the document, explained below, and understarnd:\n\n\nthe business model.\nkwnow the practices on the company.\ndevelop software.\n\n\n\n\nIDE Visual Studio with c# for server and client side.\nGIT\nSQL Management Studio\nPostman\nAzure Devops: boards, repository, Pipelines,\nWorkspace Google\n\n\n\n\n\naccess to network\ngit user\nconnection string to database\nip’s servers.\n\nTODO: explain how\n\n\n\n\nAngular\nRestFul API\nMicroservices\nMultilayer\nEntity Framework\nPatterns : DI, Mediator, Repository\n\n\n\n\n\nSOLID\nLINQ\nCQRS with MediatR\nMapping with Dapper\nEvent bus with RabbitMQ\n\n\n\n\nMicroservices\n\n\n\n\nGit: creating branches by US\n\nTODO: explain how"
+    "text": "Objetive:\nA junior or sernior software developer would be read the document, explained below, and understand it:\n\n\nthe business model.\nkwnow the practices on the company.\ndevelop software.\n\n\n\n\nIDE Visual Studio with c# for server and client side.\nGIT\nSQL Management Studio\nPostman\nAzure Devops: boards, repository, Pipelines,\nWorkspace Google\n\n\n\n\n\naccess to network\ngit user\nconnection string to database\nip’s servers.\n\nTODO: explain how\n\n\n\n\nAngular\nRestFul API\nMicroservices\nMultilayer\nEntity Framework\nPatterns : DI, Mediator, Repository\n\n\n\n\n\nSOLID\nLINQ\nCQRS with MediatR\nMapping with Dapper\nEvent bus with RabbitMQ\n\n\n\n\nMicroservices\n\n\n\n\nGit: creating branches by US\n\nTODO: explain how"
   },
   {
     "objectID": "internship.html#features",
     "href": "internship.html#features",
-    "title": "Internships",
+    "title": "Internship",
     "section": "Features",
     "text": "Features\ncompany, clients, providers, orders, employees, schedule control, job signing\nDefinition of the terms according the point of view."
   },
   {
     "objectID": "internship.html#apliying-business-model-to-develop-sotware",
     "href": "internship.html#apliying-business-model-to-develop-sotware",
-    "title": "Internships",
+    "title": "Internship",
     "section": "Apliying Business model to develop sotware",
     "text": "Apliying Business model to develop sotware\n\nList microservices\nUses Cases.\nQuery logic."
+  },
+  {
+    "objectID": "internship.html#example-of-diagram",
+    "href": "internship.html#example-of-diagram",
+    "title": "Internship",
+    "section": "Example of diagram",
+    "text": "Example of diagram\n\n\n\n\ngantt\n    title A Gantt Diagram\n    dateFormat  YYYY-MM-DD\n    section Apis\n    Develop     :a1, 2022-01-01, 20d\n    Publish     :after a1  , 20d\n    section Platform\n    Develop      : 2022-01-12  , 12d\n    Testing      : 24d\n    Production : 2d"
   },
   {
     "objectID": "mongodb/mongodb2.html",
