@@ -1,5 +1,5 @@
 ---
-title: "Internships"
+title: "Internship"
 subtitle : "Company relative to develop a software platform to manage fleets by GPS"
 ---
 
@@ -8,7 +8,7 @@ subtitle : "Company relative to develop a software platform to manage fleets by 
 
 > Objetive:
 >
-> A junior or sernior software developer would be read the document, explained below, and understarnd:
+> A junior or sernior software developer would be read the document, explained below, and understand it:
 
 - the business model.
 - kwnow the practices on the company.
@@ -123,6 +123,22 @@ Definition of the terms according the point of view.
 - List microservices
 - Uses Cases.
 - Query logic.
+
+## Example of diagram
+
+
+```{mermaid}
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Apis
+    Develop     :a1, 2022-01-01, 20d
+    Publish     :after a1  , 20d
+    section Platform
+    Develop      : 2022-01-12  , 12d
+    Testing      : 24d
+    Production : 2d
+```
 
 # Vocabulary
 
